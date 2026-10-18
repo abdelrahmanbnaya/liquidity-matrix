@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The method — how Liquidity Matrix reads a chart</title>
+<meta name="description" content="How Liquidity Matrix reads liquidity on real charts — stop pools, sweeps, walls and ranges — and why we test every idea on data and publish the ones that fail.">
+<link rel="canonical" href="https://liquidity-matrix.com/about.html">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><path d="M2 20h30l-6-16H8z" fill="#f5c046"/><path d="M6 12h22" stroke="#9c7a2a" stroke-width="2"/></svg>LIQUIDITY MATRIX</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
+    <nav class="nav">
+      <a href="/levels.html">Weekly levels</a>
+      <a href="/about.html" class="on">The method</a>
+      <a href="/services.html">Services</a>
+      <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap prose">
+      <div class="kicker">The method</div>
+      <h2>Price moves toward where the orders are</h2>
+      <p>Most traders put their stop loss in the same obvious places: just above a high, just below a low, at the edge of a range. Those stops are orders waiting to be filled — liquidity. Large moves often start by running through one of those pools before going the other way, or by breaking through it and continuing.</p>
+      <p>Liquidity Matrix is a way to see those pools before price reaches them, so you are not the one whose stop gets taken.</p>
+
+      <h2>What we mark on a chart</h2>
+      <ul>
+        <li><b>Equal highs and equal lows</b> — two or more turns at almost the same price. Buy stops above, sell stops below.</li>
+        <li><b>Walls and floors</b> — a zone price reaches again and again without a candle closing through it. Each touch is shown, and the zone is drawn as a zone, not as one exact price.</li>
+        <li><b>Sweeps</b> — a wick through a level that closes back inside. We always show what price did on the candles after it, including when the sweep failed.</li>
+        <li><b>Ranges and breaks</b> — the ceiling and floor of a sideways market, and whether the break followed through.</li>
+        <li><b>Structure</b> — lower highs or higher lows that show which side is in control.</li>
+        <li><b>Untouched levels</b> — highs above and lows below the current price that have not been traded through yet. These are the weekly levels.</li>
+      </ul>
+
+      <h2>How we keep it honest</h2>
+      <p>Every level and every moment in our videos is found by code on real MetaTrader candles, with the dates on screen. The script is not allowed to invent a price: every number is checked against the chart data before a video is made.</p>
+      <p>We test trading ideas on years of data, and we keep the most recent part of the data aside to check them on candles the idea was not built on. Most ideas fail that check. For example, an order-block entry on gold looked slightly positive on the full history (166 trades) but lost on the held-back recent data, and the same rules on three currency pairs lost overall (379 trades). We say so, and we do not trade or sell an idea that failed.</p>
+
+      <h2>What Liquidity Matrix is not</h2>
+      <p>It is not a signal service, not a promise of profit, and not financial advice. A level is where stops are likely to sit — price can go through any of them. Liquidity Matrix is not affiliated with other indicators or products that use a similar name.</p>
+
+      <div class="cta" style="justify-content:flex-start">
+        <a class="btn gold" href="/levels.html">See this week's levels</a>
+        <a class="btn" href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">Watch the lessons</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a></div>
+    <nav><a href="/levels.html">Weekly levels</a><a href="/about.html">The method</a><a href="/services.html">Services</a><a href="/disclaimer.html">Risk disclaimer</a><a href="/privacy.html">Privacy</a></nav>
+  </div>
+  <p class="risk">Trading carries a high risk of loss. Everything on this site is education based on past market data — not financial advice, not a recommendation to buy or sell, and not a promise of results. Liquidity Matrix is not affiliated with other indicators or products that use a similar name.</p>
+</footer>
+</body>
+</html>

@@ -120,6 +120,23 @@ footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
 footer nav a { color: var(--muted); }
 .risk { max-width: var(--max); margin: 18px auto 0; padding: 0 20px; font-size: 12.5px; color: #7d808e; }
 
+
+/* market dashboard */
+.dash { margin-top: 22px; }
+.tfs b { font-size: 19px; }
+.tv { height: 520px; margin-top: 18px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--bg); }
+.sessions-clock b { display: block; font-size: 18px; margin: 4px 0 6px; }
+.scenario { border-color: var(--gold-dim); }
+.pricing .card { display: flex; flex-direction: column; }
+.pricing .price { font-size: 34px; font-weight: 800; margin: 6px 0 2px; }
+.pricing .price small { font-size: 15px; color: var(--muted); font-weight: 600; }
+.pricing .list { flex: 1; }
+.pricing .card .btn { margin-top: 18px; text-align: center; }
+.pricing .popular { border-color: var(--gold); }
+details.faq { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-top: 10px; }
+details.faq summary { cursor: pointer; font-weight: 700; }
+details.faq p { color: var(--muted); margin: 10px 0 0; }
+
 @media (max-width: 860px) {
   .g3, .g2 { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); }
@@ -160,6 +177,9 @@ footer nav a { color: var(--muted); }
   .levels td { border: 0; padding: 4px 0; display: flex; gap: 12px; align-items: baseline; font-size: 14px; }
   .levels td::before { content: attr(data-label); flex: 0 0 88px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
   .shots img { border-radius: 12px; }
+  .tv { height: 380px; }
+  .tfs b { font-size: 16px; }
+  .pricing .price { font-size: 28px; }
   footer { padding: 28px 0 34px; font-size: 13px; }
   footer nav { gap: 12px; }
 }

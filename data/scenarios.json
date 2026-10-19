@@ -3,8 +3,8 @@
   "id": "XAUUSD-1792371600",
   "symbol": "XAUUSD",
   "created_utc": 1792386010,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 4183.51,
@@ -13,14 +13,15 @@
   "rr": 3.34,
   "sweep_price": 4154.65,
   "sweep_t": 1792371600,
-  "bar_t": 1792393200
+  "bar_t": 1792393200,
+  "closed_bar_t": 1792425600
  },
  {
   "id": "GBPUSD-1792418400",
   "symbol": "GBPUSD",
   "created_utc": 1792411228,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 3.27,
   "digits": 5,
   "side": "short",
   "entry": 1.3335,
@@ -29,6 +30,39 @@
   "rr": 3.27,
   "sweep_price": 1.33366,
   "sweep_t": 1792418400,
-  "bar_t": 1792418400
+  "bar_t": 1792418400,
+  "closed_bar_t": 1792432800
+ },
+ {
+  "id": "XAUUSD-1792425600",
+  "symbol": "XAUUSD",
+  "created_utc": 1792439315,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 4145.56,
+  "sl": 4135.39,
+  "tp": 4190.33,
+  "rr": 4.4,
+  "sweep_price": 4150.16,
+  "sweep_t": 1792425600,
+  "bar_t": 1792443600
+ },
+ {
+  "id": "GBPUSD-1792432800",
+  "symbol": "GBPUSD",
+  "created_utc": 1792439319,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.33049,
+  "sl": 1.32973,
+  "tp": 1.3342,
+  "rr": 4.86,
+  "sweep_price": 1.33048,
+  "sweep_t": 1792432800,
+  "bar_t": 1792443600
  }
 ]

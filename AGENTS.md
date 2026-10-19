@@ -24,7 +24,7 @@ changing anything.
 | `assets/gold-levels.png`, `assets/gold-levels-m.png` | The home-page gold chart, rendered by Jarvis |
 | Everything between `<!-- LEVELS:START` and `<!-- LEVELS:END -->` in `levels.html` | Jarvis replaces this block on every update. Keep both markers exactly as they are. |
 | `sitemap.xml` | Jarvis maintains the `<lastmod>` dates and adds market pages |
-| `track-record.html`, `assets/levels/equity*.png` | Built by Jarvis from the demo account's real closed trades |
+| `track-record.html`, `assets/levels/scenarios-r*.png` | Built by Jarvis from the public scenario log only |
 | `data/scenarios.json` | The public log of educational scenarios and their outcomes. Never edit, reorder or delete entries. |
 | `CNAME` | The custom domain. Changing it takes the site offline. |
 
@@ -37,6 +37,9 @@ say so clearly in the PR description so the owner can bump the version in Jarvis
 `site_levels.py`); otherwise browsers keep the old cached CSS.
 
 ## 3. Content rules (brand honesty — these are strict)
+
+- **Never publish any trading-account result** (demo or live): no balances, P&L, win rates or equity
+  curves of any account. The track record is the educational scenario log only, in R.
 
 - **Never invent market numbers.** Prices, levels, dates, highs/lows on this site come only from
   Jarvis's code reading real candles. Do not type any market figure into a page.

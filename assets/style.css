@@ -153,8 +153,24 @@ details.faq p { color: var(--muted); margin: 10px 0 0; }
 [dir="rtl"] .prose ul { padding-right: 22px; padding-left: 0; }
 .num { direction: ltr; unicode-bidi: isolate; }
 
+
+/* market switcher, section links, live market cards */
+[id] { scroll-margin-top: 80px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 8px; scrollbar-width: thin; }
+.chips a, .chips span { flex: 0 0 auto; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14px; color: var(--muted); white-space: nowrap; }
+.chips a:hover { color: var(--text); text-decoration: none; border-color: var(--gold-dim); }
+.chips .on { background: var(--gold); color: #1a1406; border-color: var(--gold); font-weight: 700; }
+.jump { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 14px 0 4px; font-size: 14px; }
+.g4 { grid-template-columns: repeat(4, 1fr); }
+.mk-cards .card.mk { padding: 16px; color: inherit; display: block; }
+.mk-cards .card.mk:hover { border-color: var(--gold-dim); text-decoration: none; }
+.mk-cards h3 { font-size: 16px; margin: 2px 0 4px; }
+.mk-cards p { margin: 2px 0; font-size: 14px; }
+.card .more { display: inline-block; margin-top: 12px; font-weight: 600; }
+
 @media (max-width: 860px) {
   .g3, .g2 { grid-template-columns: 1fr; }
+  .g4 { grid-template-columns: repeat(2, 1fr); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .nav { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0;
          background: var(--bg); border-bottom: 1px solid var(--line); }
@@ -197,6 +213,9 @@ details.faq p { color: var(--muted); margin: 10px 0 0; }
   [dir="rtl"] .levels td::before { flex-basis: 96px; }
   [dir="rtl"] .levels td { text-align: right; }
   .tv { height: 380px; }
+  .mk-cards .card.mk { padding: 12px; }
+  .mk-cards h3 { font-size: 15px; }
+  .jump { font-size: 13px; gap: 4px 14px; }
   .tfs b { font-size: 16px; }
   .pricing .price { font-size: 28px; }
   footer { padding: 28px 0 34px; font-size: 13px; }

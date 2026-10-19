@@ -37,30 +37,40 @@
 <main>
   <section>
     <div class="wrap">
-      <div class="kicker">GBP/USD · GBPUSD · H4 · updated Mon 19 Oct 07:00 UTC</div>
+      <div class="kicker">GBP/USD · GBPUSD · H4 · updated Mon 19 Oct 12:00 UTC</div>
       <h2>Where the stops sit in GBP/USD right now</h2>
-      <p class="sub">Last price <b class="num" style="color:var(--text)">1.33353</b> · candle of Mon 19 Oct 05:00 UTC</p>
+      <p class="sub">Last price <b class="num" style="color:var(--text)">1.33335</b> · candle of Mon 19 Oct 09:00 UTC</p>
       <p class="sub">Highs above and lows below the last price that have <b>not</b> been traded through since they formed. Stops usually rest just beyond them. Found by code on real candles (MetaTrader).</p>
       
       <div class="dash">
-        <div class="stats tfs"><div class="stat"><span>M15 structure</span><b class="down">Bullish</b><span>higher high and higher low</span></div><div class="stat"><span>H1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H4 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>D1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div></div>
+        <div class="stats tfs"><div class="stat"><span>M15 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H1 structure</span><b class="up">Bearish</b><span>lower high and lower low</span></div><div class="stat"><span>H4 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>D1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div></div>
         <div class="grid g2" style="margin-top:14px">
-          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="down">Sell-side liquidity taken</b><p>H1 wick below the low <span class="num">1.33101</span>, closed back inside · Sun 18 Oct 21:00 UTC (9 H1 candles ago).</p></div>
+          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="up">Buy-side liquidity taken</b><p>H1 wick above the high <span class="num">1.33366</span>, closed back inside · Mon 19 Oct 11:00 UTC (0 H1 candles ago).</p></div>
           <div class="card sessions-clock" data-sessions><div class="kicker">Session clock</div><b data-now>Loading the session clock…</b><p data-next></p></div>
         </div>
         <div class="tv"><div class="tradingview-widget-container" style="height:100%;width:100%"><div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize": true, "symbol": "FX:GBPUSD", "interval": "60", "timezone": "Etc/UTC", "theme": "dark", "style": "1", "locale": "en", "backgroundColor": "rgba(9, 9, 12, 1)", "gridColor": "rgba(38, 38, 47, 0.6)", "hide_side_toolbar": true, "allow_symbol_change": false, "save_image": false, "support_host": "https://www.tradingview.com"}</script></div></div><p class="sub" style="font-size:13px;margin-top:8px">Live chart by TradingView (their price feed: it can differ slightly from the broker candles our levels are built from).</p>
         <h3 style="margin-top:30px">Educational scenario</h3>
-        <div class="card"><div class="kicker">Educational scenario · سيناريو تعليمي</div><h3 style="margin-top:6px">No scenario right now</h3><p>A scenario appears only after a confirmed liquidity sweep on H1 with an untouched level on the other side worth at least 1.5R.</p></div>
+        <div class="card scenario">
+        <div class="kicker">Educational scenario · سيناريو تعليمي — not a recommendation</div>
+        <h3 style="margin-top:6px" class="up">Short after a sweep of 1.33366</h3>
+        <div class="stats" style="margin-top:12px">
+          <div class="stat"><span>Entry</span><b class="num">1.33350</b></div>
+          <div class="stat"><span>Stop loss</span><b class="num up">1.33435</b></div>
+          <div class="stat"><span>Take profit</span><b class="num down">1.33073</b></div>
+          <div class="stat"><span>Reward : risk</span><b class="num">3.27R</b></div>
+        </div>
+        <p style="margin-top:12px">Status: <b style="color:var(--gold)">Open</b> · published Mon 19 Oct 12:00 UTC · entry at the close of the H1 candle of Mon 19 Oct 11:00 UTC.</p>
+      </div>
         <h3 style="margin-top:26px">Scenario log — every one, with its outcome</h3>
         <p class="sub" style="font-size:14px">No closed scenarios yet on this market. Outcomes are read from the candles; spread, slippage and commission are not included. Full log: <a href="/data/scenarios.json">scenarios.json</a> · <a href="/track-record.html">track record</a>.</p>
-        
+        <table class="levels"><thead><tr><th>Published</th><th>Side</th><th>Entry / SL / TP</th><th>Outcome</th></tr></thead><tbody><tr><td data-label="Published">Mon 19 Oct 12:00 UTC</td><td data-label="Side">Short</td><td class="num" data-label="Entry / SL / TP">1.33350 / 1.33435 / 1.33073</td><td data-label="Outcome"><b style="color:var(--gold)">Open</b> </td></tr></tbody></table>
       </div>
       <script src="/assets/sessions.js?v=2" defer></script>
 
       <div class="stats">
         <div class="stat"><span>Previous day high</span><b class="num">1.33717</b><span>Fri 16 Oct</span></div>
         <div class="stat"><span>Previous day low</span><b class="num">1.32643</b><span>Fri 16 Oct</span></div>
-        <div class="stat"><span>Week high</span><b class="num">1.33388</b><span>Mon 19 Oct</span></div>
+        <div class="stat"><span>Week high</span><b class="num">1.33420</b><span>Mon 19 Oct</span></div>
         <div class="stat"><span>Week low</span><b class="num">1.33048</b><span>Mon 19 Oct</span></div>
       </div>
 
@@ -84,18 +94,19 @@
       </div>
       
       <h3 style="margin-top:34px" id="sessions">Sessions: Asia · London · New York</h3>
-      <p class="sub">Each session's high and low is a pool of stops. Which ones were already taken, and did price reject them (closed back inside) or accept them (held beyond)? Now: London.</p>
+      <p class="sub">Each session's high and low is a pool of stops. Which ones were already taken, and did price reject them (closed back inside) or accept them (held beyond)? Now: New York.</p>
       <table class="levels">
         <thead><tr><th>Session</th><th>High</th><th>What happened</th><th>Low</th><th>What happened</th></tr></thead>
         <tbody>
           <tr><td data-label="Session"><span>Fri Asia <span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></span></td><td class="num up" data-label="High">1.33137</td><td data-label="High was">taken Fri 07:00 UTC by London · accepted (held beyond)</td><td class="num down" data-label="Low">1.32679</td><td data-label="Low was">untouched — stops still there</td></tr>
 <tr><td data-label="Session"><span>Fri London <span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></span></td><td class="num up" data-label="High">1.33493</td><td data-label="High was">taken Fri 13:30 UTC by New York · rejected (closed back inside)</td><td class="num down" data-label="Low">1.33089</td><td data-label="Low was">taken Sun 21:00 UTC by off-session · rejected (closed back inside)</td></tr>
 <tr><td data-label="Session"><span>Fri New York <span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></span></td><td class="num up" data-label="High">1.33717</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">1.33101</td><td data-label="Low was">taken Sun 21:00 UTC by off-session · accepted (held beyond)</td></tr>
-<tr><td data-label="Session"><span>Today Asia <span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></span></td><td class="num up" data-label="High">1.33388</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">1.33233</td><td data-label="Low was">untouched — stops still there</td></tr>
-<tr><td data-label="Session"><span>Today London <span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></span></td><td class="num up" data-label="High">1.33363</td><td data-label="High was">forming now</td><td class="num down" data-label="Low">1.33343</td><td data-label="Low was">forming now</td></tr>
+<tr><td data-label="Session"><span>Today Asia <span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></span></td><td class="num up" data-label="High">1.33388</td><td data-label="High was">taken Mon 11:15 UTC by London · rejected (closed back inside)</td><td class="num down" data-label="Low">1.33233</td><td data-label="Low was">taken Mon 07:00 UTC by London · rejected (closed back inside)</td></tr>
+<tr><td data-label="Session"><span>Today London <span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></span></td><td class="num up" data-label="High">1.33420</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">1.33073</td><td data-label="Low was">untouched — stops still there</td></tr>
+<tr><td data-label="Session"><span>Today New York <span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></span></td><td class="num up" data-label="High">1.33351</td><td data-label="High was">forming now</td><td class="num down" data-label="Low">1.33331</td><td data-label="Low was">forming now</td></tr>
         </tbody>
       </table>
-      <ul class="list"><li>Nearest resting buy-side liquidity: Today Asia high 1.33388.</li><li>Nearest resting sell-side liquidity: Today Asia low 1.33233.</li><li>Recent history (20 days): London took Asia&#x27;s high 50% and low 50% of days; New York took London&#x27;s high 60% and low 65%.</li></ul>
+      <ul class="list"><li>Today Asia high 1.33388 was taken Mon 11:15 UTC by London: rejected (closed back inside).</li><li>Today Asia low 1.33233 was taken Mon 07:00 UTC by London: rejected (closed back inside).</li><li>Nearest resting buy-side liquidity: Today London high 1.3342.</li><li>Nearest resting sell-side liquidity: Today London low 1.33073.</li><li>Recent history (20 days): London took Asia&#x27;s high 50% and low 50% of days; New York took London&#x27;s high 60% and low 65%.</li></ul>
       <div class="note">The session counts describe what happened in the recent history (with the number of days). They are not a signal or a prediction.</div>
       
       <h3 style="margin-top:34px">Weekly outlook · 2026-W43</h3>

@@ -14,5 +14,21 @@
   "sweep_price": 4154.65,
   "sweep_t": 1792371600,
   "bar_t": 1792393200
+ },
+ {
+  "id": "GBPUSD-1792418400",
+  "symbol": "GBPUSD",
+  "created_utc": 1792411228,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "short",
+  "entry": 1.3335,
+  "sl": 1.33435,
+  "tp": 1.33073,
+  "rr": 3.27,
+  "sweep_price": 1.33366,
+  "sweep_t": 1792418400,
+  "bar_t": 1792418400
  }
 ]

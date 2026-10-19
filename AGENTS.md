@@ -77,3 +77,5 @@ say so clearly in the PR description so the owner can bump the version in Jarvis
 ## 5. When unsure
 
 Do less, and ask in the PR description. The owner prefers a small correct change over a big redesign.
+
+- Links between our pages never end in `.html`: write `/pricing`, `/markets/xauusd`, `/ar/` (GitHub Pages serves the .html file). Jarvis cleans its own pages the same way.

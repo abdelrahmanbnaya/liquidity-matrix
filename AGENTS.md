@@ -19,6 +19,7 @@ changing anything.
 | File / folder | Why |
 |---|---|
 | `markets/*.html` | One page per market, rebuilt by Jarvis on every update |
+| `ar/markets/*.html`, `ar/weekly.html`, `ar/track-record.html`, the LEVELS block of `ar/levels.html` | The Arabic versions, rebuilt by Jarvis from `site_ar.py` |
 | `weekly.html` | Weekly outlook, rebuilt by Jarvis every Monday |
 | `assets/levels/*.png` | Charts rendered by Jarvis from real candles |
 | `assets/gold-levels.png`, `assets/gold-levels-m.png` | The home-page gold chart, rendered by Jarvis |
@@ -54,7 +55,8 @@ say so clearly in the PR description so the owner can bump the version in Jarvis
 - Never ask visitors for trading passwords, card numbers or ID documents. A read-only (investor)
   MetaTrader password is the most we ever ask for, and only for the journal review.
 - Contact email: `jarvislmatrix@gmail.com`. Do not add other emails, phone numbers or names.
-- Language of the site: English.
+- Languages: English at `/`, Arabic (Modern Standard, right-to-left) at `/ar/`. A change to the text of an English
+  page needs the same change on its Arabic page, and the reverse. Every page has the language button (`a.lang`).
 
 ## 4. Design and code rules
 

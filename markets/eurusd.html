@@ -35,23 +35,19 @@
 <main>
   <section>
     <div class="wrap">
-      <div class="kicker">EUR/USD · EURUSD · H4 · updated Mon 19 Oct 12:00 UTC</div>
+      <nav class="chips" aria-label="Markets"><a href="/markets/xauusd.html">Gold</a><a href="/markets/xagusd.html">Silver</a><span class="on">EUR/USD</span><a href="/markets/gbpusd.html">GBP/USD</a><a href="/markets/usdjpy.html">USD/JPY</a><a href="/markets/nas100.html">Nasdaq 100</a><a href="/markets/us30.html">Dow Jones 30</a><a href="/markets/btcusd.html">Bitcoin</a></nav>
+      <div class="kicker" style="margin-top:22px">EUR/USD · EURUSD · H4 · updated Mon 19 Oct 13:25 UTC</div>
       <h2>Where the stops sit in EUR/USD right now</h2>
-      <p class="sub">Last price <b class="num" style="color:var(--text)">1.12267</b> · candle of Mon 19 Oct 09:00 UTC</p>
+      <p class="sub">Last price <b class="num" style="color:var(--text)">1.12262</b> · candle of Mon 19 Oct 13:00 UTC</p>
       <p class="sub">Highs above and lows below the last price that have <b>not</b> been traded through since they formed. Stops usually rest just beyond them. Found by code on real candles (MetaTrader).</p>
+      <nav class="jump"><a href="#levels">Levels</a><a href="#scenario">Scenario</a><a href="#sessions">Sessions</a><a href="#live">Live chart</a><a href="#weekly">Weekly</a></nav>
       
       <div class="dash">
-        <div class="stats tfs"><div class="stat"><span>M15 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H4 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>D1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div></div>
+        <div class="stats tfs"><div class="stat"><span>M15 structure</span><b class="down">Bullish</b><span>higher high and higher low</span></div><div class="stat"><span>H1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H4 structure</span><b class="down">Bullish</b><span>higher high and higher low</span></div><div class="stat"><span>D1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div></div>
         <div class="grid g2" style="margin-top:14px">
-          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="down">Sell-side liquidity taken</b><p>H1 wick below the low <span class="num">1.11883</span>, closed back inside · Sun 18 Oct 21:00 UTC (14 H1 candles ago).</p></div>
+          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="down">Sell-side liquidity taken</b><p>H1 wick below the low <span class="num">1.11883</span>, closed back inside · Sun 18 Oct 21:00 UTC (15 H1 candles ago).</p></div>
           <div class="card sessions-clock" data-sessions><div class="kicker">Session clock</div><b data-now>Loading the session clock…</b><p data-next></p></div>
         </div>
-        <div class="tv"><div class="tradingview-widget-container" style="height:100%;width:100%"><div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize": true, "symbol": "FX:EURUSD", "interval": "60", "timezone": "Etc/UTC", "theme": "dark", "style": "1", "locale": "en", "backgroundColor": "rgba(9, 9, 12, 1)", "gridColor": "rgba(38, 38, 47, 0.6)", "hide_side_toolbar": true, "allow_symbol_change": false, "save_image": false, "support_host": "https://www.tradingview.com"}</script></div></div><p class="sub" style="font-size:13px;margin-top:8px">Live chart by TradingView (their price feed: it can differ slightly from the broker candles our levels are built from).</p>
-        <h3 style="margin-top:30px">Educational scenario</h3>
-        <div class="card"><div class="kicker">Educational scenario · سيناريو تعليمي</div><h3 style="margin-top:6px">No scenario right now</h3><p>A scenario appears only after a confirmed liquidity sweep on H1 with an untouched level on the other side worth at least 1.5R.</p></div>
-        <h3 style="margin-top:26px">Scenario log — every one, with its outcome</h3>
-        <p class="sub" style="font-size:14px">No closed scenarios yet on this market. Outcomes are read from the candles; spread, slippage and commission are not included. Full log: <a href="/data/scenarios.json">scenarios.json</a> · <a href="/track-record.html">track record</a>.</p>
-        
       </div>
       <script src="/assets/sessions.js?v=2" defer></script>
 
@@ -62,7 +58,8 @@
         <div class="stat"><span>Week low</span><b class="num">1.11806</b><span>Mon 19 Oct</span></div>
       </div>
 
-      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/eurusd-m.png?v=2026101905" width="1080" height="1280"><img src="/assets/levels/eurusd.png?v=2026101905" alt="EURUSD H4 chart: above 1.12696; above 1.12855; above 1.16360 – 1.16419; below 1.11806; below 1.11129" width="1200" height="675"></picture></div>
+      <h3 style="margin-top:34px" id="levels">Levels to watch</h3>
+      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/eurusd-m.png?v=2026101913" width="1080" height="1280"><img src="/assets/levels/eurusd.png?v=2026101913" alt="EURUSD H4 chart: above 1.12696; above 1.12855; above 1.16360 – 1.16419; below 1.11806; below 1.11129" width="1200" height="675"></picture></div>
 
       <table class="levels">
         <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
@@ -81,6 +78,12 @@
         <div class="card"><h3 class="down">Sweep below</h3><p>Price runs down to 1.11806, then 1.11129. Watch whether it closes back above (stops taken, buyers return) or keeps closing below (the move continues).</p></div>
       </div>
       
+      <h3 style="margin-top:34px" id="scenario">Educational scenario</h3>
+      <div class="card"><div class="kicker">Educational scenario · سيناريو تعليمي</div><h3 style="margin-top:6px">No scenario right now</h3><p>A scenario appears only after a confirmed liquidity sweep on H1 with an untouched level on the other side worth at least 1.5R.</p></div>
+      <h3 style="margin-top:26px">Scenario log — every one, with its outcome</h3>
+      <p class="sub" style="font-size:14px">No closed scenarios yet on this market. Outcomes are read from the candles; spread, slippage and commission are not included. Full log: <a href="/data/scenarios.json">scenarios.json</a> · <a href="/track-record.html">track record</a>.</p>
+      
+      
       <h3 style="margin-top:34px" id="sessions">Sessions: Asia · London · New York</h3>
       <p class="sub">Each session's high and low is a pool of stops. Which ones were already taken, and did price reject them (closed back inside) or accept them (held beyond)? Now: New York.</p>
       <table class="levels">
@@ -91,12 +94,15 @@
 <tr><td data-label="Session"><span>Fri New York <span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></span></td><td class="num up" data-label="High">1.12616</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">1.12126</td><td data-label="Low was">taken Sun 21:00 UTC by off-session · accepted (held beyond)</td></tr>
 <tr><td data-label="Session"><span>Today Asia <span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></span></td><td class="num up" data-label="High">1.12347</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">1.12176</td><td data-label="Low was">taken Mon 07:00 UTC by London · rejected (closed back inside)</td></tr>
 <tr><td data-label="Session"><span>Today London <span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></span></td><td class="num up" data-label="High">1.12312</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">1.11865</td><td data-label="Low was">untouched — stops still there</td></tr>
-<tr><td data-label="Session"><span>Today New York <span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></span></td><td class="num up" data-label="High">1.12289</td><td data-label="High was">forming now</td><td class="num down" data-label="Low">1.12265</td><td data-label="Low was">forming now</td></tr>
+<tr><td data-label="Session"><span>Today New York <span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></span></td><td class="num up" data-label="High">1.12289</td><td data-label="High was">forming now</td><td class="num down" data-label="Low">1.12116</td><td data-label="Low was">forming now</td></tr>
         </tbody>
       </table>
       <ul class="list"><li>Today Asia low 1.12176 was taken Mon 07:00 UTC by London: rejected (closed back inside).</li><li>Nearest resting buy-side liquidity: Today London high 1.12312.</li><li>Nearest resting sell-side liquidity: Today London low 1.11865.</li><li>So far London took only Asia&#x27;s low. In the last 20 days that happened 10 times, and New York then took London&#x27;s high 1 of 10 times (10%).</li><li>Recent history (20 days): London took Asia&#x27;s high 40% and low 65% of days; New York took London&#x27;s high 40% and low 75%.</li></ul>
       <div class="note">The session counts describe what happened in the recent history (with the number of days). They are not a signal or a prediction.</div>
       
+      <h3 style="margin-top:34px" id="live">Live chart</h3>
+      <div class="tv"><div class="tradingview-widget-container" style="height:100%;width:100%"><div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize": true, "symbol": "FX:EURUSD", "interval": "60", "timezone": "Etc/UTC", "theme": "dark", "style": "1", "locale": "en", "backgroundColor": "rgba(9, 9, 12, 1)", "gridColor": "rgba(38, 38, 47, 0.6)", "hide_side_toolbar": true, "allow_symbol_change": false, "save_image": false, "support_host": "https://www.tradingview.com"}</script></div></div><p class="sub" style="font-size:13px;margin-top:8px">Live chart by TradingView (their price feed: it can differ slightly from the broker candles our levels are built from).</p>
+      <div id="weekly">
       <h3 style="margin-top:34px">Weekly outlook · 2026-W43</h3>
       <div class="stats">
         <div class="stat"><span>Last week high</span><b class="num">1.12696</b><span>12 Oct – 16 Oct 2026</span></div>
@@ -104,10 +110,8 @@
         <div class="stat"><span>Last week close</span><b class="num">1.12393</b><span>+0.49% on the week · upper third of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">0.01567</b><span>126% of the 8-week average</span></div>
       </div>
-      <p class="sub" style="margin-top:14px">Nearest untouched daily level above: <b class="num up">1.12696</b> · below: <b class="num down">1.11129</b>. <a href="/weekly.html#eurusd">Full weekly outlook →</a></p>
+      <p class="sub" style="margin-top:14px">Nearest untouched daily level above: <b class="num up">1.12696</b> · below: <b class="num down">1.11129</b>. <a href="/weekly.html#eurusd">Full weekly outlook →</a></p></div>
       <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Always use a stop loss and keep risk small — a common rule is 1% of the account or less on a single trade.</div>
-      <h3 style="margin-top:34px">Other markets</h3>
-      <div class="cta" style="justify-content:flex-start"><a class="btn" href="/markets/xauusd.html">Gold</a> <a class="btn" href="/markets/xagusd.html">Silver</a> <a class="btn" href="/markets/gbpusd.html">GBP/USD</a> <a class="btn" href="/markets/usdjpy.html">USD/JPY</a> <a class="btn" href="/markets/nas100.html">Nasdaq 100</a> <a class="btn" href="/markets/us30.html">Dow Jones 30</a> <a class="btn" href="/markets/btcusd.html">Bitcoin</a></div>
     </div>
   </section>
 </main>

@@ -66,11 +66,32 @@
   </section>
   <script>
     (function () {
+      var form = document.querySelector("form.order");
+      if (!form) return;
       var s = new URLSearchParams(location.search).get("s");
-      if (!s) return;
-      s = s.slice(0, 200);
-      document.getElementById("request").value = s;
-      document.querySelector('input[name="_subject"]').value = "New request (AR): " + s;
+      if (s) {
+        s = s.slice(0, 200);
+        document.getElementById("request").value = s;
+        form.querySelector('input[name="_subject"]').value = "New request (AR): " + s;
+      }
+      // Requests go to our Google Sheet (and a Telegram alert). If that fails, the form posts to FormSubmit (email).
+      var SHEET = "https://script.google.com/macros/s/AKfycbzJE1L4ykaNSVuwpdBtgn7NIkoUepJDduQj3hmmz1bVMg_t_3mDBDtGJ18oWVKPC3jhbQ/exec";
+      var busy = false;
+      form.addEventListener("submit", function (ev) {
+        if (busy || !window.fetch || !window.FormData || !window.URLSearchParams) return;
+        ev.preventDefault();
+        busy = true;
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = "جارٍ الإرسال…";
+        var next = form.querySelector('input[name="_next"]').value;
+        var ctrl = window.AbortController ? new AbortController() : null;
+        var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 15000);
+        fetch(SHEET, { method: "POST", mode: "no-cors", body: new URLSearchParams(new FormData(form)),
+                       signal: ctrl ? ctrl.signal : undefined })
+          .then(function () { clearTimeout(timer); location.href = next; })
+          .catch(function () { clearTimeout(timer); form.submit(); });
+      });
     })();
   </script>
 </main>

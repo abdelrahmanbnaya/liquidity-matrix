@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المنهج: كيف يقرأ Liquidity Matrix الشارت</title>
+<meta name="description" content="كيف يحدد Liquidity Matrix تجمّعات أوامر الوقف على شارتات حقيقية، وكيف نحافظ على صدق النتائج، وما الذي لا يكونه.">
+<link rel="canonical" href="https://liquidity-matrix.com/ar/about.html">
+<link rel="alternate" hreflang="ar" href="https://liquidity-matrix.com/ar/about.html">
+<link rel="alternate" hreflang="en" href="https://liquidity-matrix.com/about.html">
+<meta property="og:title" content="المنهج: كيف يقرأ Liquidity Matrix الشارت">
+<meta property="og:image" content="https://liquidity-matrix.com/assets/gold-levels.png">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=6">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/ar/"><svg viewBox="0 0 34 22" aria-hidden="true"><path d="M2 20h30l-6-16H8z" fill="#f5c046"/><path d="M6 12h22" stroke="#9c7a2a" stroke-width="2"/></svg>LIQUIDITY MATRIX</a>
+    <button class="menu-btn" aria-label="القائمة" onclick="document.querySelector('.nav').classList.toggle('open')">القائمة</button>
+    <nav class="nav">
+      <a href="/ar/levels.html">مستويات السوق</a>
+      <a href="/ar/track-record.html">سجل النتائج</a>
+      <a href="/ar/services.html">الخدمات</a>
+      <a href="/ar/pricing.html">الأسعار</a>
+      <a href="/ar/about.html" class="on">المنهج</a>
+      <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">يوتيوب</a>
+      <a class="lang" href="/about.html" lang="en" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap prose">
+      <div class="kicker">المنهج</div>
+      <h2>يتحرك السعر نحو أماكن الأوامر</h2>
+      <p>يضع معظم المتداولين وقف الخسارة في الأماكن الواضحة نفسها: فوق القمة مباشرة، وتحت القاع مباشرة، وعند حافة النطاق. أوامر الوقف هذه أوامر تنتظر التنفيذ — أي سيولة. كثيرًا ما تبدأ الحركات الكبيرة باختراق أحد هذه التجمّعات ثم الانعكاس، أو باختراقه والاستمرار.</p>
+      <p>Liquidity Matrix طريقة لرؤية هذه التجمّعات قبل أن يصل إليها السعر، حتى لا تكون أنت من يُضرب وقف خسارته.</p>
+
+      <h2>ما الذي نحدده على الشارت</h2>
+      <ul>
+        <li><b>القمم المتساوية والقيعان المتساوية</b> — انعطافتان أو أكثر عند السعر نفسه تقريبًا. أوامر وقف الشراء فوقها، وأوامر وقف البيع تحتها.</li>
+        <li><b>الجدران والأرضيات</b> — منطقة يصل إليها السعر مرة بعد مرة دون أن تُغلق شمعة خلفها. نعرض كل لمسة، ونرسم المنطقة كمنطقة لا كسعر واحد دقيق.</li>
+        <li><b>عمليات الـ Sweep</b> — ذيل شمعة يخترق مستوى ثم تُغلق الشمعة عائدة إلى الداخل. ونعرض دائمًا ما فعله السعر في الشموع التالية، حتى عندما فشل الـ Sweep.</li>
+        <li><b>النطاقات والاختراقات</b> — سقف السوق العرضي وأرضيته، وهل استمر الاختراق.</li>
+        <li><b>الهيكل</b> — القمم الأدنى أو القيعان الأعلى التي تُظهر أي طرف يسيطر.</li>
+        <li><b>المستويات التي لم تُلمس</b> — القمم فوق السعر الحالي والقيعان تحته التي لم يتجاوزها السعر بعد. هذه هي مستويات السوق اليومية.</li>
+      </ul>
+
+      <h2>كيف نحافظ على الصدق</h2>
+      <p>كل مستوى وكل لحظة في فيديوهاتنا يحددها الكود على شموع ميتاتريدر حقيقية، مع التواريخ على الشاشة. لا يُسمح للنص باختلاق سعر: كل رقم يُقارن ببيانات الشارت قبل صنع الفيديو.</p>
+      <p>نختبر أفكار التداول على سنوات من البيانات، ونحتفظ بالجزء الأحدث منها جانبًا لنختبر الفكرة على شموع لم تُبنَ عليها. معظم الأفكار تفشل في هذا الاختبار. على سبيل المثال، بدا دخول «أوردر بلوك» على الذهب إيجابيًا قليلًا على التاريخ الكامل (166 صفقة)، لكنه خسر على البيانات الحديثة المحجوزة، وخسرت القواعد نفسها إجمالًا على ثلاثة أزواج عملات (379 صفقة). نقول ذلك بوضوح، ولا نتداول فكرة فشلت ولا نبيعها.</p>
+      <p>حتى الاختبار التاريخي الجيد ليس وعدًا. التداول الحقيقي يضيف السبريد والانزلاق السعري والعمولات وقفزات الأخبار وأسواقًا تتغير، لذلك قد تخسر فكرةٌ صمدت على الشموع السابقة من الآن فصاعدًا.</p>
+
+      <h2>ما ليس عليه Liquidity Matrix</h2>
+      <p>ليس خدمة توصيات، ولا وعدًا بالربح، ولا نصيحة مالية. نحن لا نرى دفتر الأوامر الحقيقي للسوق ولا أماكن أوامر الوقف الفعلية — وفي الذهب الفوري والعملات لا يستطيع أحد خارج الوسيط ذلك. التجمّعات التي نحددها مقروءة من حركة السعر نفسها: القمم والقيعان والمناطق على الشموع. المستوى هو المكان الذي يُرجَّح أن تتجمع عنده أوامر الوقف — وقد يخترق السعر أيًّا منها. Liquidity Matrix غير مرتبط بأي مؤشرات أو منتجات أخرى تحمل اسمًا مشابهًا.</p>
+
+      <div class="cta" style="justify-content:flex-start">
+        <a class="btn gold" href="/ar/levels.html">مستويات اليوم</a>
+        <a class="btn" href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">شاهد الدروس</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a></div>
+    <nav><a href="/ar/levels.html">مستويات السوق</a><a href="/ar/track-record.html">سجل النتائج</a><a href="/ar/services.html">الخدمات</a><a href="/ar/pricing.html">الأسعار</a><a href="/ar/about.html">المنهج</a><a href="/ar/disclaimer.html">إخلاء المسؤولية</a><a href="/ar/privacy.html">الخصوصية</a></nav>
+  </div>
+  <p class="risk">التداول ينطوي على مخاطر عالية للخسارة. كل ما في هذا الموقع تعليم مبني على بيانات سوق سابقة — وليس نصيحة مالية، ولا توصية بالشراء أو البيع، ولا وعدًا بنتائج. Liquidity Matrix غير مرتبط بأي مؤشرات أو منتجات أخرى تحمل اسمًا مشابهًا.</p>
+</footer>
+</body>
+</html>

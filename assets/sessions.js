@@ -4,6 +4,9 @@
 (function () {
   "use strict";
   var LONDON = "Europe/London", NEW_YORK = "America/New_York";
+  var AR = (document.documentElement.lang || "").indexOf("ar") === 0;
+  var NAMES = AR ? { "Asia": "آسيا", "London": "لندن", "New York": "نيويورك" } : null;
+  function nm(s) { return AR ? NAMES[s] : s; }
 
   function zoneOffsetMs(tz, t) {
     var f = new Intl.DateTimeFormat("en-US", {
@@ -33,11 +36,12 @@
 
   function fmtLeft(ms) {
     var m = Math.max(0, Math.round(ms / 60000)), h = Math.floor(m / 60);
+    if (AR) return (h ? h + " س " : "") + (m % 60) + " د";
     return (h ? h + " h " : "") + (m % 60) + " min";
   }
 
   function localTime(t) {
-    return new Date(t).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    return new Date(t).toLocaleTimeString(AR ? "en-GB" : [], { hour: "2-digit", minute: "2-digit" });
   }
 
   function state(now) {
@@ -58,15 +62,19 @@
     var now = Date.now(), st = state(now);
     document.querySelectorAll("[data-sessions]").forEach(function (el) {
       var a = el.querySelector("[data-now]"), b = el.querySelector("[data-next]");
+      var wd = weekday(now);
       if (st.current) {
-        a.textContent = st.current[0] + " session open · " + fmtLeft(st.current[2] - now) + " left";
+        a.textContent = AR ? "جلسة " + nm(st.current[0]) + " مفتوحة · متبقٍ " + fmtLeft(st.current[2] - now)
+                           : st.current[0] + " session open · " + fmtLeft(st.current[2] - now) + " left";
+      } else if (wd === 0 || wd === 6) {
+        a.textContent = AR ? "عطلة نهاية الأسبوع · أسواق العملات والمعادن مغلقة" : "Weekend · forex and metals closed";
       } else {
-        var wd = weekday(now);
-        a.textContent = (wd === 0 || wd === 6) ? "Weekend · forex and metals closed" : "Between sessions";
+        a.textContent = AR ? "بين الجلسات" : "Between sessions";
       }
       if (st.next) {
-        b.textContent = st.next[0] + " opens in " + fmtLeft(st.next[1] - now) + " (" + localTime(st.next[1]) +
-          " your time).";
+        b.textContent = AR ? "تفتح جلسة " + nm(st.next[0]) + " بعد " + fmtLeft(st.next[1] - now) + " (الساعة " +
+          localTime(st.next[1]) + " بتوقيتك)."
+          : st.next[0] + " opens in " + fmtLeft(st.next[1] - now) + " (" + localTime(st.next[1]) + " your time).";
       }
     });
   }

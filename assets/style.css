@@ -242,3 +242,27 @@ details.faq p { color: var(--muted); margin: 10px 0 0; }
 @media (prefers-reduced-motion: reduce) {
   .anim .w, .anim .l2, .anim .l2::after { animation: none !important; opacity: 1 !important; transform: none !important;
     filter: none !important; letter-spacing: 0 !important; } }
+
+/* ---- request form (/order) ---- */
+.narrow { max-width: 660px; }
+form.order { display: grid; gap: 16px; }
+form.order label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
+form.order input, form.order textarea, form.order select { width: 100%; background: var(--panel-2); border: 1px solid var(--line);
+  border-radius: 10px; color: var(--text); padding: 12px 14px; font: inherit; font-weight: 400; font-size: 16px; }
+form.order textarea { resize: vertical; min-height: 120px; }
+form.order input:focus, form.order textarea:focus { outline: none; border-color: var(--gold-dim); box-shadow: 0 0 0 3px rgba(245,192,70,.15); }
+form.order .opt, form.order small { color: var(--muted); font-weight: 400; font-size: 13px; }
+form.order .fine { color: var(--muted); font-size: 13px; margin: 0; }
+form.order .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+form.order button.btn { justify-self: start; border: 0; cursor: pointer; font: inherit; font-weight: 700; }
+.fine.center { text-align: center; color: var(--muted); font-size: 13px; margin-top: 16px; }
+
+/* ---- folded detail on market pages (open on wide screens via sessions.js) ---- */
+details.more { margin-top: 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+details.more > summary { cursor: pointer; list-style: none; padding: 14px 18px; font-weight: 700; display: flex;
+  justify-content: space-between; align-items: center; gap: 12px; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::after { content: "+"; color: var(--gold); font-size: 22px; line-height: 1; }
+details.more[open] > summary::after { content: "−"; }
+details.more > .more-body { padding: 0 14px 14px; }
+details.more > .more-body > table.levels { margin-top: 0; }

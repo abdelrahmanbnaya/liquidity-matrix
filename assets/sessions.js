@@ -83,3 +83,18 @@
   render();
   setInterval(render, 30000);
 })();
+
+/* Folded detail (details.more): open on wide screens, and open the one a link points into. */
+(function () {
+  "use strict";
+  function openFor(hash) {
+    var t = hash && hash.length > 1 ? document.getElementById(hash.slice(1)) : null;
+    var d = t && t.closest ? t.closest("details.more") : null;
+    if (d) d.open = true;
+  }
+  if (window.matchMedia && window.matchMedia("(min-width: 900px)").matches) {
+    Array.prototype.forEach.call(document.querySelectorAll("details.more"), function (d) { d.open = true; });
+  }
+  openFor(location.hash);
+  window.addEventListener("hashchange", function () { openFor(location.hash); });
+})();

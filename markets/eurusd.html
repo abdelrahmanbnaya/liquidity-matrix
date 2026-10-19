@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EUR/USD (EURUSD) liquidity levels today — Liquidity Matrix</title>
+<meta name="description" content="Untouched highs and lows in EUR/USD (EURUSD), found by code on real candles: where stops still sit above and below price, session by session. Updated every day.">
+<link rel="canonical" href="https://liquidity-matrix.com/markets/eurusd.html">
+<meta property="og:title" content="EUR/USD (EURUSD) liquidity levels today — Liquidity Matrix">
+<meta property="og:image" content="https://liquidity-matrix.com/assets/levels/eurusd.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><path d="M2 20h30l-6-16H8z" fill="#f5c046"/><path d="M6 12h22" stroke="#9c7a2a" stroke-width="2"/></svg>LIQUIDITY MATRIX</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
+    <nav class="nav">
+      <a href="/levels.html" class="on">Market levels</a>
+      <a href="/about.html">The method</a>
+      <a href="/services.html">Services</a>
+      <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="kicker">EUR/USD · EURUSD · H4 · updated Mon 19 Oct 00:00 UTC</div>
+      <h2>Where the stops sit in EUR/USD right now</h2>
+      <p class="sub">Last price <b class="num" style="color:var(--text)">1.12291</b> · candle of Sun 18 Oct 21:00 UTC</p>
+      <p class="sub">Highs above and lows below the last price that have <b>not</b> been traded through since they formed. Stops usually rest just beyond them. Found by code on real candles (MetaTrader).</p>
+
+      <div class="stats">
+        <div class="stat"><span>Previous day high</span><b class="num">1.12696</b><span>Fri 16 Oct</span></div>
+        <div class="stat"><span>Previous day low</span><b class="num">1.12080</b><span>Fri 16 Oct</span></div>
+        <div class="stat"><span>Week high</span><b class="num">1.12308</b><span>Mon 19 Oct</span></div>
+        <div class="stat"><span>Week low</span><b class="num">1.11806</b><span>Mon 19 Oct</span></div>
+      </div>
+
+      <div class="chart"><img src="/assets/levels/eurusd.png?v=2026101821" alt="EURUSD H4 chart: above 1.12696; above 1.12855; above 1.16360 – 1.16419; below 1.11129" width="1200" height="675"></div>
+
+      <table class="levels">
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td class="up">Above</td><td class="num">1.12696</td><td>Fri 16 Oct</td><td>Friday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
+          <tr><td class="up">Above</td><td class="num">1.12855</td><td>Fri 02 Oct</td><td>A swing high from Fri 02 Oct, not traded through since.</td></tr>
+          <tr><td class="up">Above</td><td class="num">1.16360 – 1.16419</td><td>3 Sep · 8 Sep · 10 Sep</td><td>Price reached this zone 3 times and no candle closed above 1.16419. Buy stops sit above it.</td></tr>
+          <tr><td class="down">Below</td><td class="num">1.11129</td><td>Wed 14 Oct</td><td>Wednesday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:34px">Two scenarios to watch — not a prediction</h3>
+      <div class="grid g2" style="margin-top:12px">
+        <div class="card"><h3 class="up">Sweep above</h3><p>Price runs up to 1.12696, then 1.12855, then 1.16360 – 1.16419. Watch whether it closes back below (a sweep that fails to hold) or keeps closing above (a breakout that has to be respected).</p></div>
+        <div class="card"><h3 class="down">Sweep below</h3><p>Price runs down to 1.11129. Watch whether it closes back above (stops taken, buyers return) or keeps closing below (the move continues).</p></div>
+      </div>
+      
+      <h3 style="margin-top:34px" id="sessions">Sessions: Asia · London · New York</h3>
+      <p class="sub">Each session's high and low is a pool of stops. Which ones were already taken, and did price reject them (closed back inside) or accept them (held beyond)? Now: Asia.</p>
+      <table class="levels">
+        <thead><tr><th>Session</th><th>High</th><th>What happened</th><th>Low</th><th>What happened</th></tr></thead>
+        <tbody>
+          <tr><td>Fri Asia<br><span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></td><td class="num up">1.12413</td><td>taken Fri 07:15 UTC by London · accepted (held beyond)</td><td class="num down">1.12080</td><td>taken Sun 21:00 UTC by off-session · accepted (held beyond)</td></tr>
+<tr><td>Fri London<br><span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></td><td class="num up">1.12696</td><td>untouched — stops still there</td><td class="num down">1.12342</td><td>taken Fri 15:45 UTC by New York · rejected (closed back inside)</td></tr>
+<tr><td>Fri New York<br><span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></td><td class="num up">1.12616</td><td>untouched — stops still there</td><td class="num down">1.12126</td><td>taken Sun 21:00 UTC by off-session · accepted (held beyond)</td></tr>
+<tr><td>Today Asia<br><span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></td><td class="num up">1.12292</td><td>forming now</td><td class="num down">1.12264</td><td>forming now</td></tr>
+        </tbody>
+      </table>
+      <ul class="list"><li>Nearest resting buy-side liquidity: Fri New York high 1.12616.</li><li>Recent history (21 days): London took Asia&#x27;s high 43% and low 67% of days; New York took London&#x27;s high 38% and low 76%.</li></ul>
+      <div class="note">The session counts describe what happened in the recent history (with the number of days). They are not a signal or a prediction.</div>
+      
+      <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Always use a stop loss and keep risk small — a common rule is 1% of the account or less on a single trade.</div>
+      <h3 style="margin-top:34px">Other markets</h3>
+      <div class="cta" style="justify-content:flex-start"><a class="btn" href="/markets/xauusd.html">Gold</a> <a class="btn" href="/markets/xagusd.html">Silver</a> <a class="btn" href="/markets/gbpusd.html">GBP/USD</a> <a class="btn" href="/markets/usdjpy.html">USD/JPY</a> <a class="btn" href="/markets/nas100.html">Nasdaq 100</a> <a class="btn" href="/markets/us30.html">Dow Jones 30</a> <a class="btn" href="/markets/btcusd.html">Bitcoin</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a></div>
+    <nav><a href="/levels.html">Market levels</a><a href="/about.html">The method</a><a href="/services.html">Services</a><a href="/disclaimer.html">Risk disclaimer</a><a href="/privacy.html">Privacy</a></nav>
+  </div>
+  <p class="risk">Trading carries a high risk of loss. Everything on this site is education based on past market data — not financial advice, not a recommendation to buy or sell, and not a promise of results. Liquidity Matrix is not affiliated with other indicators or products that use a similar name.</p>
+</footer>
+</body>
+</html>

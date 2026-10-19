@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gold Liquidity Levels This Week (XAUUSD) — Liquidity Matrix</title>
-<meta name="description" content="This week's untouched highs and lows in gold (XAUUSD H4), found by code on real MetaTrader candles: where stops still sit above and below price. Updated every weekend.">
+<title>Market Liquidity Levels Today — Gold, Forex, Indices, Bitcoin — Liquidity Matrix</title>
+<meta name="description" content="Untouched highs and lows in gold, silver, EUR/USD, GBP/USD, USD/JPY, Nasdaq 100, Dow 30 and Bitcoin, found by code on real candles: where stops still sit above and below price. Updated every day.">
 <link rel="canonical" href="https://liquidity-matrix.com/levels.html">
-<meta property="og:title" content="Gold Liquidity Levels This Week — Liquidity Matrix">
+<meta property="og:title" content="Market Liquidity Levels Today — Liquidity Matrix">
 <meta property="og:image" content="https://liquidity-matrix.com/assets/gold-levels.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
@@ -21,7 +21,7 @@
     <a class="brand" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><path d="M2 20h30l-6-16H8z" fill="#f5c046"/><path d="M6 12h22" stroke="#9c7a2a" stroke-width="2"/></svg>LIQUIDITY MATRIX</a>
     <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
     <nav class="nav">
-      <a href="/levels.html" class="on">Weekly levels</a>
+      <a href="/levels.html" class="on">Market levels</a>
       <a href="/about.html">The method</a>
       <a href="/services.html">Services</a>
       <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">YouTube</a>
@@ -32,47 +32,34 @@
 <main>
   <section>
     <div class="wrap">
-      <!-- LEVELS:START (updated every weekend from the code-checked levels) -->
-      <div class="kicker">Gold · XAUUSD · H4 · week of 12–16 Oct 2026</div>
-      <h2>Where the stops sit going into the new week</h2>
-      <p class="sub">Highs above and lows below the last close that price has <b>not</b> traded through since they formed. Stops usually rest just beyond them. Found by code on real MetaTrader candles (broker chart time).</p>
-
-      <div class="stats">
-        <div class="stat"><span>Week high</span><b class="num">4216.98</b><span>Mon 12 Oct</span></div>
-        <div class="stat"><span>Week low</span><b class="num">4073.31</b><span>Wed 14 Oct</span></div>
-        <div class="stat"><span>Week close</span><b class="num">4168.77</b><span>Fri 16 Oct</span></div>
-        <div class="stat"><span>Week range</span><b class="num">143.67</b><span>points</span></div>
+      <!-- LEVELS:START (built by code from the real candles: every morning, at each session open and every Monday - no AI) -->
+      <div class="kicker">Updated Mon 19 Oct 00:00 UTC · Asia open · 8 markets</div>
+      <h2>Where the stops sit today</h2>
+      <p class="sub">For each market: the nearest high above and low below the last price that have <b>not</b> been traded through since they formed. Stops usually rest just beyond them. Open a market for its chart, the full table, the Asia / London / New York sessions and two scenarios to watch.</p>
+      
+      <div class="grid g3" style="margin-top:22px">
+        <a class="card" href="/markets/xauusd.html" style="color:inherit;text-decoration:none"><div class="kicker">XAUUSD</div><h3>Gold</h3><p>Last <b class="num" style="color:var(--text)">4186.03</b></p><p><span class="up">Above</span> <span class="num">4199.10</span></p><p><span class="down">Below</span> <span class="num">4126.31</span></p></a>
+        <a class="card" href="/markets/xagusd.html" style="color:inherit;text-decoration:none"><div class="kicker">XAGUSD</div><h3>Silver</h3><p>Last <b class="num" style="color:var(--text)">57.386</b></p><p><span class="up">Above</span> <span class="num">57.976</span></p><p><span class="down">Below</span> <span class="num">55.384</span></p></a>
+        <a class="card" href="/markets/eurusd.html" style="color:inherit;text-decoration:none"><div class="kicker">EURUSD</div><h3>EUR/USD</h3><p>Last <b class="num" style="color:var(--text)">1.12291</b></p><p><span class="up">Above</span> <span class="num">1.12696</span></p><p><span class="down">Below</span> <span class="num">1.11129</span></p></a>
+        <a class="card" href="/markets/gbpusd.html" style="color:inherit;text-decoration:none"><div class="kicker">GBPUSD</div><h3>GBP/USD</h3><p>Last <b class="num" style="color:var(--text)">1.33376</b></p><p><span class="up">Above</span> <span class="num">1.33717</span></p><p><span class="down">Below</span> <span class="num">1.31369</span></p></a>
+        <a class="card" href="/markets/usdjpy.html" style="color:inherit;text-decoration:none"><div class="kicker">USDJPY</div><h3>USD/JPY</h3><p>Last <b class="num" style="color:var(--text)">157.774</b></p><p><span class="up">Above</span> <span class="num">158.340</span></p><p><span class="down">Below</span> <span class="num">157.520 – 157.583</span></p></a>
+        <a class="card" href="/markets/nas100.html" style="color:inherit;text-decoration:none"><div class="kicker">NAS100</div><h3>Nasdaq 100</h3><p>Last <b class="num" style="color:var(--text)">29426.40</b></p><p><span class="up">Above</span> <span class="num">30021.30</span></p><p><span class="down">Below</span> <span class="num">29070.40</span></p></a>
+        <a class="card" href="/markets/us30.html" style="color:inherit;text-decoration:none"><div class="kicker">US30</div><h3>Dow Jones 30</h3><p>Last <b class="num" style="color:var(--text)">52178.90</b></p><p><span class="up">Above</span> <span class="num">52588.00</span></p><p><span class="down">Below</span> <span class="num">51830.50</span></p></a>
+        <a class="card" href="/markets/btcusd.html" style="color:inherit;text-decoration:none"><div class="kicker">BTCUSD</div><h3>Bitcoin</h3><p>Last <b class="num" style="color:var(--text)">81980.55</b></p><p><span class="up">Above</span> <span class="num">82183.56</span></p><p><span class="down">Below</span> <span class="num">80564.57</span></p></a>
       </div>
-
-      <div class="chart"><img src="/assets/gold-levels.png" alt="XAUUSD H4 chart: untouched highs 4199.10 and the 4217–4226 zone above; untouched lows 4126.31 and 4073.31 below; close 4168.77" width="1200" height="675"></div>
-
-      <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
-        <tbody>
-          <tr><td class="up">Above</td><td class="num">4217 – 4226</td><td>30 Sep · 2 Oct · 12 Oct</td><td>Price reached this zone 3 times and no candle closed above 4226.45. Buy stops sit above it.</td></tr>
-          <tr><td class="up">Above</td><td class="num">4199.10</td><td>Fri 16 Oct</td><td>Friday's high, not traded through yet: the nearest pool of buy stops.</td></tr>
-          <tr><td class="down">Below</td><td class="num">4126.31</td><td>Fri 16 Oct</td><td>Friday's low, not traded through yet: the nearest pool of sell stops.</td></tr>
-          <tr><td class="down">Below</td><td class="num">4073.31</td><td>Wed 14 Oct</td><td>Last week's low: sell stops below the bottom of the week.</td></tr>
-        </tbody>
-      </table>
-
-      <h3 style="margin-top:34px">Two scenarios to watch — not a prediction</h3>
-      <div class="grid g2" style="margin-top:12px">
-        <div class="card"><h3 class="up">Sweep above</h3><p>Price runs the highs near 4199 and into the 4217–4226 zone. Watch whether it closes back below the zone (a sweep that fails to hold) or closes through it (a breakout that has to be respected).</p></div>
-        <div class="card"><h3 class="down">Sweep below</h3><p>Price runs the lows near 4126, then 4073. Watch whether it closes back above (stops taken, buyers return) or keeps closing below (the move continues).</p></div>
-      </div>
-      <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Always use a stop loss and keep risk small — a common rule is 1% of the account or less on a single trade.</div>
+      <a href="/markets/xauusd.html" class="chart"><img src="/assets/gold-levels.png?v=2026101821" alt="Gold H4 chart with today's untouched levels" width="1200" height="675"></a>
+      <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Education only — not financial advice.</div>
       <!-- LEVELS:END -->
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Get the levels every weekend</h2>
-      <p class="sub">A new map is published before every trading week, with a Short that replays how price reacted to last week's levels.</p>
+      <h2>Get the levels every day</h2>
+      <p class="sub">A new map is published every morning for gold, silver, the major currencies, indices and Bitcoin.</p>
       <div class="cta" style="justify-content:flex-start">
         <a class="btn gold" href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">Subscribe on YouTube</a>
-        <a class="btn" href="mailto:jarvislmatrix@gmail.com?subject=Add%20me%20to%20the%20weekly%20levels">Get them by email</a>
+        <a class="btn" href="mailto:jarvislmatrix@gmail.com?subject=Add%20me%20to%20the%20daily%20levels">Get them by email</a>
       </div>
     </div>
   </section>
@@ -81,7 +68,7 @@
 <footer>
   <div class="wrap">
     <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a></div>
-    <nav><a href="/levels.html">Weekly levels</a><a href="/about.html">The method</a><a href="/services.html">Services</a><a href="/disclaimer.html">Risk disclaimer</a><a href="/privacy.html">Privacy</a></nav>
+    <nav><a href="/levels.html">Market levels</a><a href="/about.html">The method</a><a href="/services.html">Services</a><a href="/disclaimer.html">Risk disclaimer</a><a href="/privacy.html">Privacy</a></nav>
   </div>
   <p class="risk">Trading carries a high risk of loss. Everything on this site is education based on past market data — not financial advice, not a recommendation to buy or sell, and not a promise of results. Liquidity Matrix is not affiliated with other indicators or products that use a similar name.</p>
 </footer>

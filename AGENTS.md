@@ -24,6 +24,8 @@ changing anything.
 | `assets/gold-levels.png`, `assets/gold-levels-m.png` | The home-page gold chart, rendered by Jarvis |
 | Everything between `<!-- LEVELS:START` and `<!-- LEVELS:END -->` in `levels.html` | Jarvis replaces this block on every update. Keep both markers exactly as they are. |
 | `sitemap.xml` | Jarvis maintains the `<lastmod>` dates and adds market pages |
+| `track-record.html`, `assets/levels/equity*.png` | Built by Jarvis from the demo account's real closed trades |
+| `data/scenarios.json` | The public log of educational scenarios and their outcomes. Never edit, reorder or delete entries. |
 | `CNAME` | The custom domain. Changing it takes the site offline. |
 
 You may edit the rest of `levels.html` (outside the markers) and all other root pages
@@ -60,6 +62,8 @@ say so clearly in the PR description so the owner can bump the version in Jarvis
   phones and need a `data-label="..."` attribute on every `<td>`.
 - Images: always set `width` and `height` attributes; large images get `loading="lazy"`.
   Charts use `<picture>` with a phone version (`*-m.png`) for screens under 600px.
+- `assets/sessions.js` is the session clock used on the market pages; keep its session times in line with
+  the site (Asia 00:00 UTC, London 08:00 London, New York 08:00–17:00 New York).
 - **No new third-party scripts, trackers, analytics, chat widgets, cookie banners or external fonts**
   without the owner's approval. Google Fonts (Inter, JetBrains Mono) is the only external resource.
 - Keep pages accessible: meaningful `alt` text, real headings in order, links that say where they go.

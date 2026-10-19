@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": "XAUUSD-1792371600",
+  "symbol": "XAUUSD",
+  "created_utc": 1792386010,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 4183.51,
+  "sl": 4148.54,
+  "tp": 4300.26,
+  "rr": 3.34,
+  "sweep_price": 4154.65,
+  "sweep_t": 1792371600,
+  "bar_t": 1792393200
+ }
+]

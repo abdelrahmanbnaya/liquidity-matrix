@@ -6,6 +6,8 @@
 <title>Nasdaq 100 (NAS100) liquidity levels today — Liquidity Matrix</title>
 <meta name="description" content="Untouched highs and lows in Nasdaq 100 (NAS100), found by code on real candles: where stops still sit above and below price, session by session. Updated every day.">
 <link rel="canonical" href="https://liquidity-matrix.com/markets/nas100.html">
+<link rel="alternate" hreflang="en" href="https://liquidity-matrix.com/markets/nas100.html">
+<link rel="alternate" hreflang="ar" href="https://liquidity-matrix.com/ar/markets/nas100.html">
 <meta property="og:title" content="Nasdaq 100 (NAS100) liquidity levels today — Liquidity Matrix">
 <meta property="og:image" content="https://liquidity-matrix.com/assets/levels/nas100.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -13,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=4">
+<link rel="stylesheet" href="/assets/style.css?v=6">
 </head>
 <body>
 <header class="site-head">
@@ -22,9 +24,12 @@
     <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
     <nav class="nav">
       <a href="/levels.html" class="on">Market levels</a>
-      <a href="/about.html">The method</a>
+      <a href="/track-record.html">Track record</a>
       <a href="/services.html">Services</a>
+      <a href="/pricing.html">Pricing</a>
+      <a href="/about.html">The method</a>
       <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">YouTube</a>
+      <a class="lang" href="/ar/markets/nas100.html" lang="ar" hreflang="ar">العربية</a>
     </nav>
   </div>
 </header>
@@ -32,28 +37,43 @@
 <main>
   <section>
     <div class="wrap">
-      <div class="kicker">Nasdaq 100 · NAS100 · H4 · updated Mon 19 Oct 00:00 UTC</div>
+      <div class="kicker">Nasdaq 100 · NAS100 · H4 · updated Mon 19 Oct 05:00 UTC</div>
       <h2>Where the stops sit in Nasdaq 100 right now</h2>
-      <p class="sub">Last price <b class="num" style="color:var(--text)">29426.40</b> · candle of Sun 18 Oct 21:00 UTC</p>
+      <p class="sub">Last price <b class="num" style="color:var(--text)">29596.20</b> · candle of Mon 19 Oct 05:00 UTC</p>
       <p class="sub">Highs above and lows below the last price that have <b>not</b> been traded through since they formed. Stops usually rest just beyond them. Found by code on real candles (MetaTrader).</p>
+      
+      <div class="dash">
+        <div class="stats tfs"><div class="stat"><span>M15 structure</span><b class="down">Bullish</b><span>higher high and higher low</span></div><div class="stat"><span>H1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H4 structure</span><b class="up">Bearish</b><span>lower high and lower low</span></div><div class="stat"><span>D1 structure</span><b class="down">Bullish</b><span>higher high and higher low</span></div></div>
+        <div class="grid g2" style="margin-top:14px">
+          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="down">Sell-side liquidity taken</b><p>H1 wick below the low <span class="num">29406.90</span>, closed back inside · Fri 16 Oct 16:00 UTC (10 H1 candles ago).</p></div>
+          <div class="card sessions-clock" data-sessions><div class="kicker">Session clock</div><b data-now>Loading the session clock…</b><p data-next></p></div>
+        </div>
+        <div class="tv"><div class="tradingview-widget-container" style="height:100%;width:100%"><div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize": true, "symbol": "OANDA:NAS100USD", "interval": "60", "timezone": "Etc/UTC", "theme": "dark", "style": "1", "locale": "en", "backgroundColor": "rgba(9, 9, 12, 1)", "gridColor": "rgba(38, 38, 47, 0.6)", "hide_side_toolbar": true, "allow_symbol_change": false, "save_image": false, "support_host": "https://www.tradingview.com"}</script></div></div><p class="sub" style="font-size:13px;margin-top:8px">Live chart by TradingView (their price feed: it can differ slightly from the broker candles our levels are built from).</p>
+        <h3 style="margin-top:30px">Educational scenario</h3>
+        <div class="card"><div class="kicker">Educational scenario · سيناريو تعليمي</div><h3 style="margin-top:6px">No scenario right now</h3><p>A scenario appears only after a confirmed liquidity sweep on H1 with an untouched level on the other side worth at least 1.5R.</p></div>
+        <h3 style="margin-top:26px">Scenario log — every one, with its outcome</h3>
+        <p class="sub" style="font-size:14px">No closed scenarios yet on this market. Outcomes are read from the candles; spread, slippage and commission are not included. Full log: <a href="/data/scenarios.json">scenarios.json</a> · <a href="/track-record.html">track record</a>.</p>
+        
+      </div>
+      <script src="/assets/sessions.js?v=2" defer></script>
 
       <div class="stats">
         <div class="stat"><span>Previous day high</span><b class="num">30021.30</b><span>Fri 16 Oct</span></div>
         <div class="stat"><span>Previous day low</span><b class="num">29070.40</b><span>Fri 16 Oct</span></div>
-        <div class="stat"><span>Week high</span><b class="num">29447.70</b><span>Mon 19 Oct</span></div>
+        <div class="stat"><span>Week high</span><b class="num">29601.10</b><span>Mon 19 Oct</span></div>
         <div class="stat"><span>Week low</span><b class="num">29122.20</b><span>Mon 19 Oct</span></div>
       </div>
 
-      <div class="chart"><img src="/assets/levels/nas100.png?v=2026101821" alt="NAS100 H4 chart: above 30021.30; above 30673.40; below 29070.40; below 28871 – 28901; below 28745.50" width="1200" height="675"></div>
+      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/nas100-m.png?v=2026101905" width="1080" height="1280"><img src="/assets/levels/nas100.png?v=2026101905" alt="NAS100 H4 chart: above 30021.30; above 30673.40; below 29070.40; below 28871 – 28901; below 28745.50" width="1200" height="675"></picture></div>
 
       <table class="levels">
         <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
         <tbody>
-          <tr><td class="up">Above</td><td class="num">30021.30</td><td>Fri 16 Oct</td><td>Friday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
-          <tr><td class="up">Above</td><td class="num">30673.40</td><td>Wed 14 Oct</td><td>A swing high from Wed 14 Oct, not traded through since.</td></tr>
-          <tr><td class="down">Below</td><td class="num">29070.40</td><td>Fri 16 Oct</td><td>Friday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
-          <tr><td class="down">Below</td><td class="num">28871 – 28901</td><td>24 Aug · 2 Sep · 15 Sep</td><td>Price reached this zone 3 times and no candle closed below 28871.30. Sell stops sit below it.</td></tr>
-          <tr><td class="down">Below</td><td class="num">28745.50</td><td>Wed 16 Sep</td><td>A swing low from Wed 16 Sep, not traded through since.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">30021.30</td><td data-label="Formed">Fri 16 Oct</td><td data-label="Why">Friday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">30673.40</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">A swing high from Wed 14 Oct, not traded through since.</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">29070.40</td><td data-label="Formed">Fri 16 Oct</td><td data-label="Why">Friday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">28871 – 28901</td><td data-label="Formed">24 Aug · 2 Sep · 15 Sep</td><td data-label="Why">Price reached this zone 3 times and no candle closed below 28871.30. Sell stops sit below it.</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">28745.50</td><td data-label="Formed">Wed 16 Sep</td><td data-label="Why">A swing low from Wed 16 Sep, not traded through since.</td></tr>
         </tbody>
       </table>
 
@@ -68,15 +88,23 @@
       <table class="levels">
         <thead><tr><th>Session</th><th>High</th><th>What happened</th><th>Low</th><th>What happened</th></tr></thead>
         <tbody>
-          <tr><td>Fri Asia<br><span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></td><td class="num up">30021.30</td><td>untouched — stops still there</td><td class="num down">29754.20</td><td>taken Fri 13:30 UTC by New York · accepted (held beyond)</td></tr>
-<tr><td>Fri London<br><span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></td><td class="num up">29997.80</td><td>untouched — stops still there</td><td class="num down">29849.00</td><td>taken Fri 12:45 UTC by New York · accepted (held beyond)</td></tr>
-<tr><td>Fri New York<br><span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></td><td class="num up">29925.80</td><td>untouched — stops still there</td><td class="num down">29070.40</td><td>untouched — stops still there</td></tr>
-<tr><td>Today Asia<br><span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></td><td class="num up">29437.80</td><td>forming now</td><td class="num down">29426.40</td><td>forming now</td></tr>
+          <tr><td data-label="Session"><span>Fri Asia <span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></span></td><td class="num up" data-label="High">30021.30</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">29754.20</td><td data-label="Low was">taken Fri 13:30 UTC by New York · accepted (held beyond)</td></tr>
+<tr><td data-label="Session"><span>Fri London <span style="color:var(--muted);font-size:13px">07:00–12:00 UTC</span></span></td><td class="num up" data-label="High">29997.80</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">29849.00</td><td data-label="Low was">taken Fri 12:45 UTC by New York · accepted (held beyond)</td></tr>
+<tr><td data-label="Session"><span>Fri New York <span style="color:var(--muted);font-size:13px">12:00–21:00 UTC</span></span></td><td class="num up" data-label="High">29925.80</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">29070.40</td><td data-label="Low was">untouched — stops still there</td></tr>
+<tr><td data-label="Session"><span>Today Asia <span style="color:var(--muted);font-size:13px">00:00–07:00 UTC</span></span></td><td class="num up" data-label="High">29601.10</td><td data-label="High was">forming now</td><td class="num down" data-label="Low">29420.70</td><td data-label="Low was">forming now</td></tr>
         </tbody>
       </table>
-      <ul class="list"><li>Nearest resting buy-side liquidity: Fri New York high 29925.8.</li><li>Nearest resting sell-side liquidity: Fri New York low 29070.4.</li><li>Recent history (22 days): London took Asia&#x27;s high 36% and low 45% of days; New York took London&#x27;s high 59% and low 64%.</li></ul>
+      <ul class="list"><li>Nearest resting buy-side liquidity: Fri New York high 29925.8.</li><li>Nearest resting sell-side liquidity: Fri New York low 29070.4.</li><li>Recent history (21 days): London took Asia&#x27;s high 33% and low 48% of days; New York took London&#x27;s high 57% and low 67%.</li></ul>
       <div class="note">The session counts describe what happened in the recent history (with the number of days). They are not a signal or a prediction.</div>
       
+      <h3 style="margin-top:34px">Weekly outlook · 2026-W43</h3>
+      <div class="stats">
+        <div class="stat"><span>Last week high</span><b class="num">31064.00</b><span>12 Oct – 16 Oct 2026</span></div>
+        <div class="stat"><span>Last week low</span><b class="num">29070.40</b><span>12 Oct – 16 Oct 2026</span></div>
+        <div class="stat"><span>Last week close</span><b class="num">29183.40</b><span>-5.59% on the week · lower third of the range</span></div>
+        <div class="stat"><span>Last week range</span><b class="num">1993.60</b><span>216% of the 8-week average</span></div>
+      </div>
+      <p class="sub" style="margin-top:14px">Nearest untouched daily level above: <b class="num up">31366.00</b> · below: <b class="num down">29070.40</b>. <a href="/weekly.html#nas100">Full weekly outlook →</a></p>
       <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Always use a stop loss and keep risk small — a common rule is 1% of the account or less on a single trade.</div>
       <h3 style="margin-top:34px">Other markets</h3>
       <div class="cta" style="justify-content:flex-start"><a class="btn" href="/markets/xauusd.html">Gold</a> <a class="btn" href="/markets/xagusd.html">Silver</a> <a class="btn" href="/markets/eurusd.html">EUR/USD</a> <a class="btn" href="/markets/gbpusd.html">GBP/USD</a> <a class="btn" href="/markets/usdjpy.html">USD/JPY</a> <a class="btn" href="/markets/us30.html">Dow Jones 30</a> <a class="btn" href="/markets/btcusd.html">Bitcoin</a></div>
@@ -87,7 +115,7 @@
 <footer>
   <div class="wrap">
     <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a></div>
-    <nav><a href="/levels.html">Market levels</a><a href="/about.html">The method</a><a href="/services.html">Services</a><a href="/disclaimer.html">Risk disclaimer</a><a href="/privacy.html">Privacy</a></nav>
+    <nav><a href="/levels.html">Market levels</a><a href="/track-record.html">Track record</a><a href="/services.html">Services</a><a href="/pricing.html">Pricing</a><a href="/about.html">The method</a><a href="/disclaimer.html">Risk disclaimer</a><a href="/privacy.html">Privacy</a></nav>
   </div>
   <p class="risk">Trading carries a high risk of loss. Everything on this site is education based on past market data — not financial advice, not a recommendation to buy or sell, and not a promise of results. Liquidity Matrix is not affiliated with other indicators or products that use a similar name.</p>
 </footer>

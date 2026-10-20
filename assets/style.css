@@ -268,3 +268,67 @@ details.more > summary::after { content: "+"; color: var(--gold); font-size: 22p
 details.more[open] > summary::after { content: "−"; }
 details.more > .more-body { padding: 0 14px 14px; }
 details.more > .more-body > table.levels { margin-top: 0; }
+
+/* ---- v10: freshness badge, market cards, filter, sticky section bar, glance, sample size, RTL numbers ---- */
+.fresh { display: inline-flex; align-items: center; gap: 6px; margin-inline-start: 8px; padding: 2px 10px;
+  border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 600;
+  letter-spacing: 0; text-transform: none; vertical-align: middle; white-space: nowrap; }
+.fresh:empty { display: none; }
+.fresh::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.fresh.f-ok { color: var(--green); border-color: rgba(80,210,140,.35); }
+.fresh.f-warn { color: var(--gold); border-color: var(--gold-dim); }
+.fresh.f-old { color: var(--red); border-color: rgba(255,92,98,.4); }
+.fresh.f-closed { color: var(--muted); }
+
+.mkc { display: flex; flex-direction: column; gap: 6px; color: inherit; }
+.mkc:hover { text-decoration: none; border-color: var(--gold-dim); }
+.mkc[hidden] { display: none !important; }
+.mkc .mk-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.mkc .mk-name { font-weight: 700; color: var(--text); font-size: 16px; }
+.mkc .mk-price { font-size: 24px; font-weight: 700; color: var(--text); line-height: 1.25; margin: 2px 0 4px; }
+.mkc .mk-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; }
+.mkc .mk-row .lab { color: var(--muted); }
+.mkc .mk-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.tag { font-size: 12px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag.t-bull { color: var(--green); border-color: rgba(80,210,140,.35); }
+.tag.t-bear { color: var(--red); border-color: rgba(255,92,98,.4); }
+.chips button { flex: 0 0 auto; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font: inherit;
+  font-size: 14px; color: var(--muted); background: transparent; cursor: pointer; white-space: nowrap; }
+.chips button:hover { color: var(--text); border-color: var(--gold-dim); }
+.chips button.on { background: var(--gold); color: #1a1406; border-color: var(--gold); font-weight: 700; }
+.chips[hidden] { display: none; }
+
+.jump { position: sticky; top: 64px; z-index: 9; background: var(--bg); padding: 10px 0; margin: 14px 0 4px;
+  border-bottom: 1px solid var(--line); flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+.jump::-webkit-scrollbar { display: none; }
+.jump a { white-space: nowrap; }
+main [id] { scroll-margin-top: 130px; }
+.glance { margin-top: 16px; }
+.glance .stat b { font-size: 20px; }
+.glance .stat b:not(.num) { font-size: 16px; line-height: 1.4; }
+.chips[data-filter] { flex-wrap: wrap; overflow: visible; }
+.mkc .mk-head { flex-wrap: wrap; }
+
+.sample { display: flex; align-items: center; gap: 18px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 18px 20px; margin-top: 18px; }
+.sample > b { font-size: 44px; line-height: 1; color: var(--gold); }
+.sample div { display: flex; flex-direction: column; gap: 4px; }
+.sample div b { font-size: 17px; color: var(--text); }
+.sample div span { color: var(--muted); font-size: 14px; }
+.sample-line { font-size: 16px; color: var(--text); margin: 18px 0 0; }
+.sample-line b { color: var(--gold); font-size: 20px; }
+
+[dir="rtl"] span.num, [dir="rtl"] b.num { direction: ltr; unicode-bidi: isolate; }
+[dir="rtl"] p.num, [dir="rtl"] div.num { direction: ltr; unicode-bidi: isolate; text-align: right; }
+
+.svc-grid { margin-top: 22px; }
+.svc { display: flex; flex-direction: column; gap: 6px; }
+.svc h3 { margin: 4px 0 2px; font-size: 19px; }
+.svc .svc-for { color: var(--muted); font-size: 14px; margin: 0; }
+.svc .svc-for b { color: var(--text); }
+.svc .list { margin-top: 6px; }
+.svc .list li { padding-top: 4px; padding-bottom: 4px; font-size: 14px; }
+.svc .svc-price { margin: auto 0 0; padding-top: 10px; font-size: 19px; font-weight: 700; color: var(--gold); }
+.svc .cta { justify-content: flex-start; margin-top: 8px; gap: 8px; }
+.svc .cta .btn { padding: 9px 16px; font-size: 14px; }
+details.more > .more-body > .list { margin-top: 0; }

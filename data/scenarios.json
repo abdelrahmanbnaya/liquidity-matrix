@@ -81,5 +81,37 @@
   "sweep_price": 158.551,
   "sweep_t": 1792450800,
   "bar_t": 1792461600
+ },
+ {
+  "id": "XAGUSD-1792465200",
+  "symbol": "XAGUSD",
+  "created_utc": 1792472417,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "long",
+  "entry": 57.46,
+  "sl": 56.35,
+  "tp": 59.372,
+  "rr": 1.72,
+  "sweep_price": 56.824,
+  "sweep_t": 1792465200,
+  "bar_t": 1792479600
+ },
+ {
+  "id": "US30-1792472400",
+  "symbol": "US30",
+  "created_utc": 1792472422,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 52076.8,
+  "sl": 52155.37,
+  "tp": 51836.4,
+  "rr": 3.06,
+  "sweep_price": 52137.1,
+  "sweep_t": 1792472400,
+  "bar_t": 1792479600
  }
 ]

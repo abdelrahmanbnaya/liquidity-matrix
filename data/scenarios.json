@@ -120,8 +120,8 @@
   "id": "EURUSD-1792483200",
   "symbol": "EURUSD",
   "created_utc": 1792479627,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.66,
   "digits": 5,
   "side": "short",
   "entry": 1.12281,
@@ -130,7 +130,8 @@
   "rr": 2.66,
   "sweep_price": 1.12347,
   "sweep_t": 1792483200,
-  "bar_t": 1792486800
+  "bar_t": 1792486800,
+  "closed_bar_t": 1792497600
  },
  {
   "id": "BTCUSD-1792468800",
@@ -147,5 +148,53 @@
   "sweep_price": 82164.54,
   "sweep_t": 1792468800,
   "bar_t": 1792472400
+ },
+ {
+  "id": "EURUSD-1792497600",
+  "symbol": "EURUSD",
+  "created_utc": 1792497602,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.12109,
+  "sl": 1.12037,
+  "tp": 1.12353,
+  "rr": 3.38,
+  "sweep_price": 1.12072,
+  "sweep_t": 1792497600,
+  "bar_t": 1792504800
+ },
+ {
+  "id": "NAS100-1792497600",
+  "symbol": "NAS100",
+  "created_utc": 1792497605,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 29335.8,
+  "sl": 29311.21,
+  "tp": 29595.1,
+  "rr": 10.54,
+  "sweep_price": 29386.8,
+  "sweep_t": 1792497600,
+  "bar_t": 1792504800
+ },
+ {
+  "id": "US30-1792504800",
+  "symbol": "US30",
+  "created_utc": 1792497606,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 52004.8,
+  "sl": 51959.55,
+  "tp": 52199.8,
+  "rr": 4.31,
+  "sweep_price": 51991.3,
+  "sweep_t": 1792504800,
+  "bar_t": 1792504800
  }
 ]

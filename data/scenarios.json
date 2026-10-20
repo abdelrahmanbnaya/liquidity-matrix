@@ -37,8 +37,8 @@
   "id": "XAUUSD-1792425600",
   "symbol": "XAUUSD",
   "created_utc": 1792439315,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 4145.56,
@@ -47,7 +47,8 @@
   "rr": 4.4,
   "sweep_price": 4150.16,
   "sweep_t": 1792425600,
-  "bar_t": 1792443600
+  "bar_t": 1792443600,
+  "closed_bar_t": 1792458000
  },
  {
   "id": "GBPUSD-1792432800",
@@ -64,5 +65,21 @@
   "sweep_price": 1.33048,
   "sweep_t": 1792432800,
   "bar_t": 1792443600
+ },
+ {
+  "id": "USDJPY-1792450800",
+  "symbol": "USDJPY",
+  "created_utc": 1792454417,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "short",
+  "entry": 158.528,
+  "sl": 158.609,
+  "tp": 157.878,
+  "rr": 8.06,
+  "sweep_price": 158.551,
+  "sweep_t": 1792450800,
+  "bar_t": 1792461600
  }
 ]

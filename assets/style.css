@@ -332,3 +332,23 @@ main [id] { scroll-margin-top: 130px; }
 .svc .cta { justify-content: flex-start; margin-top: 8px; gap: 8px; }
 .svc .cta .btn { padding: 9px 16px; font-size: 14px; }
 details.more > .more-body > .list { margin-top: 0; }
+
+/* v11: tidy */
+h1.ph { font-size: clamp(26px, 3.6vw, 38px); margin: 8px 0 14px; max-width: none; letter-spacing: -0.01em; line-height: 1.15; }
+.mk-cards .mkc { min-width: 0; }
+.mkc .mk-row .lab { white-space: nowrap; flex: none; }
+.mkc .mk-row .num { text-align: right; white-space: nowrap; }
+.mkc .zn { font-size: 10px; color: var(--muted); margin-inline-start: 5px; letter-spacing: .04em; text-transform: uppercase; font-weight: 600; }
+[dir="rtl"] .mkc .mk-row .num { text-align: left; }
+[dir="rtl"] .mkc .zn { text-transform: none; font-size: 11px; }
+@media (max-width: 600px) {
+  h1.ph { font-size: clamp(22px, 6.2vw, 27px); }
+  .mk-cards { gap: 10px; }
+  .mkc .mk-price { font-size: 21px; }
+  .mkc .mk-row { font-size: 13px; gap: 6px; }
+  .mkc .mk-head { flex-wrap: nowrap; min-width: 0; }
+  .mkc .mk-name { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .mkc .mk-tags { gap: 4px; flex-wrap: nowrap; }
+  .mkc .mk-tags .tag { font-size: 10.5px; padding: 2px 6px; white-space: nowrap; }
+}
+@media (max-width: 360px) { .g4.mk-cards { grid-template-columns: 1fr; } }

@@ -34,4 +34,6 @@
   <url><loc>https://liquidity-matrix.com/ar/weekly</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://liquidity-matrix.com/order</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/order</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>https://liquidity-matrix.com/ar/disclaimer</loc><changefreq>yearly</changefreq></url>
+<url><loc>https://liquidity-matrix.com/ar/privacy</loc><changefreq>yearly</changefreq></url>
 </urlset>

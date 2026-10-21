@@ -352,3 +352,23 @@ h1.ph { font-size: clamp(26px, 3.6vw, 38px); margin: 8px 0 14px; max-width: none
   .mkc .mk-tags .tag { font-size: 10.5px; padding: 2px 6px; white-space: nowrap; }
 }
 @media (max-width: 360px) { .g4.mk-cards { grid-template-columns: 1fr; } }
+
+/* v12: services page, one card per service with its details folded (details.fold stays closed on every screen;
+   details.more is opened by site.js on wide screens) */
+details.fold { margin-top: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+details.fold > summary { cursor: pointer; list-style: none; padding: 11px 14px; font-weight: 700; display: flex;
+  justify-content: space-between; align-items: center; gap: 10px; }
+details.fold > summary::-webkit-details-marker { display: none; }
+details.fold > summary::after { content: "+"; color: var(--gold); font-size: 20px; line-height: 1; }
+details.fold[open] > summary::after { content: "\2212"; }
+details.fold > .more-body { padding: 0 14px 14px; }
+details.fold > .more-body > .list { margin-top: 0; }
+.svc-more { margin: 12px 0 4px; }
+.svc-more > summary { font-size: 14px; }
+.svc-more .more-body { font-size: 14px; }
+.svc-more .more-body p, .svc-more .more-body .note { font-size: 14px; }
+.svc-more .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0; }
+.svc-more .shots img { width: 100%; height: auto; border-radius: 10px; }
+.svc-more a.chart { display: block; margin: 10px 0 0; }
+.svc .svc-price a { color: inherit; text-decoration: none; border-bottom: 1px dashed var(--gold-dim); }
+.svc-grid .card.svc { scroll-margin-top: 90px; }

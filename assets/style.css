@@ -372,3 +372,7 @@ details.fold > .more-body > .list { margin-top: 0; }
 .svc-more a.chart { display: block; margin: 10px 0 0; }
 .svc .svc-price a { color: inherit; text-decoration: none; border-bottom: 1px dashed var(--gold-dim); }
 .svc-grid .card.svc { scroll-margin-top: 90px; }
+
+/* v13: the levels page chart follows the market filter */
+#lv-charts > [hidden] { display: none !important; }
+#lv-charts > .chart + .chart { margin-top: 18px; }

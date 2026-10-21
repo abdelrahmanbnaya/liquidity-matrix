@@ -69,6 +69,11 @@
         Array.prototype.forEach.call(grid.querySelectorAll("[data-group]"), function (c) {
           c.hidden = g !== "all" && c.getAttribute("data-group") !== g;
         });
+        // the charts under the cards follow the chips: All = the default chart, a group = its markets' charts
+        var box = bar.getAttribute("data-charts") ? document.querySelector(bar.getAttribute("data-charts")) : null;
+        if (box) Array.prototype.forEach.call(box.querySelectorAll("[data-group]"), function (c) {
+          c.hidden = g === "all" ? !c.hasAttribute("data-default") : c.getAttribute("data-group") !== g;
+        });
       });
     });
   }

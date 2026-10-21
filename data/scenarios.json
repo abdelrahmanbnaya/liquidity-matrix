@@ -206,8 +206,8 @@
   "id": "XAUUSD-1792544400",
   "symbol": "XAUUSD",
   "created_utc": 1792540803,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 4113.86,
@@ -216,7 +216,8 @@
   "rr": 4.37,
   "sweep_price": 4111.6,
   "sweep_t": 1792544400,
-  "bar_t": 1792548000
+  "bar_t": 1792548000,
+  "closed_bar_t": 1792555200
  },
  {
   "id": "GBPUSD-1792540800",
@@ -238,8 +239,8 @@
   "id": "NAS100-1792544400",
   "symbol": "NAS100",
   "created_utc": 1792540808,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 29719.3,
@@ -248,6 +249,7 @@
   "rr": 2.97,
   "sweep_price": 29790.6,
   "sweep_t": 1792544400,
-  "bar_t": 1792548000
+  "bar_t": 1792548000,
+  "closed_bar_t": 1792551600
  }
 ]

@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://liquidity-matrix.com/</loc><lastmod>2026-10-19</lastmod></url>
-  <url><loc>https://liquidity-matrix.com/levels</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/levels</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/about</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://liquidity-matrix.com/services</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://liquidity-matrix.com/disclaimer</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://liquidity-matrix.com/privacy</loc><lastmod>2026-10-19</lastmod></url>
-  <url><loc>https://liquidity-matrix.com/markets/xauusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/xagusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/eurusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/gbpusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/usdjpy</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/nas100</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/us30</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/markets/btcusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/xauusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/xagusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/eurusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/gbpusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/usdjpy</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/nas100</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/us30</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/markets/btcusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://liquidity-matrix.com/pricing</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/levels</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/levels</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/services</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/pricing</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/about</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/track-record</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/weekly</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/track-record</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/xauusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/xagusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/eurusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/gbpusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/usdjpy</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/nas100</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/us30</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/markets/btcusd</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
-  <url><loc>https://liquidity-matrix.com/ar/weekly</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/track-record</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/weekly</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/track-record</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/xauusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/xagusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/eurusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/gbpusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/usdjpy</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/nas100</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/us30</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/markets/btcusd</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/weekly</loc><lastmod>2026-10-21</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://liquidity-matrix.com/order</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/order</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq></url>
 </urlset>

@@ -71,8 +71,8 @@
   "id": "USDJPY-1792450800",
   "symbol": "USDJPY",
   "created_utc": 1792454417,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 8.06,
   "digits": 3,
   "side": "short",
   "entry": 158.528,
@@ -81,7 +81,8 @@
   "rr": 8.06,
   "sweep_price": 158.551,
   "sweep_t": 1792450800,
-  "bar_t": 1792461600
+  "bar_t": 1792461600,
+  "closed_bar_t": 1792508400
  },
  {
   "id": "XAGUSD-1792465200",
@@ -137,8 +138,8 @@
   "id": "BTCUSD-1792468800",
   "symbol": "BTCUSD",
   "created_utc": 1792479636,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 81612.69,
@@ -147,14 +148,15 @@
   "rr": 1.75,
   "sweep_price": 82164.54,
   "sweep_t": 1792468800,
-  "bar_t": 1792472400
+  "bar_t": 1792472400,
+  "closed_bar_t": 1792504800
  },
  {
   "id": "EURUSD-1792497600",
   "symbol": "EURUSD",
   "created_utc": 1792497602,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 3.38,
   "digits": 5,
   "side": "long",
   "entry": 1.12109,
@@ -163,14 +165,15 @@
   "rr": 3.38,
   "sweep_price": 1.12072,
   "sweep_t": 1792497600,
-  "bar_t": 1792504800
+  "bar_t": 1792504800,
+  "closed_bar_t": 1792512000
  },
  {
   "id": "NAS100-1792497600",
   "symbol": "NAS100",
   "created_utc": 1792497605,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 29335.8,
@@ -179,14 +182,15 @@
   "rr": 10.54,
   "sweep_price": 29386.8,
   "sweep_t": 1792497600,
-  "bar_t": 1792504800
+  "bar_t": 1792504800,
+  "closed_bar_t": 1792508400
  },
  {
   "id": "US30-1792504800",
   "symbol": "US30",
   "created_utc": 1792497606,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 52004.8,
@@ -195,6 +199,55 @@
   "rr": 4.31,
   "sweep_price": 51991.3,
   "sweep_t": 1792504800,
-  "bar_t": 1792504800
+  "bar_t": 1792504800,
+  "closed_bar_t": 1792508400
+ },
+ {
+  "id": "XAUUSD-1792544400",
+  "symbol": "XAUUSD",
+  "created_utc": 1792540803,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 4113.86,
+  "sl": 4109.79,
+  "tp": 4131.64,
+  "rr": 4.37,
+  "sweep_price": 4111.6,
+  "sweep_t": 1792544400,
+  "bar_t": 1792548000
+ },
+ {
+  "id": "GBPUSD-1792540800",
+  "symbol": "GBPUSD",
+  "created_utc": 1792540807,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.33724,
+  "sl": 1.33579,
+  "tp": 1.34094,
+  "rr": 2.56,
+  "sweep_price": 1.33654,
+  "sweep_t": 1792540800,
+  "bar_t": 1792548000
+ },
+ {
+  "id": "NAS100-1792544400",
+  "symbol": "NAS100",
+  "created_utc": 1792540808,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 29719.3,
+  "sl": 29804.19,
+  "tp": 29467.0,
+  "rr": 2.97,
+  "sweep_price": 29790.6,
+  "sweep_t": 1792544400,
+  "bar_t": 1792548000
  }
 ]

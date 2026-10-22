@@ -308,8 +308,8 @@
   "id": "XAUUSD-1792630800",
   "symbol": "XAUUSD",
   "created_utc": 1792627212,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.67,
   "digits": 2,
   "side": "short",
   "entry": 4125.16,
@@ -318,14 +318,15 @@
   "rr": 2.67,
   "sweep_price": 4141.76,
   "sweep_t": 1792630800,
-  "bar_t": 1792634400
+  "bar_t": 1792634400,
+  "closed_bar_t": 1792656000
  },
  {
   "id": "XAGUSD-1792645200",
   "symbol": "XAGUSD",
   "created_utc": 1792645205,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 56.345,
@@ -334,6 +335,23 @@
   "rr": 19.1,
   "sweep_price": 56.79,
   "sweep_t": 1792645200,
-  "bar_t": 1792652400
+  "bar_t": 1792652400,
+  "closed_bar_t": 1792656000
+ },
+ {
+  "id": "US30-1792659600",
+  "symbol": "US30",
+  "created_utc": 1792652436,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 52594.2,
+  "sl": 52536.99,
+  "tp": 52756.7,
+  "rr": 2.84,
+  "sweep_price": 52578.9,
+  "sweep_t": 1792659600,
+  "bar_t": 1792659600
  }
 ]

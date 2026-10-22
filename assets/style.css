@@ -376,3 +376,18 @@ details.fold > .more-body > .list { margin-top: 0; }
 /* v13: the levels page chart follows the market filter */
 #lv-charts > [hidden] { display: none !important; }
 #lv-charts > .chart + .chart { margin-top: 18px; }
+
+/* v14: the home page's 3D liquidity map (assets/hero3d.js; desktop 900px+ only, hidden until it has drawn) */
+.hero3d { position: relative; margin: 34px auto 0; max-width: 1080px; aspect-ratio: 21 / 8; border: 1px solid var(--line);
+  border-radius: 16px; overflow: hidden; background: radial-gradient(120% 90% at 70% 10%, #1a1710 0%, transparent 62%); }
+.hero3d canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; }
+.hero3d canvas:active { cursor: grabbing; }
+.hero3d .h3-chip { position: absolute; left: 14px; top: 12px; font: 700 12px/1.4 "JetBrains Mono", Consolas, monospace;
+  color: var(--gold); pointer-events: none; direction: ltr; }
+.hero3d .h3-legend { position: absolute; left: 14px; bottom: 12px; display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px;
+  color: var(--muted); pointer-events: none; }
+.hero3d .h3-legend b { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-inline-end: 6px; border-radius: 2px; }
+.hero3d .h3-legend b.dn { background: #ef5350; } .hero3d .h3-legend b.up { background: #26a69a; }
+.hero3d .h3-hint { position: absolute; right: 14px; bottom: 12px; font-size: 12px; color: var(--muted); pointer-events: none; }
+[dir="rtl"] .hero3d .h3-legend { left: auto; right: 14px; } [dir="rtl"] .hero3d .h3-hint { right: auto; left: 14px; }
+@media (max-width: 899px) { .hero3d { display: none !important; } }

@@ -88,8 +88,8 @@
   "id": "XAGUSD-1792465200",
   "symbol": "XAGUSD",
   "created_utc": 1792472417,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 57.46,
@@ -98,7 +98,8 @@
   "rr": 1.72,
   "sweep_price": 56.824,
   "sweep_t": 1792465200,
-  "bar_t": 1792479600
+  "bar_t": 1792479600,
+  "closed_bar_t": 1792648800
  },
  {
   "id": "US30-1792472400",
@@ -318,5 +319,21 @@
   "sweep_price": 4141.76,
   "sweep_t": 1792630800,
   "bar_t": 1792634400
+ },
+ {
+  "id": "XAGUSD-1792645200",
+  "symbol": "XAGUSD",
+  "created_utc": 1792645205,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "long",
+  "entry": 56.345,
+  "sl": 56.26,
+  "tp": 57.961,
+  "rr": 19.1,
+  "sweep_price": 56.79,
+  "sweep_t": 1792645200,
+  "bar_t": 1792652400
  }
 ]

@@ -44,14 +44,14 @@
     bars.forEach(function (b) { lo = Math.min(lo, b[3]); hi = Math.max(hi, b[2]); });
     levels.forEach(function (l) { lo = Math.min(lo, l.lo); hi = Math.max(hi, l.hi); });
     var pad = (hi - lo) * 0.06; lo -= pad; hi += pad;
-    var W = 26, H = 9;
+    var W = 26, H = 12;
     function X(i) { return -W / 2 + (i + 0.5) * W / n; }
     function Y(p) { return (p - lo) / (hi - lo) * H - H / 2; }
     var bw = W / n * 0.62, floor = -H / 2 - 0.6;
 
     var scene = new THREE.Scene();
     scene.fog = new THREE.Fog(0x0a0a0d, 30, 62);
-    var camera = new THREE.PerspectiveCamera(32, 1, 0.1, 200);
+    var camera = new THREE.PerspectiveCamera(30, 1, 0.1, 200);
     scene.add(new THREE.AmbientLight(0xffffff, 0.55));
     var key = new THREE.DirectionalLight(0xffe2a0, 0.9); key.position.set(8, 14, 12); scene.add(key);
     var rim = new THREE.DirectionalLight(0x6688ff, 0.25); rim.position.set(-10, 4, -12); scene.add(rim);
@@ -72,18 +72,23 @@
 
     function label(text, color) {
       var c = document.createElement("canvas"), g = c.getContext("2d");
-      c.width = 512; c.height = 96;
-      g.font = "700 38px JetBrains Mono, Consolas, monospace";
-      var w = Math.min(500, g.measureText(text).width + 36);
+      c.width = 640; c.height = 96;
+      g.font = "700 36px JetBrains Mono, Consolas, monospace";
+      var w = Math.min(630, g.measureText(text).width + 36);
       g.fillStyle = "rgba(10,10,13,0.88)"; g.strokeStyle = color; g.lineWidth = 4;
       g.beginPath(); if (g.roundRect) g.roundRect(4, 14, w, 68, 14); else g.rect(4, 14, w, 68); g.fill(); g.stroke();
       g.fillStyle = color; g.textBaseline = "middle"; g.fillText(text, 22, 49);
       var s = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c), transparent: true, depthTest: false }));
-      s.scale.set(4.4, 0.825, 1); s.center.set(0, 0.5);
+      s.scale.set(5.6, 0.84, 1); s.center.set(0, 0.5);
       return s;
     }
 
-    var fades = [], t0 = bars[0][0], step = bars[1][0] - bars[0][0];
+    var fades = [], t0 = bars[0][0], step = bars[1][0] - bars[0][0], placed = [];
+    function free(y, up) {                    // two levels close together: stack their tags instead of overlapping
+      for (var k = 0; k < 6 && placed.some(function (p) { return Math.abs(p - y) < 0.85; }); k++) y += up ? 0.85 : -0.85;
+      placed.push(y);
+      return y;
+    }
     levels.forEach(function (l) {
       var above = l.side === "above", col = above ? 0xef5350 : 0x26a69a, css = above ? "#ef5350" : "#26a69a";
       var i = l.t ? Math.max(0, Math.min(n - 1, Math.round((l.t - t0) / step))) : 0;
@@ -95,21 +100,23 @@
       var edge = new THREE.Mesh(new THREE.BoxGeometry(x1 - x0, thick, 0.035),
         new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0 }));
       edge.position.set((x0 + x1) / 2, l.zone ? (Y(l.hi) + Y(l.lo)) / 2 : y, 2.1); scene.add(edge);
-      var price = l.zone ? l.lo.toFixed(dg) + "–" + l.hi.toFixed(dg) : l.price.toFixed(dg);
+      var zd = l.hi >= 1000 ? 0 : dg;                         // a zone reads as a band: 4199–4207
+      var price = l.zone ? l.lo.toFixed(zd) + "–" + l.hi.toFixed(zd) + (AR ? " منطقة" : " zone") : l.price.toFixed(dg);
       var tag = label(price + (l.t ? " · " + day(l.t) : ""), css);
-      tag.position.set(x1 + 0.2, y, 2.1); tag.material.opacity = 0; scene.add(tag);
+      tag.position.set(x1 + 0.2, free(y, above), 2.1); tag.material.opacity = 0; scene.add(tag);
       fades.push([plate.material, 0.16], [edge.material, 0.95], [tag.material, 1]);
     });
     var lastLine = new THREE.Mesh(new THREE.BoxGeometry(W + 6, 0.03, 0.03), new THREE.MeshBasicMaterial({ color: 0xf5c046 }));
-    lastLine.position.set(3, Y(last), 0); scene.add(lastLine);
+    lastLine.position.set(0, Y(last), 0); scene.add(lastLine);
     var lastTag = label(last.toFixed(dg) + (AR ? " آخر سعر" : " last"), "#f5c046");
-    lastTag.position.set(W / 2 + 3.2, Y(last), 0); scene.add(lastTag);
+    lastTag.position.set(-W / 2 + 0.6, Y(last) + 0.55, 0); scene.add(lastTag);   // on the left: the level tags stay readable
 
     var chip = stage.querySelector(".h3-chip");
+    if (chip && AR) { chip.style.direction = "rtl"; chip.style.left = "auto"; chip.style.right = "14px"; }
     if (chip) chip.textContent = (DATA.symbol || "XAUUSD") + " · " + (DATA.tf || "H4") + " · " + day(bars[0][0]) + " – " +
       day(bars[n - 1][0]);
 
-    var yaw = -0.42, pitch = 0.18, tYaw = yaw, tPitch = pitch, drag = null, start = performance.now(), on = true;
+    var yaw = -0.42, pitch = 0.14, tYaw = yaw, tPitch = pitch, drag = null, start = performance.now(), on = true;
     function size() {
       var r = stage.getBoundingClientRect();
       renderer.setSize(r.width, r.height, false);
@@ -142,9 +149,9 @@
       fades.forEach(function (m) { m[0].opacity = m[1] * f; });
       if (!drag && !reduce) tYaw = -0.42 + Math.sin(t * 0.18) * 0.3;
       yaw += (tYaw - yaw) * 0.06; pitch += (tPitch - pitch) * 0.06;
-      var r = 30;
-      camera.position.set(Math.sin(yaw) * Math.cos(pitch) * r + 2, Math.sin(pitch) * r + 1.2, Math.cos(yaw) * Math.cos(pitch) * r);
-      camera.lookAt(2.4, 0, 0);
+      var r = camera.aspect > 2 ? 30 : 33;                      // candles on the left, level labels on the right, all in frame
+      camera.position.set(Math.sin(yaw) * Math.cos(pitch) * r + 3, Math.sin(pitch) * r + 0.6, Math.cos(yaw) * Math.cos(pitch) * r);
+      camera.lookAt(3, 0.9, 0);
       renderer.render(scene, camera);
       if (on && (!reduce || drag || t < 0.5)) requestAnimationFrame(frame);
     }

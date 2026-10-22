@@ -224,8 +224,8 @@
   "id": "GBPUSD-1792540800",
   "symbol": "GBPUSD",
   "created_utc": 1792540807,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.56,
   "digits": 5,
   "side": "long",
   "entry": 1.33724,
@@ -234,7 +234,8 @@
   "rr": 2.56,
   "sweep_price": 1.33654,
   "sweep_t": 1792540800,
-  "bar_t": 1792548000
+  "bar_t": 1792548000,
+  "closed_bar_t": 1792663200
  },
  {
   "id": "NAS100-1792544400",
@@ -342,8 +343,8 @@
   "id": "US30-1792659600",
   "symbol": "US30",
   "created_utc": 1792652436,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 52594.2,
@@ -352,6 +353,39 @@
   "rr": 2.84,
   "sweep_price": 52578.9,
   "sweep_t": 1792659600,
-  "bar_t": 1792659600
+  "bar_t": 1792659600,
+  "closed_bar_t": 1792663200
+ },
+ {
+  "id": "EURUSD-1792666800",
+  "symbol": "EURUSD",
+  "created_utc": 1792670416,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.11984,
+  "sl": 1.11914,
+  "tp": 1.1256,
+  "rr": 8.22,
+  "sweep_price": 1.12274,
+  "sweep_t": 1792666800,
+  "bar_t": 1792677600
+ },
+ {
+  "id": "GBPUSD-1792677600",
+  "symbol": "GBPUSD",
+  "created_utc": 1792670418,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.33718,
+  "sl": 1.33604,
+  "tp": 1.34191,
+  "rr": 4.16,
+  "sweep_price": 1.33643,
+  "sweep_t": 1792677600,
+  "bar_t": 1792677600
  }
 ]

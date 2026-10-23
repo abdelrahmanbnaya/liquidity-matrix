@@ -471,5 +471,37 @@
   "sweep_price": 81473.0,
   "sweep_t": 1792717200,
   "bar_t": 1792724400
+ },
+ {
+  "id": "USDJPY-1792746000",
+  "symbol": "USDJPY",
+  "created_utc": 1792738832,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "short",
+  "entry": 157.073,
+  "sl": 157.188,
+  "tp": 156.075,
+  "rr": 8.71,
+  "sweep_price": 157.123,
+  "sweep_t": 1792746000,
+  "bar_t": 1792746000
+ },
+ {
+  "id": "NAS100-1792746000",
+  "symbol": "NAS100",
+  "created_utc": 1792738834,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 29011.5,
+  "sl": 29083.48,
+  "tp": 28850.9,
+  "rr": 2.23,
+  "sweep_price": 29038.9,
+  "sweep_t": 1792746000,
+  "bar_t": 1792746000
  }
 ]

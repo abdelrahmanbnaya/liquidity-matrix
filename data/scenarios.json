@@ -410,8 +410,8 @@
   "id": "BTCUSD-1792674000",
   "symbol": "BTCUSD",
   "created_utc": 1792682696,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 81792.22,
@@ -420,6 +420,39 @@
   "rr": 5.36,
   "sweep_price": 81546.17,
   "sweep_t": 1792674000,
-  "bar_t": 1792677600
+  "bar_t": 1792677600,
+  "closed_bar_t": 1792684800
+ },
+ {
+  "id": "USDJPY-1792717200",
+  "symbol": "USDJPY",
+  "created_utc": 1792713607,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "long",
+  "entry": 156.541,
+  "sl": 156.368,
+  "tp": 157.357,
+  "rr": 4.71,
+  "sweep_price": 156.689,
+  "sweep_t": 1792717200,
+  "bar_t": 1792720800
+ },
+ {
+  "id": "US30-1792717200",
+  "symbol": "US30",
+  "created_utc": 1792713610,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 52942.2,
+  "sl": 52962.37,
+  "tp": 52433.2,
+  "rr": 25.24,
+  "sweep_price": 52934.9,
+  "sweep_t": 1792717200,
+  "bar_t": 1792720800
  }
 ]

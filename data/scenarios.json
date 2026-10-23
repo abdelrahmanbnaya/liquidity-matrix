@@ -492,8 +492,8 @@
   "id": "NAS100-1792746000",
   "symbol": "NAS100",
   "created_utc": 1792738834,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 29011.5,
@@ -502,6 +502,39 @@
   "rr": 2.23,
   "sweep_price": 29038.9,
   "sweep_t": 1792746000,
-  "bar_t": 1792746000
+  "bar_t": 1792746000,
+  "closed_bar_t": 1792753200
+ },
+ {
+  "id": "XAUUSD-1792756800",
+  "symbol": "XAUUSD",
+  "created_utc": 1792756815,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 4024.4,
+  "sl": 4032.5,
+  "tp": 3986.6,
+  "rr": 4.67,
+  "sweep_price": 4028.47,
+  "sweep_t": 1792756800,
+  "bar_t": 1792764000
+ },
+ {
+  "id": "EURUSD-1792753200",
+  "symbol": "EURUSD",
+  "created_utc": 1792756819,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.11901,
+  "sl": 1.11836,
+  "tp": 1.12162,
+  "rr": 4.04,
+  "sweep_price": 1.11885,
+  "sweep_t": 1792753200,
+  "bar_t": 1792764000
  }
 ]

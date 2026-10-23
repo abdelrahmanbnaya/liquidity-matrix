@@ -184,7 +184,8 @@
   "sweep_price": 29386.8,
   "sweep_t": 1792497600,
   "bar_t": 1792504800,
-  "closed_bar_t": 1792508400
+  "closed_bar_t": 1792508400,
+  "tp_after_stop_t": 1792515600
  },
  {
   "id": "US30-1792504800",
@@ -201,7 +202,8 @@
   "sweep_price": 51991.3,
   "sweep_t": 1792504800,
   "bar_t": 1792504800,
-  "closed_bar_t": 1792508400
+  "closed_bar_t": 1792508400,
+  "tp_after_stop_t": 1792512000
  },
  {
   "id": "XAUUSD-1792544400",
@@ -218,7 +220,8 @@
   "sweep_price": 4111.6,
   "sweep_t": 1792544400,
   "bar_t": 1792548000,
-  "closed_bar_t": 1792555200
+  "closed_bar_t": 1792555200,
+  "tp_after_stop_t": 1792591200
  },
  {
   "id": "GBPUSD-1792540800",
@@ -252,7 +255,8 @@
   "sweep_price": 29790.6,
   "sweep_t": 1792544400,
   "bar_t": 1792548000,
-  "closed_bar_t": 1792551600
+  "closed_bar_t": 1792551600,
+  "tp_after_stop_t": 1792648800
  },
  {
   "id": "USDJPY-1792587600",
@@ -286,7 +290,8 @@
   "sweep_price": 52599.3,
   "sweep_t": 1792591200,
   "bar_t": 1792591200,
-  "closed_bar_t": 1792594800
+  "closed_bar_t": 1792594800,
+  "tp_after_stop_t": 1792602000
  },
  {
   "id": "BTCUSD-1792569600",
@@ -303,7 +308,8 @@
   "sweep_price": 83344.25,
   "sweep_t": 1792569600,
   "bar_t": 1792576800,
-  "closed_bar_t": 1792587600
+  "closed_bar_t": 1792587600,
+  "tp_after_stop_t": 1792648800
  },
  {
   "id": "XAUUSD-1792630800",
@@ -354,7 +360,8 @@
   "sweep_price": 52578.9,
   "sweep_t": 1792659600,
   "bar_t": 1792659600,
-  "closed_bar_t": 1792663200
+  "closed_bar_t": 1792663200,
+  "tp_after_stop_t": 1792684800
  },
  {
   "id": "EURUSD-1792666800",
@@ -505,7 +512,8 @@
   "sweep_price": 29038.9,
   "sweep_t": 1792746000,
   "bar_t": 1792746000,
-  "closed_bar_t": 1792753200
+  "closed_bar_t": 1792753200,
+  "tp_after_stop_t": 1792771200
  },
  {
   "id": "XAUUSD-1792756800",
@@ -522,7 +530,8 @@
   "sweep_price": 4028.47,
   "sweep_t": 1792756800,
   "bar_t": 1792764000,
-  "closed_bar_t": 1792771200
+  "closed_bar_t": 1792771200,
+  "tp_after_stop_t": 1792774800
  },
  {
   "id": "EURUSD-1792753200",

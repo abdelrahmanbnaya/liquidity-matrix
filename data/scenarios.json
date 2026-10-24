@@ -617,8 +617,8 @@
   "id": "BTCUSD-1792764000",
   "symbol": "BTCUSD",
   "created_utc": 1792768237,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 81678.55,
@@ -627,6 +627,7 @@
   "rr": 4.09,
   "sweep_price": 81003.71,
   "sweep_t": 1792764000,
-  "bar_t": 1792764000
+  "bar_t": 1792764000,
+  "closed_bar_t": 1792792800
  }
 ]

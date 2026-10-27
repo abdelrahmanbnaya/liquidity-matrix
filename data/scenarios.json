@@ -766,8 +766,8 @@
   "id": "BTCUSD-1793070000",
   "symbol": "BTCUSD",
   "created_utc": 1793077227,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.06,
   "digits": 2,
   "side": "long",
   "entry": 79685.8,
@@ -777,7 +777,8 @@
   "sweep_price": 79544.76,
   "sweep_t": 1793070000,
   "bar_t": 1793070000,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793120400
  },
  {
   "id": "XAGUSD-1793084400",
@@ -794,6 +795,23 @@
   "sweep_price": 53.0,
   "sweep_t": 1793084400,
   "bar_t": 1793091600,
+  "rule": "v2"
+ },
+ {
+  "id": "BTCUSD-1793120400",
+  "symbol": "BTCUSD",
+  "created_utc": 1793125214,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 80393.82,
+  "sl": 80958.05,
+  "tp": 79365.93,
+  "rr": 1.82,
+  "sweep_price": 80710.04,
+  "sweep_t": 1793120400,
+  "bar_t": 1793120400,
   "rule": "v2"
  }
 ]

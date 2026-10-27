@@ -446,7 +446,8 @@
   "sweep_price": 156.689,
   "sweep_t": 1792717200,
   "bar_t": 1792720800,
-  "closed_bar_t": 1792724400
+  "closed_bar_t": 1792724400,
+  "tp_after_stop_t": 1793012400
  },
  {
   "id": "US30-1792717200",
@@ -649,14 +650,15 @@
   "sweep_t": 1792972800,
   "bar_t": 1792976400,
   "rule": "v2",
-  "closed_bar_t": 1792983600
+  "closed_bar_t": 1792983600,
+  "tp_after_stop_t": 1793023200
  },
  {
   "id": "EURUSD-1792987200",
   "symbol": "EURUSD",
   "created_utc": 1792990825,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 3.44,
   "digits": 5,
   "side": "short",
   "entry": 1.122,
@@ -666,14 +668,15 @@
   "sweep_price": 1.12265,
   "sweep_t": 1792987200,
   "bar_t": 1792994400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793023200
  },
  {
   "id": "USDJPY-1792980000",
   "symbol": "USDJPY",
   "created_utc": 1792990828,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "short",
   "entry": 156.935,
@@ -683,14 +686,15 @@
   "sweep_price": 157.161,
   "sweep_t": 1792980000,
   "bar_t": 1792994400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793012400
  },
  {
   "id": "BTCUSD-1792969200",
   "symbol": "BTCUSD",
   "created_utc": 1792990833,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.45,
   "digits": 2,
   "side": "long",
   "entry": 79478.39,
@@ -700,6 +704,24 @@
   "sweep_price": 79973.01,
   "sweep_t": 1792969200,
   "bar_t": 1792983600,
+  "rule": "v2",
+  "closed_bar_t": 1793026800
+ },
+ {
+  "id": "EURUSD-1793052000",
+  "symbol": "EURUSD",
+  "created_utc": 1793059227,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.11735,
+  "sl": 1.11697,
+  "tp": 1.11954,
+  "rr": 5.77,
+  "sweep_price": 1.11735,
+  "sweep_t": 1793052000,
+  "bar_t": 1793062800,
   "rule": "v2"
  }
 ]

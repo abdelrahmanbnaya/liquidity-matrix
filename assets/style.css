@@ -421,3 +421,33 @@ details.fold > .more-body > .list { margin-top: 0; }
   .lsc-lv b { font-size: 14px; }
   .founder .ph { max-width: 300px; }
 }
+
+/* v16: compact track record (record.js filters it) — by-market tiles, one-line scenario rows that open for details */
+.mk-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+.mk-tile { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.mk-tile b { display: block; font-size: 14px; }
+.mk-tile .r { font-size: 18px; font-weight: 700; margin-top: 4px; }
+.mk-tile span { color: var(--muted); font-size: 12.5px; }
+.rec-list { list-style: none; margin: 12px 0 0; padding: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.rec-list > li + li { border-top: 1px solid var(--line); }
+.rec-list > li[hidden] { display: none; }
+.rec-list details > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 10px 1fr auto auto;
+  align-items: center; gap: 10px; padding: 12px 14px; background: var(--panel); }
+.rec-list details > summary::-webkit-details-marker { display: none; }
+.rec-list details[open] > summary { background: var(--panel-2); }
+.rec-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--muted); }
+.rec-dot.win { background: var(--green); } .rec-dot.loss { background: var(--red); } .rec-dot.open { background: var(--gold); }
+.rec-m { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-d { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.rec-r { font-weight: 700; white-space: nowrap; min-width: 64px; text-align: right; }
+.rec-x { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 10px 14px 14px 34px; background: var(--panel-2); font-size: 14px; }
+.rec-x .muted { color: var(--muted); flex-basis: 100%; font-size: 13px; }
+.rec .chips { margin-top: 10px; }
+.rec-more-btn { margin-top: 14px; cursor: pointer; font: inherit; font-weight: 700; }
+.rec-empty { color: var(--muted); padding: 14px; }
+[dir="rtl"] .rec-r { text-align: left; } [dir="rtl"] .rec-x { padding: 10px 34px 14px 14px; }
+@media (max-width: 600px) {
+  .mk-tiles { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .rec-list details > summary { gap: 8px; padding: 11px 12px; font-size: 14px; }
+  .rec-d { font-size: 12px; }
+}

@@ -784,8 +784,8 @@
   "id": "XAGUSD-1793084400",
   "symbol": "XAGUSD",
   "created_utc": 1793088024,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 6.94,
   "digits": 3,
   "side": "long",
   "entry": 52.789,
@@ -795,7 +795,8 @@
   "sweep_price": 53.0,
   "sweep_t": 1793084400,
   "bar_t": 1793091600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793116800
  },
  {
   "id": "BTCUSD-1793120400",
@@ -812,6 +813,40 @@
   "sweep_price": 80710.04,
   "sweep_t": 1793120400,
   "bar_t": 1793120400,
+  "rule": "v2"
+ },
+ {
+  "id": "GBPUSD-1793041200",
+  "symbol": "GBPUSD",
+  "created_utc": 1793132803,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "short",
+  "entry": 1.33416,
+  "sl": 1.33622,
+  "tp": 1.32995,
+  "rr": 2.04,
+  "sweep_price": 1.33579,
+  "sweep_t": 1793041200,
+  "bar_t": 1793052000,
+  "rule": "v2"
+ },
+ {
+  "id": "USDJPY-1793116800",
+  "symbol": "USDJPY",
+  "created_utc": 1793132804,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "short",
+  "entry": 157.917,
+  "sl": 157.994,
+  "tp": 157.584,
+  "rr": 4.34,
+  "sweep_price": 157.882,
+  "sweep_t": 1793116800,
+  "bar_t": 1793134800,
   "rule": "v2"
  }
 ]

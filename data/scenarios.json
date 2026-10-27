@@ -730,8 +730,8 @@
   "id": "GBPUSD-1793070000",
   "symbol": "GBPUSD",
   "created_utc": 1793077222,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 5,
   "side": "long",
   "entry": 1.33383,
@@ -741,14 +741,15 @@
   "sweep_price": 1.33362,
   "sweep_t": 1793070000,
   "bar_t": 1793080800,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793084400
  },
  {
   "id": "USDJPY-1793066400",
   "symbol": "USDJPY",
   "created_utc": 1793077223,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "short",
   "entry": 157.591,
@@ -758,7 +759,8 @@
   "sweep_price": 157.642,
   "sweep_t": 1793066400,
   "bar_t": 1793080800,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793088000
  },
  {
   "id": "BTCUSD-1793070000",

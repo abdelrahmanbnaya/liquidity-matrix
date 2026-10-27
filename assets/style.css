@@ -427,7 +427,7 @@ details.fold > .more-body > .list { margin-top: 0; }
 .mk-tile { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
 .mk-tile b { display: block; font-size: 14px; }
 .mk-tile .r { font-size: 18px; font-weight: 700; margin-top: 4px; }
-.mk-tile span { color: var(--muted); font-size: 12.5px; }
+.mk-tile > span { color: var(--muted); font-size: 12.5px; }
 .rec-list { list-style: none; margin: 12px 0 0; padding: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 .rec-list > li + li { border-top: 1px solid var(--line); }
 .rec-list > li[hidden] { display: none; }

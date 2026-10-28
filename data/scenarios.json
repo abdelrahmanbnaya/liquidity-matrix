@@ -850,5 +850,22 @@
   "bar_t": 1793134800,
   "rule": "v2",
   "closed_bar_t": 1793149200
+ },
+ {
+  "id": "EURUSD-1793156400",
+  "symbol": "EURUSD",
+  "created_utc": 1793163610,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.11216,
+  "sl": 1.11188,
+  "tp": 1.11318,
+  "rr": 3.62,
+  "sweep_price": 1.11229,
+  "sweep_t": 1793156400,
+  "bar_t": 1793167200,
+  "rule": "v2"
  }
 ]

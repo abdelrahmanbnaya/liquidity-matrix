@@ -820,8 +820,8 @@
   "id": "GBPUSD-1793041200",
   "symbol": "GBPUSD",
   "created_utc": 1793132803,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.04,
   "digits": 5,
   "side": "short",
   "entry": 1.33416,
@@ -831,7 +831,8 @@
   "sweep_price": 1.33579,
   "sweep_t": 1793041200,
   "bar_t": 1793052000,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793156400
  },
  {
   "id": "USDJPY-1793116800",
@@ -868,5 +869,39 @@
   "bar_t": 1793167200,
   "rule": "v2",
   "closed_bar_t": 1793170800
+ },
+ {
+  "id": "XAGUSD-1793188800",
+  "symbol": "XAGUSD",
+  "created_utc": 1793188819,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "long",
+  "entry": 53.839,
+  "sl": 53.585,
+  "tp": 54.517,
+  "rr": 2.66,
+  "sweep_price": 53.717,
+  "sweep_t": 1793188800,
+  "bar_t": 1793192400,
+  "rule": "v2"
+ },
+ {
+  "id": "USDJPY-1793170800",
+  "symbol": "USDJPY",
+  "created_utc": 1793188823,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "long",
+  "entry": 157.899,
+  "sl": 157.623,
+  "tp": 158.344,
+  "rr": 1.61,
+  "sweep_price": 157.79,
+  "sweep_t": 1793170800,
+  "bar_t": 1793192400,
+  "rule": "v2"
  }
 ]

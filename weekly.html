@@ -15,13 +15,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=14">
+<link rel="stylesheet" href="/assets/style.css?v=16">
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f27544eb70614fe39584df2b3c54f3c1"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><path d="M2 20h30l-6-16H8z" fill="#f5c046"/><path d="M6 12h22" stroke="#9c7a2a" stroke-width="2"/></svg>LIQUIDITY MATRIX</a>
+    <a class="brand" href="/"><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M9.33 7.11 20.67 7.11 24.28 10.72 15.00 20.00 5.72 10.72z" fill="#f5c046"/><path d="M15.00 0.00 20.67 5.67 9.33 5.67z" fill="#ffe08a"/><path d="M1.80 6.39H28.20" stroke="#f5c046" stroke-width="1.00" stroke-dasharray="1.65 0.99"/></svg>LIQUIDITY MATRIX</a>
     <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
     <nav class="nav">
       <a href="/levels">Market levels</a>
@@ -36,10 +36,11 @@
 <main>
   <section>
     <div class="wrap">
-      <div class="kicker">Weekly outlook · 2026-W44 · built Monday from real candles (no AI)</div>
+      <div class="kicker">Weekly outlook · 2026-W44 · plan built Monday from real candles (no AI) · progress updated Thu 29 Oct 03:28 UTC</div>
       <h1 style="text-align:left;margin-left:0">The week ahead: where the stops sit</h1>
       <p class="sub">For each market: last week's high, low and close, how big the week was compared with the weeks before, and the untouched daily highs and lows that price may run for. Two scenarios each — not a prediction.</p>
-      <div class="cta" style="justify-content:flex-start"><a class="btn" href="#xauusd">Gold</a> <a class="btn" href="#xagusd">Silver</a> <a class="btn" href="#eurusd">EUR/USD</a> <a class="btn" href="#gbpusd">GBP/USD</a> <a class="btn" href="#usdjpy">USD/JPY</a> <a class="btn" href="#nas100">Nasdaq 100</a> <a class="btn" href="#us30">Dow Jones 30</a> <a class="btn" href="#btcusd">Bitcoin</a></div>
+      <p class="sub">The plan is fixed on Monday. "This week so far" and the "This week" column update with every site update. These levels come from daily (D1) candles; each market page uses 4-hour candles, so the two pages can list different levels.</p>
+      <nav class="jump"><a href="#xauusd">Gold</a><a href="#xagusd">Silver</a><a href="#eurusd">EUR/USD</a><a href="#gbpusd">GBP/USD</a><a href="#usdjpy">USD/JPY</a><a href="#nas100">Nasdaq 100</a><a href="#us30">Dow Jones 30</a><a href="#btcusd">Bitcoin</a><a href="#last-week">Last week</a></nav>
       
       <div id="xauusd" style="padding-top:40px">
       <div class="kicker">XAUUSD · D1 · last week 19 Oct – 23 Oct 2026</div>
@@ -50,13 +51,20 @@
         <div class="stat"><span>Last week close</span><b class="num">3999.79</b><span>-3.84% on the week · lower third of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">214.84</b><span>123% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">4082.57</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">3977.94</b><span>Mon 26 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">4039.57</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>Below</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/xauusd-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/xauusd-weekly.png?v=2026-W44" alt="Gold daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">4216.98</td><td data-label="Formed">Mon 12 Oct</td><td data-label="Why">Monday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">4399.53</td><td data-label="Formed">Fri 18 Sep</td><td data-label="Why">A swing high from Fri 18 Sep, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">3942 – 3996</td><td data-label="Formed">24 Jun · 30 Jun · 17 Jul · 29 Jul</td><td data-label="Why">Price reached this zone 4 times and no candle closed below 3942.48. Sell stops sit below it.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">4216.98</td><td data-label="Formed">Mon 12 Oct</td><td data-label="Why">The high of Mon 12 Oct, not traded through yet: the nearest pool of buy stops.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">4399.53</td><td data-label="Formed">Fri 18 Sep</td><td data-label="Why">A swing high from Fri 18 Sep, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">3942 – 3996</td><td data-label="Formed">24 Jun · 30 Jun · 17 Jul · 29 Jul</td><td data-label="Why">Price reached this zone 4 times and no candle closed below 3942.48. Sell stops sit below it.</td><td data-label="This week">Reached Mon 26 Oct, no close beyond it so far</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -74,13 +82,20 @@
         <div class="stat"><span>Last week close</span><b class="num">53.958</b><span>-5.20% on the week · lower third of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">5.583</b><span>116% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">54.632</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">52.659</b><span>Tue 27 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">53.095</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>Below</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/xagusd-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/xagusd-weekly.png?v=2026-W44" alt="Silver daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">58.605</td><td data-label="Formed">Tue 20 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">62.082</td><td data-label="Formed">Fri 02 Oct</td><td data-label="Why">A swing high from Fri 02 Oct, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">53.022</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Last week&#x27;s low: sell stops below the bottom of last week.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">58.605</td><td data-label="Formed">Tue 20 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">62.082</td><td data-label="Formed">Fri 02 Oct</td><td data-label="Why">A swing high from Fri 02 Oct, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">53.022</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Last week&#x27;s low: sell stops below the bottom of last week.</td><td data-label="This week">Reached Mon 26 Oct, no close beyond it so far</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -98,14 +113,21 @@
         <div class="stat"><span>Last week close</span><b class="num">1.12030</b><span>+0.05% on the week · lower third of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">0.00802</b><span>64% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">1.12267</b><span>Mon 26 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">1.11131</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">1.11500</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>Below</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/eurusd-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/eurusd-weekly.png?v=2026-W44" alt="EUR/USD daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.12696</td><td data-label="Formed">Fri 16 Oct</td><td data-label="Why">Friday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.16543</td><td data-label="Formed">Wed 09 Sep</td><td data-label="Why">A swing high from Wed 09 Sep, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">1.11846</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Friday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">1.11129</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">A swing low from Wed 14 Oct, not traded through since.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.12696</td><td data-label="Formed">Fri 16 Oct</td><td data-label="Why">The high of Fri 16 Oct, not traded through yet: the nearest pool of buy stops.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.16543</td><td data-label="Formed">Wed 09 Sep</td><td data-label="Why">A swing high from Wed 09 Sep, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">1.11846</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">The low of Fri 23 Oct, not traded through yet: the nearest pool of sell stops.</td><td data-label="This week">Broken Mon 26 Oct: closed beyond it</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">1.11129</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">A swing low from Wed 14 Oct, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -123,13 +145,20 @@
         <div class="stat"><span>Last week close</span><b class="num">1.33760</b><span>+0.53% on the week · middle of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">0.01204</b><span>82% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">1.33877</b><span>Mon 26 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">1.32734</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">1.33260</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>None yet</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/gbpusd-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/gbpusd-weekly.png?v=2026-W44" alt="GBP/USD daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.34191</td><td data-label="Formed">Thu 22 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.35680</td><td data-label="Formed">Wed 09 Sep</td><td data-label="Why">A swing high from Wed 09 Sep, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">1.31369</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">Wednesday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.34191</td><td data-label="Formed">Thu 22 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">1.35680</td><td data-label="Formed">Wed 09 Sep</td><td data-label="Why">A swing high from Wed 09 Sep, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">1.31369</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">The low of Wed 14 Oct, not traded through yet: the nearest pool of sell stops.</td><td data-label="This week">Not reached yet</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -147,14 +176,21 @@
         <div class="stat"><span>Last week close</span><b class="num">156.860</b><span>-0.65% on the week · lower third of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">2.528</b><span>93% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">158.347</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">156.649</b><span>Mon 26 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">157.746</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>None yet</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/usdjpy-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/usdjpy-weekly.png?v=2026-W44" alt="USD/JPY daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">158.603</td><td data-label="Formed">Tue 20 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">158.949</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">A swing high from Wed 14 Oct, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">156.075</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Last week&#x27;s low: sell stops below the bottom of last week.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">152.888</td><td data-label="Formed">Tue 08 Sep</td><td data-label="Why">A swing low from Tue 08 Sep, not traded through since.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">158.603</td><td data-label="Formed">Tue 20 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">158.949</td><td data-label="Formed">Wed 14 Oct</td><td data-label="Why">A swing high from Wed 14 Oct, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">156.075</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Last week&#x27;s low: sell stops below the bottom of last week.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">152.888</td><td data-label="Formed">Tue 08 Sep</td><td data-label="Why">A swing low from Tue 08 Sep, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -172,13 +208,20 @@
         <div class="stat"><span>Last week close</span><b class="num">28952.70</b><span>-0.60% on the week · lower third of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">1109.00</b><span>108% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">30021.80</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">28862.40</b><span>Mon 26 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">29379.20</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>Below</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/nas100-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/nas100-weekly.png?v=2026-W44" alt="Nasdaq 100 daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">31366.00</td><td data-label="Formed">Tue 06 Oct</td><td data-label="Why">Tuesday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">28746 – 28879</td><td data-label="Formed">24 Aug · 2 Sep · 16 Sep</td><td data-label="Why">Price reached this zone 3 times and no candle closed below 28745.50. Sell stops sit below it.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">27058.40</td><td data-label="Formed">Wed 29 Jul</td><td data-label="Why">A swing low from Wed 29 Jul, not traded through since.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">31366.00</td><td data-label="Formed">Tue 06 Oct</td><td data-label="Why">The high of Tue 06 Oct, not traded through yet: the nearest pool of buy stops.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">28746 – 28879</td><td data-label="Formed">24 Aug · 2 Sep · 16 Sep</td><td data-label="Why">Price reached this zone 3 times and no candle closed below 28745.50. Sell stops sit below it.</td><td data-label="This week">Reached Mon 26 Oct, no close beyond it so far</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">27058.40</td><td data-label="Formed">Wed 29 Jul</td><td data-label="Why">A swing low from Wed 29 Jul, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -196,14 +239,21 @@
         <div class="stat"><span>Last week close</span><b class="num">52207.10</b><span>+0.41% on the week · middle of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">1111.30</b><span>93% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">52770.60</b><span>Wed 28 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">52193.10</b><span>Mon 26 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">52654.00</b><span>Thu 29 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>None yet</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/us30-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/us30-weekly.png?v=2026-W44" alt="Dow Jones 30 daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">52947.70</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">53759.20</td><td data-label="Formed">Thu 03 Sep</td><td data-label="Why">A swing high from Thu 03 Sep, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">50629.00</td><td data-label="Formed">Thu 08 Oct</td><td data-label="Why">Thursday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">49705.60</td><td data-label="Formed">Thu 11 Jun</td><td data-label="Why">A swing low from Thu 11 Jun, not traded through since.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">52947.70</td><td data-label="Formed">Fri 23 Oct</td><td data-label="Why">Last week&#x27;s high: buy stops above the top of last week.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">53759.20</td><td data-label="Formed">Thu 03 Sep</td><td data-label="Why">A swing high from Thu 03 Sep, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">50629.00</td><td data-label="Formed">Thu 08 Oct</td><td data-label="Why">The low of Thu 08 Oct, not traded through yet: the nearest pool of sell stops.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">49705.60</td><td data-label="Formed">Thu 11 Jun</td><td data-label="Why">A swing low from Thu 11 Jun, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -221,14 +271,21 @@
         <div class="stat"><span>Last week close</span><b class="num">82006.85</b><span>-2.00% on the week · middle of the range</span></div>
         <div class="stat"><span>Last week range</span><b class="num">4585.97</b><span>64% of the 8-week average</span></div>
       </div>
+      <h3 style="margin-top:26px">This week so far</h3>
+      <div class="stats">
+        <div class="stat"><span>High so far</span><b class="num">84856.07</b><span>Wed 21 Oct</span></div>
+        <div class="stat"><span>Low so far</span><b class="num">79107.00</b><span>Sat 24 Oct</span></div>
+        <div class="stat"><span>Last price</span><b class="num">80053.16</b><span>Sun 25 Oct</span></div>
+        <div class="stat"><span>Plan levels reached</span><b>Both sides</b><span>see the "This week" column</span></div>
+      </div>
       <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/btcusd-weekly-m.png?v=2026-W44" width="1080" height="1280"><img src="/assets/levels/btcusd-weekly.png?v=2026-W44" alt="Bitcoin daily chart with untouched levels" width="1200" height="675" loading="lazy"></picture></div>
       <table class="levels">
-        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
+        <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th><th>This week</th></tr></thead>
         <tbody>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">84856.07</td><td data-label="Formed">Wed 21 Oct</td><td data-label="Why">Wednesday&#x27;s high, not traded through yet: the nearest pool of buy stops.</td></tr>
-          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">87249.05</td><td data-label="Formed">Fri 02 Oct</td><td data-label="Why">A swing high from Fri 02 Oct, not traded through since.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">79107.00</td><td data-label="Formed">Sat 24 Oct</td><td data-label="Why">Saturday&#x27;s low, not traded through yet: the nearest pool of sell stops.</td></tr>
-          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">74887.50</td><td data-label="Formed">Tue 15 Sep</td><td data-label="Why">A swing low from Tue 15 Sep, not traded through since.</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">84856.07</td><td data-label="Formed">Wed 21 Oct</td><td data-label="Why">The high of Wed 21 Oct, not traded through yet: the nearest pool of buy stops.</td><td data-label="This week">Reached Wed 21 Oct, no close beyond it so far</td></tr>
+          <tr><td class="up" data-label="Side">Above</td><td class="num" data-label="Level">87249.05</td><td data-label="Formed">Fri 02 Oct</td><td data-label="Why">A swing high from Fri 02 Oct, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">79107.00</td><td data-label="Formed">Sat 24 Oct</td><td data-label="Why">The low of Sat 24 Oct, not traded through yet: the nearest pool of sell stops.</td><td data-label="This week">Reached Sat 24 Oct, no close beyond it so far</td></tr>
+          <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">74887.50</td><td data-label="Formed">Tue 15 Sep</td><td data-label="Why">A swing low from Tue 15 Sep, not traded through since.</td><td data-label="This week">Not reached yet</td></tr>
         </tbody>
       </table>
       <div class="grid g2" style="margin-top:16px">
@@ -236,6 +293,16 @@
         <div class="card"><h3 class="down">Sweep below</h3><p>Price runs down to 79107.00, then 74887.50. Watch whether it closes back above (stops taken, buyers return) or keeps closing below.</p></div>
       </div>
       <p class="sub" style="margin-top:12px"><a href="/markets/btcusd">Bitcoin today, with the sessions →</a></p>
+      </div>
+      
+      <div id="last-week" style="padding-top:40px">
+      <div class="kicker">Outlook 2026-W43 · what happened</div>
+      <h2>Last week's outlook, checked against the candles</h2>
+      <p class="sub">For each market: the first level of that week's plan that price reached on each side, and whether a candle then closed beyond it. Read by code from 4-hour candles (6-hour for Bitcoin).</p>
+      <table class="levels">
+        <thead><tr><th>Market</th><th>Above</th><th>Below</th></tr></thead>
+        <tbody><tr><td data-label="Market">Gold</td><td data-label="Above">No level reached</td><td data-label="Below">4073.31: Broken Thu 22 Oct: closed beyond it</td></tr><tr><td data-label="Market">Silver</td><td data-label="Above">No level reached</td><td data-label="Below">54.748 – 56.628: Broken Thu 22 Oct: closed beyond it</td></tr><tr><td data-label="Market">EUR/USD</td><td data-label="Above">No level reached</td><td data-label="Below">No level reached</td></tr><tr><td data-label="Market">GBP/USD</td><td data-label="Above">1.33717: Broken Tue 20 Oct: closed beyond it</td><td data-label="Below">No level reached</td></tr><tr><td data-label="Market">USD/JPY</td><td data-label="Above">No level reached</td><td data-label="Below">157.546: Broken Thu 22 Oct: closed beyond it</td></tr><tr><td data-label="Market">Nasdaq 100</td><td data-label="Above">No level reached</td><td data-label="Below">29070.40: Broken Thu 22 Oct: closed beyond it</td></tr><tr><td data-label="Market">Dow Jones 30</td><td data-label="Above">52588.00: Broken Tue 20 Oct: closed beyond it</td><td data-label="Below">No level reached</td></tr><tr><td data-label="Market">Bitcoin</td><td data-label="Above">84261.99: Broken Wed 21 Oct: closed beyond it</td><td data-label="Below">79676.02: Reached Sat 24 Oct, no close beyond it</td></tr></tbody>
+      </table>
       </div>
       <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Always use a stop loss and keep risk small — a common rule is 1% of the account or less on a single trade. Education only — not financial advice.</div>
     </div>

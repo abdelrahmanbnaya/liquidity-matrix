@@ -557,8 +557,8 @@
   "id": "XAUUSD-1792774800",
   "symbol": "XAUUSD",
   "created_utc": 1792768226,
-  "status": "open",
-  "r": null,
+  "status": "expired",
+  "r": 1.22,
   "digits": 2,
   "side": "long",
   "entry": 4000.38,
@@ -567,7 +567,8 @@
   "rr": 5.34,
   "sweep_price": 3986.6,
   "sweep_t": 1792774800,
-  "bar_t": 1792774800
+  "bar_t": 1792774800,
+  "closed_bar_t": 1793217600
  },
  {
   "id": "XAGUSD-1792774800",
@@ -590,8 +591,8 @@
   "id": "NAS100-1792771200",
   "symbol": "NAS100",
   "created_utc": 1792768233,
-  "status": "open",
-  "r": null,
+  "status": "expired",
+  "r": 2.01,
   "digits": 2,
   "side": "long",
   "entry": 29119.4,
@@ -600,14 +601,15 @@
   "rr": 2.58,
   "sweep_price": 28850.9,
   "sweep_t": 1792771200,
-  "bar_t": 1792774800
+  "bar_t": 1792774800,
+  "closed_bar_t": 1793217600
  },
  {
   "id": "US30-1792767600",
   "symbol": "US30",
   "created_utc": 1792768235,
-  "status": "open",
-  "r": null,
+  "status": "expired",
+  "r": 0.27,
   "digits": 2,
   "side": "long",
   "entry": 52336.4,
@@ -616,7 +618,8 @@
   "rr": 1.95,
   "sweep_price": 52391.5,
   "sweep_t": 1792767600,
-  "bar_t": 1792774800
+  "bar_t": 1792774800,
+  "closed_bar_t": 1793217600
  },
  {
   "id": "BTCUSD-1792764000",
@@ -868,14 +871,15 @@
   "sweep_t": 1793156400,
   "bar_t": 1793167200,
   "rule": "v2",
-  "closed_bar_t": 1793170800
+  "closed_bar_t": 1793170800,
+  "tp_after_stop_t": 1793196000
  },
  {
   "id": "XAGUSD-1793188800",
   "symbol": "XAGUSD",
   "created_utc": 1793188819,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 53.839,
@@ -885,7 +889,9 @@
   "sweep_price": 53.717,
   "sweep_t": 1793188800,
   "bar_t": 1793192400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793203200,
+  "tp_after_stop_t": 1793224800
  },
  {
   "id": "USDJPY-1793170800",
@@ -902,6 +908,74 @@
   "sweep_price": 157.79,
   "sweep_t": 1793170800,
   "bar_t": 1793192400,
+  "rule": "v2"
+ },
+ {
+  "id": "XAUUSD-1793217600",
+  "symbol": "XAUUSD",
+  "created_utc": 1793232003,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 4054.24,
+  "sl": 4020.08,
+  "tp": 4143.08,
+  "rr": 2.6,
+  "sweep_price": 4027.98,
+  "sweep_t": 1793217600,
+  "bar_t": 1793235600,
+  "rule": "v2"
+ },
+ {
+  "id": "XAGUSD-1793224800",
+  "symbol": "XAGUSD",
+  "created_utc": 1793232005,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "short",
+  "entry": 53.91,
+  "sl": 54.743,
+  "tp": 52.659,
+  "rr": 1.5,
+  "sweep_price": 54.346,
+  "sweep_t": 1793224800,
+  "bar_t": 1793235600,
+  "rule": "v2"
+ },
+ {
+  "id": "US30-1793224800",
+  "symbol": "US30",
+  "created_utc": 1793232010,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 52540.0,
+  "sl": 52804.11,
+  "tp": 52035.4,
+  "rr": 1.91,
+  "sweep_price": 52637.4,
+  "sweep_t": 1793224800,
+  "bar_t": 1793235600,
+  "rule": "v2"
+ },
+ {
+  "id": "BTCUSD-1793217600",
+  "symbol": "BTCUSD",
+  "created_utc": 1793232012,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 81183.48,
+  "sl": 81827.6,
+  "tp": 79365.93,
+  "rr": 2.82,
+  "sweep_price": 81694.39,
+  "sweep_t": 1793217600,
+  "bar_t": 1793224800,
   "rule": "v2"
  }
 ]

@@ -917,8 +917,8 @@
   "id": "XAUUSD-1793217600",
   "symbol": "XAUUSD",
   "created_utc": 1793232003,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 4054.24,
@@ -928,7 +928,8 @@
   "sweep_price": 4027.98,
   "sweep_t": 1793217600,
   "bar_t": 1793235600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793268000
  },
  {
   "id": "XAGUSD-1793224800",
@@ -1038,8 +1039,8 @@
   "id": "XAGUSD-1793246400",
   "symbol": "XAGUSD",
   "created_utc": 1793260822,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 52.658,
@@ -1049,14 +1050,15 @@
   "sweep_price": 53.293,
   "sweep_t": 1793246400,
   "bar_t": 1793264400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793278800
  },
  {
   "id": "EURUSD-1793260800",
   "symbol": "EURUSD",
   "created_utc": 1793260824,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 5,
   "side": "long",
   "entry": 1.11439,
@@ -1066,14 +1068,15 @@
   "sweep_price": 1.11338,
   "sweep_t": 1793260800,
   "bar_t": 1793264400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793271600
  },
  {
   "id": "US30-1793257200",
   "symbol": "US30",
   "created_utc": 1793260830,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 52639.5,
@@ -1083,6 +1086,24 @@
   "sweep_price": 52770.6,
   "sweep_t": 1793257200,
   "bar_t": 1793264400,
+  "rule": "v2",
+  "closed_bar_t": 1793271600
+ },
+ {
+  "id": "US30-1793271600",
+  "symbol": "US30",
+  "created_utc": 1793275211,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 52368.0,
+  "sl": 52984.66,
+  "tp": 51357.0,
+  "rr": 1.64,
+  "sweep_price": 52843.0,
+  "sweep_t": 1793271600,
+  "bar_t": 1793278800,
   "rule": "v2"
  }
 ]

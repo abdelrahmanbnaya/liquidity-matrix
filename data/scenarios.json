@@ -1005,8 +1005,8 @@
   "id": "NAS100-1793246400",
   "symbol": "NAS100",
   "created_utc": 1793244080,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 29405.2,
@@ -1016,7 +1016,8 @@
   "sweep_price": 29337.5,
   "sweep_t": 1793246400,
   "bar_t": 1793246400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793286000
  },
  {
   "id": "USDJPY-1793246400",
@@ -1087,7 +1088,8 @@
   "sweep_t": 1793257200,
   "bar_t": 1793264400,
   "rule": "v2",
-  "closed_bar_t": 1793271600
+  "closed_bar_t": 1793271600,
+  "tp_after_stop_t": 1793286000
  },
  {
   "id": "US30-1793271600",
@@ -1104,6 +1106,40 @@
   "sweep_price": 52843.0,
   "sweep_t": 1793271600,
   "bar_t": 1793278800,
+  "rule": "v2"
+ },
+ {
+  "id": "EURUSD-1793286000",
+  "symbol": "EURUSD",
+  "created_utc": 1793283555,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.11355,
+  "sl": 1.11005,
+  "tp": 1.11954,
+  "rr": 1.71,
+  "sweep_price": 1.11253,
+  "sweep_t": 1793286000,
+  "bar_t": 1793286000,
+  "rule": "v2"
+ },
+ {
+  "id": "NAS100-1793286000",
+  "symbol": "NAS100",
+  "created_utc": 1793283558,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 29396.6,
+  "sl": 29225.25,
+  "tp": 30021.8,
+  "rr": 3.65,
+  "sweep_price": 29331.8,
+  "sweep_t": 1793286000,
+  "bar_t": 1793286000,
   "rule": "v2"
  }
 ]

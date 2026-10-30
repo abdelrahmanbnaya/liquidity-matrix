@@ -568,7 +568,9 @@
   "sweep_price": 3986.6,
   "sweep_t": 1792774800,
   "bar_t": 1792774800,
-  "closed_bar_t": 1793217600
+  "closed_bar_t": 1793217600,
+  "after_expiry": "stop",
+  "after_expiry_t": 1793350800
  },
  {
   "id": "XAGUSD-1792774800",
@@ -1205,5 +1207,22 @@
   "bar_t": 1793289600,
   "rule": "v2",
   "closed_bar_t": 1793293200
+ },
+ {
+  "id": "GBPUSD-1793350800",
+  "symbol": "GBPUSD",
+  "created_utc": 1793347217,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "short",
+  "entry": 1.34044,
+  "sl": 1.34225,
+  "tp": 1.33006,
+  "rr": 5.75,
+  "sweep_price": 1.34075,
+  "sweep_t": 1793350800,
+  "bar_t": 1793350800,
+  "rule": "v2"
  }
 ]

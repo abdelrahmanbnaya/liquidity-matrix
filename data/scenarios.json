@@ -1224,5 +1224,22 @@
   "sweep_t": 1793350800,
   "bar_t": 1793350800,
   "rule": "v2"
+ },
+ {
+  "id": "XAUUSD-1793365200",
+  "symbol": "XAUUSD",
+  "created_utc": 1793361603,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 3966.35,
+  "sl": 3959.99,
+  "tp": 4032.39,
+  "rr": 10.39,
+  "sweep_price": 3964.9,
+  "sweep_t": 1793365200,
+  "bar_t": 1793365200,
+  "rule": "v2"
  }
 ]

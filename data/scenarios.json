@@ -747,7 +747,8 @@
   "sweep_t": 1793070000,
   "bar_t": 1793080800,
   "rule": "v2",
-  "closed_bar_t": 1793084400
+  "closed_bar_t": 1793084400,
+  "tp_after_stop_t": 1793293200
  },
  {
   "id": "USDJPY-1793066400",
@@ -856,7 +857,8 @@
   "sweep_t": 1793116800,
   "bar_t": 1793134800,
   "rule": "v2",
-  "closed_bar_t": 1793149200
+  "closed_bar_t": 1793149200,
+  "tp_after_stop_t": 1793325600
  },
  {
   "id": "EURUSD-1793156400",
@@ -1027,8 +1029,8 @@
   "id": "USDJPY-1793246400",
   "symbol": "USDJPY",
   "created_utc": 1793244477,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 157.776,
@@ -1038,7 +1040,8 @@
   "sweep_price": 157.655,
   "sweep_t": 1793246400,
   "bar_t": 1793246400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793325600
  },
  {
   "id": "XAGUSD-1793246400",
@@ -1117,8 +1120,8 @@
   "id": "EURUSD-1793286000",
   "symbol": "EURUSD",
   "created_utc": 1793283555,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 1.71,
   "digits": 5,
   "side": "long",
   "entry": 1.11355,
@@ -1128,7 +1131,8 @@
   "sweep_price": 1.11253,
   "sweep_t": 1793286000,
   "bar_t": 1793286000,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793325600
  },
  {
   "id": "NAS100-1793286000",
@@ -1152,8 +1156,8 @@
   "id": "XAUUSD-1793296800",
   "symbol": "XAUUSD",
   "created_utc": 1793318425,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 4007.74,
@@ -1163,14 +1167,15 @@
   "sweep_price": 4016.54,
   "sweep_t": 1793296800,
   "bar_t": 1793322000,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793329200
  },
  {
   "id": "XAGUSD-1793304000",
   "symbol": "XAGUSD",
   "created_utc": 1793318427,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 51.936,
@@ -1180,14 +1185,15 @@
   "sweep_price": 51.987,
   "sweep_t": 1793304000,
   "bar_t": 1793322000,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793329200
  },
  {
   "id": "GBPUSD-1793282400",
   "symbol": "GBPUSD",
   "created_utc": 1793318431,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 5,
   "side": "short",
   "entry": 1.33559,
@@ -1197,6 +1203,7 @@
   "sweep_price": 1.3336,
   "sweep_t": 1793282400,
   "bar_t": 1793289600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793293200
  }
 ]

@@ -623,7 +623,9 @@
   "sweep_price": 52391.5,
   "sweep_t": 1792767600,
   "bar_t": 1792774800,
-  "closed_bar_t": 1793217600
+  "closed_bar_t": 1793217600,
+  "after_expiry": "stop",
+  "after_expiry_t": 1793376000
  },
  {
   "id": "BTCUSD-1792764000",
@@ -970,7 +972,8 @@
   "sweep_t": 1793224800,
   "bar_t": 1793235600,
   "rule": "v2",
-  "closed_bar_t": 1793257200
+  "closed_bar_t": 1793257200,
+  "tp_after_stop_t": 1793376000
  },
  {
   "id": "BTCUSD-1793217600",
@@ -1212,8 +1215,8 @@
   "id": "GBPUSD-1793350800",
   "symbol": "GBPUSD",
   "created_utc": 1793347217,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 5,
   "side": "short",
   "entry": 1.34044,
@@ -1223,14 +1226,15 @@
   "sweep_price": 1.34075,
   "sweep_t": 1793350800,
   "bar_t": 1793350800,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793358000
  },
  {
   "id": "XAUUSD-1793365200",
   "symbol": "XAUUSD",
   "created_utc": 1793361603,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 3966.35,
@@ -1240,6 +1244,7 @@
   "sweep_price": 3964.9,
   "sweep_t": 1793365200,
   "bar_t": 1793365200,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793368800
  }
 ]

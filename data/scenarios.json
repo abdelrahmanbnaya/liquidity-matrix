@@ -1304,8 +1304,8 @@
   "id": "BTCUSD-1793631600",
   "symbol": "BTCUSD",
   "created_utc": 1793647937,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 76882.82,
@@ -1315,6 +1315,24 @@
   "sweep_price": 77283.19,
   "sweep_t": 1793631600,
   "bar_t": 1793642400,
+  "rule": "v2",
+  "closed_bar_t": 1793646000
+ },
+ {
+  "id": "NAS100-1793653200",
+  "symbol": "NAS100",
+  "created_utc": 1793664031,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 28069.5,
+  "sl": 27926.9,
+  "tp": 28753.5,
+  "rr": 4.8,
+  "sweep_price": 28089.0,
+  "sweep_t": 1793653200,
+  "bar_t": 1793667600,
   "rule": "v2"
  }
 ]

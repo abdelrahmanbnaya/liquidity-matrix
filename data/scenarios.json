@@ -1322,8 +1322,8 @@
   "id": "NAS100-1793653200",
   "symbol": "NAS100",
   "created_utc": 1793664031,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 28069.5,
@@ -1333,7 +1333,8 @@
   "sweep_price": 28089.0,
   "sweep_t": 1793653200,
   "bar_t": 1793667600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793692800
  },
  {
   "id": "EURUSD-1793678400",
@@ -1373,8 +1374,8 @@
   "id": "BTCUSD-1793664000",
   "symbol": "BTCUSD",
   "created_utc": 1793684514,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 76806.47,
@@ -1384,6 +1385,7 @@
   "sweep_price": 76553.0,
   "sweep_t": 1793664000,
   "bar_t": 1793678400,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793685600
  }
 ]

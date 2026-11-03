@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المعمل: ماذا اختبرنا وماذا وجدنا — Liquidity Matrix</title>
+<meta name="description" content="كل فكرة تداول نختبرها نقارنها بدخول عشوائي على سنوات من البيانات، وما فشل منها مكتوب هنا أيضًا.">
+<link rel="canonical" href="https://liquidity-matrix.com/ar/lab">
+<link rel="alternate" hreflang="ar" href="https://liquidity-matrix.com/ar/lab">
+<link rel="alternate" hreflang="en" href="https://liquidity-matrix.com/lab">
+<meta property="og:title" content="المعمل: ماذا اختبرنا وماذا وجدنا — Liquidity Matrix">
+<meta property="og:image" content="https://liquidity-matrix.com/assets/gold-levels.png">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=16">
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f27544eb70614fe39584df2b3c54f3c1"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/ar/"><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M9.33 7.11 20.67 7.11 24.28 10.72 15.00 20.00 5.72 10.72z" fill="#f5c046"/><path d="M15.00 0.00 20.67 5.67 9.33 5.67z" fill="#ffe08a"/><path d="M1.80 6.39H28.20" stroke="#f5c046" stroke-width="1.00" stroke-dasharray="1.65 0.99"/></svg>LIQUIDITY MATRIX</a>
+    <button class="menu-btn" aria-label="القائمة" onclick="document.querySelector('.nav').classList.toggle('open')">القائمة</button>
+    <nav class="nav">
+      <a href="/ar/levels">مستويات السوق</a>
+      <a href="/ar/track-record">سجل النتائج</a>
+      <a href="/ar/trend-following">اختبار الاتجاه</a>
+      <a href="/ar/indicators">المؤشرات</a>
+      <a href="/ar/services">الخدمات والأسعار</a>
+      <a href="/ar/about">المنهج</a>
+      <a class="lang" href="/lab" lang="en" hreflang="en">English</a>
+    </nav>
+  </div>
+</header>
+<style>
+.tr-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.tr-scroll{overflow-x:auto;margin-top:12px}
+details.tr{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:10px}
+details.tr summary{cursor:pointer;font-weight:700}
+.tr-when{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+@media (max-width:720px){.tr-facts,.tr-when{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+  <section>
+    <div class="wrap">
+      <span class="pill" style="font-size:12px">المعمل</span>
+      <h1 class="ph" style="margin-top:16px">المعمل: ماذا اختبرنا، وماذا وجدنا</h1>
+      <p class="sub">كل فكرة تداول نختبرها على سنوات من البيانات، ونقارنها بدخول عشوائي بنفس الوقف والهدف والجلسة والتكاليف. إذا لم تتفوق عليه بوضوح، نكتب ذلك هنا، حتى لو كانت فكرتنا نحن.</p>
+      <div class="grid3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px"><div class="card"><h3 style="margin:0 0 6px">مقارنة بالصدفة</h3><p>ألف متداول عشوائي لكل اختبار، يدخلون في أوقات عشوائية بنفس شروط الفكرة.</p></div><div class="card"><h3 style="margin:0 0 6px">بيانات مقفولة</h3><p>جزء من التاريخ لا نفتحه إلا مرة واحدة في النهاية، حتى لا نفصّل الفكرة على مقاسه.</p></div><div class="card"><h3 style="margin:0 0 6px">عدد المحاولات</h3><p>كلما جربنا أفكارًا أكثر، صعّبنا شرط النجاح، لأن الصدفة وحدها تصنع نتائج جميلة إذا جربت ما يكفي.</p></div></div>
+      <h2 style="margin-top:34px">سجل الاختبارات</h2>
+      <div class="tr-scroll"><table class="levels"><thead><tr><th>الفكرة</th><th>البيانات</th><th>متوسط الصفقة بعد التكاليف</th><th>مقارنة بالصدفة</th><th>الحكم</th></tr></thead>
+        <tbody><tr><td data-label="الفكرة">تتبع الاتجاه (8 قواعد يومية)</td><td data-label="البيانات">ذهب 2018–2026</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num down">+0.85R</span></td><td data-label="مقارنة بالصدفة">أفضل من 98.7%</td><td data-label="الحكم">تفوق</td></tr><tr><td data-label="الفكرة">نفس القواعد</td><td data-label="البيانات">يورو دولار 2018–2026</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num up">−0.04R</span></td><td data-label="مقارنة بالصدفة">أفضل من 0.2%</td><td data-label="الحكم">فشل</td></tr><tr><td data-label="الفكرة">تتبع الاتجاه على كل الأسواق</td><td data-label="البيانات">من نوفمبر 2026</td><td data-label="متوسط الصفقة بعد التكاليف">—</td><td data-label="مقارنة بالصدفة">يُقاس في الاختبار العلني</td><td data-label="الحكم">اختبار علني جارٍ</td></tr><tr><td data-label="الفكرة">قاعدة السيناريوهات (سحب السيولة)</td><td data-label="البيانات">ذهب 2018–2022</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num up">−0.15R</span></td><td data-label="مقارنة بالصدفة">أسوأ من أغلبها</td><td data-label="الحكم">لم تتفوق</td></tr><tr><td data-label="الفكرة">قاعدة السيناريوهات</td><td data-label="البيانات">يورو دولار 2018–2026</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num up">−0.02R</span></td><td data-label="مقارنة بالصدفة">ليست أفضل</td><td data-label="الحكم">لم تتفوق</td></tr><tr><td data-label="الفكرة">المنطقة الذهبية و OTE (4 ساعات ← ساعة)</td><td data-label="البيانات">ذهب 2018–2026</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num up">−0.07 / −0.10R</span></td><td data-label="مقارنة بالصدفة">أفضل من 6–7%</td><td data-label="الحكم">فشل</td></tr><tr><td data-label="الفكرة">التحيز اليومي + أفكار السيولة</td><td data-label="البيانات">ذهب ويورو 2018–2026</td><td data-label="متوسط الصفقة بعد التكاليف">—</td><td data-label="مقارنة بالصدفة">لا شيء تفوق (5 أفكار)</td><td data-label="الحكم">فشل</td></tr><tr><td data-label="الفكرة">كسر نطاق أول الجلسة</td><td data-label="البيانات">3 أسواق، 16 شهرًا</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num up">−0.10 to +0.01R</span></td><td data-label="مقارنة بالصدفة">لا شيء تفوق</td><td data-label="الحكم">فشل</td></tr><tr><td data-label="الفكرة">مصنع الاستراتيجيات (1,584 فكرة)</td><td data-label="البيانات">13 سوقًا 2018–2022</td><td data-label="متوسط الصفقة بعد التكاليف">—</td><td data-label="مقارنة بالصدفة">كلها تحت حد الصدفة</td><td data-label="الحكم">لا شيء نجح</td></tr><tr><td data-label="الفكرة">بوت SMC متعدد التأكيدات (V4)</td><td data-label="البيانات">6 أسواق 2018–2022</td><td data-label="متوسط الصفقة بعد التكاليف"><span class="num up">−0.41R</span></td><td data-label="مقارنة بالصدفة">أسوأ من الصدفة (−0.23R)</td><td data-label="الحكم">فشل</td></tr></tbody></table></div>
+      <p class="sub" style="font-size:13px;margin-top:10px">R = الربح أو الخسارة مقسومًا على المخاطرة في الصفقة. النتائج من اختبارات تاريخية، ولا تمثل حسابًا حقيقيًا.</p>
+      <h2 style="margin-top:34px">ماذا نتعلم من هذا؟</h2>
+      <p class="sub">أنماط الشارت القصيرة وحدها لم تتفوق على الصدفة بعد التكاليف في اختباراتنا. لذلك نقدّم خريطة السيولة أداةً لفهم الشارت وتعلّم قراءته، وليست إشارة دخول. وعندما تنجح فكرة في الاختبار العلني، ستظهر هنا أولًا.</p>
+      <p class="sub" style="margin-top:14px">تابع الاختبار العلني: <a href="/ar/trend-following">تتبّع الاتجاه</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a> · <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.instagram.com/liquiditymatrix_ultimatesystem" target="_blank" rel="noopener">Instagram</a></div>
+    <nav><a href="/ar/levels">مستويات السوق</a><a href="/ar/track-record">سجل النتائج</a><a href="/ar/indicators">المؤشرات</a><a href="/ar/services">الخدمات</a><a href="/ar/pricing">الأسعار</a><a href="/ar/about">المنهج</a><a href="/ar/disclaimer">إخلاء المسؤولية</a><a href="/ar/privacy">الخصوصية</a></nav>
+  </div>
+  <p class="risk">التداول ينطوي على مخاطر عالية للخسارة. كل ما في هذا الموقع تعليم مبني على بيانات سوق سابقة — وليس نصيحة مالية، ولا توصية بالشراء أو البيع، ولا وعدًا بنتائج. Liquidity Matrix غير مرتبط بأي مؤشرات أو منتجات أخرى تحمل اسمًا مشابهًا.</p>
+</footer>
+</body>
+</html>

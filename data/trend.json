@@ -1,0 +1,264 @@
+{
+ "start": 1793577600,
+ "rules": [
+  "breakout_20",
+  "breakout_55",
+  "breakout_100",
+  "ma_20_100",
+  "ma_50_200",
+  "momentum_3m",
+  "momentum_6m",
+  "momentum_12m"
+ ],
+ "open": {
+  "XAUUSD": {
+   "breakout_20": null,
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 3945.88,
+    "risk": 227.50199999999975,
+    "stop": 4173.382
+   },
+   "momentum_6m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 3945.88,
+    "risk": 227.50199999999975,
+    "stop": 4173.382
+   },
+   "momentum_12m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 3945.88,
+    "risk": 227.50199999999975,
+    "stop": 4173.382
+   }
+  },
+  "XAGUSD": {
+   "breakout_20": null,
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 50.48,
+    "risk": 6.1053000000000015,
+    "stop": 56.5853
+   },
+   "momentum_6m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 50.48,
+    "risk": 6.1053000000000015,
+    "stop": 56.5853
+   },
+   "momentum_12m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 50.48,
+    "risk": 6.1053000000000015,
+    "stop": 56.5853
+   }
+  },
+  "EURUSD": {
+   "breakout_20": null,
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 1.11867,
+    "risk": 0.01975349999999991,
+    "stop": 1.138424
+   },
+   "momentum_6m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 1.11867,
+    "risk": 0.01975349999999991,
+    "stop": 1.138424
+   },
+   "momentum_12m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 1.11867,
+    "risk": 0.01975349999999991,
+    "stop": 1.138424
+   }
+  },
+  "GBPUSD": {
+   "breakout_20": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 1.34081,
+    "risk": 0.02152949999999989,
+    "stop": 1.319281
+   },
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 1.34063,
+    "risk": 0.02152949999999989,
+    "stop": 1.362159
+   },
+   "momentum_6m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 1.34063,
+    "risk": 0.02152949999999989,
+    "stop": 1.362159
+   },
+   "momentum_12m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 1.34081,
+    "risk": 0.02152949999999989,
+    "stop": 1.319281
+   }
+  },
+  "USDJPY": {
+   "breakout_20": null,
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 157.953,
+    "risk": 2.3526000000000167,
+    "stop": 155.6004
+   },
+   "momentum_6m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 157.953,
+    "risk": 2.3526000000000167,
+    "stop": 155.6004
+   },
+   "momentum_12m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 157.953,
+    "risk": 2.3526000000000167,
+    "stop": 155.6004
+   }
+  },
+  "NAS100": {
+   "breakout_20": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 28087.3,
+    "risk": 1759.7699999999986,
+    "stop": 29847.07
+   },
+   "breakout_55": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 28087.3,
+    "risk": 1759.7699999999986,
+    "stop": 29847.07
+   },
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 28087.3,
+    "risk": 1759.7699999999986,
+    "stop": 29847.07
+   },
+   "momentum_6m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 28087.3,
+    "risk": 1759.7699999999986,
+    "stop": 29847.07
+   },
+   "momentum_12m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 28089.3,
+    "risk": 1759.7699999999986,
+    "stop": 26329.53
+   }
+  },
+  "US30": {
+   "breakout_20": null,
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 52005.3,
+    "risk": 1851.4199999999992,
+    "stop": 53856.72
+   },
+   "momentum_6m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 52008.3,
+    "risk": 1851.4199999999992,
+    "stop": 50156.88
+   },
+   "momentum_12m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 52008.3,
+    "risk": 1851.4199999999992,
+    "stop": 50156.88
+   }
+  },
+  "BTCUSD": {
+   "breakout_20": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 76674.13,
+    "risk": 5976.631500000001,
+    "stop": 82650.7615
+   },
+   "breakout_55": null,
+   "breakout_100": null,
+   "ma_20_100": null,
+   "ma_50_200": null,
+   "momentum_3m": {
+    "side": -1,
+    "entry_t": 1793577600,
+    "entry": 76674.13,
+    "risk": 5976.631500000001,
+    "stop": 82650.7615
+   },
+   "momentum_6m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 76694.13,
+    "risk": 5976.631500000001,
+    "stop": 70717.4985
+   },
+   "momentum_12m": {
+    "side": 1,
+    "entry_t": 1793577600,
+    "entry": 76694.13,
+    "risk": 5976.631500000001,
+    "stop": 70717.4985
+   }
+  }
+ },
+ "closed": []
+}

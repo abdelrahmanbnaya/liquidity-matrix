@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The lab: what we tested and what we found — Liquidity Matrix</title>
+<meta name="description" content="Every trading idea we test is compared with random entries on years of data. What failed is listed here too.">
+<link rel="canonical" href="https://liquidity-matrix.com/lab">
+<link rel="alternate" hreflang="en" href="https://liquidity-matrix.com/lab">
+<link rel="alternate" hreflang="ar" href="https://liquidity-matrix.com/ar/lab">
+<meta property="og:title" content="The lab: what we tested and what we found — Liquidity Matrix">
+<meta property="og:image" content="https://liquidity-matrix.com/assets/gold-levels.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=16">
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f27544eb70614fe39584df2b3c54f3c1"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M9.33 7.11 20.67 7.11 24.28 10.72 15.00 20.00 5.72 10.72z" fill="#f5c046"/><path d="M15.00 0.00 20.67 5.67 9.33 5.67z" fill="#ffe08a"/><path d="M1.80 6.39H28.20" stroke="#f5c046" stroke-width="1.00" stroke-dasharray="1.65 0.99"/></svg>LIQUIDITY MATRIX</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
+    <nav class="nav">
+      <a href="/levels">Market levels</a>
+      <a href="/track-record">Track record</a>
+      <a href="/trend-following">Trend test</a>
+      <a href="/indicators">Indicators</a>
+      <a href="/services">Services &amp; pricing</a>
+      <a href="/about">The method</a>
+      <a class="lang" href="/ar/lab" lang="ar" hreflang="ar">العربية</a>
+    </nav>
+  </div>
+</header>
+<style>
+.tr-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.tr-scroll{overflow-x:auto;margin-top:12px}
+details.tr{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:10px}
+details.tr summary{cursor:pointer;font-weight:700}
+.tr-when{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+@media (max-width:720px){.tr-facts,.tr-when{grid-template-columns:1fr 1fr}}
+</style>
+<main>
+  <section>
+    <div class="wrap">
+      <span class="pill" style="font-size:12px">THE LAB</span>
+      <h1 class="ph" style="margin-top:16px">The lab: what we tested, and what we found</h1>
+      <p class="sub">Every trading idea we test runs on years of data and is compared with random entries that use the same stop, target, session and costs. If it does not clearly beat them, we write it here, even when it is our own idea.</p>
+      <div class="grid3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px"><div class="card"><h3 style="margin:0 0 6px">Compared with luck</h3><p>A thousand random traders per test, entering at random times under the same conditions as the idea.</p></div><div class="card"><h3 style="margin:0 0 6px">Locked data</h3><p>Part of the history stays closed until the very end, so an idea cannot be tailored to it.</p></div><div class="card"><h3 style="margin:0 0 6px">Number of tries</h3><p>The more ideas we try, the harder the bar, because luck alone makes good-looking results if you try enough.</p></div></div>
+      <h2 style="margin-top:34px">Test log</h2>
+      <div class="tr-scroll"><table class="levels"><thead><tr><th>Idea</th><th>Data</th><th>Average trade after costs</th><th>Versus luck</th><th>Verdict</th></tr></thead>
+        <tbody><tr><td data-label="Idea">Trend following (8 daily rules)</td><td data-label="Data">Gold 2018–2026</td><td data-label="Average trade after costs"><span class="num down">+0.85R</span></td><td data-label="Versus luck">Better than 98.7%</td><td data-label="Verdict">Beat it</td></tr><tr><td data-label="Idea">The same rules</td><td data-label="Data">EUR/USD 2018–2026</td><td data-label="Average trade after costs"><span class="num up">−0.04R</span></td><td data-label="Versus luck">Better than 0.2%</td><td data-label="Verdict">Failed</td></tr><tr><td data-label="Idea">Trend following on every market</td><td data-label="Data">From November 2026</td><td data-label="Average trade after costs">—</td><td data-label="Versus luck">Measured in the public test</td><td data-label="Verdict">Public test running</td></tr><tr><td data-label="Idea">Scenario rule (liquidity sweep)</td><td data-label="Data">Gold 2018–2022</td><td data-label="Average trade after costs"><span class="num up">−0.15R</span></td><td data-label="Versus luck">Worse than most</td><td data-label="Verdict">Did not beat it</td></tr><tr><td data-label="Idea">Scenario rule</td><td data-label="Data">EUR/USD 2018–2026</td><td data-label="Average trade after costs"><span class="num up">−0.02R</span></td><td data-label="Versus luck">No better</td><td data-label="Verdict">Did not beat it</td></tr><tr><td data-label="Idea">Golden zone and OTE (H4 → H1)</td><td data-label="Data">Gold 2018–2026</td><td data-label="Average trade after costs"><span class="num up">−0.07 / −0.10R</span></td><td data-label="Versus luck">Better than 6–7%</td><td data-label="Verdict">Failed</td></tr><tr><td data-label="Idea">Daily bias + liquidity ideas</td><td data-label="Data">Gold and EUR/USD 2018–2026</td><td data-label="Average trade after costs">—</td><td data-label="Versus luck">None beat it (5 ideas)</td><td data-label="Verdict">Failed</td></tr><tr><td data-label="Idea">Opening-range breakout</td><td data-label="Data">3 markets, 16 months</td><td data-label="Average trade after costs"><span class="num up">−0.10 to +0.01R</span></td><td data-label="Versus luck">None beat it</td><td data-label="Verdict">Failed</td></tr><tr><td data-label="Idea">Strategy factory (1,584 ideas)</td><td data-label="Data">13 markets 2018–2022</td><td data-label="Average trade after costs">—</td><td data-label="Versus luck">All under the luck bar</td><td data-label="Verdict">Nothing passed</td></tr><tr><td data-label="Idea">Multi-confirmation SMC bot (V4)</td><td data-label="Data">6 markets 2018–2022</td><td data-label="Average trade after costs"><span class="num up">−0.41R</span></td><td data-label="Versus luck">Worse than random (−0.23R)</td><td data-label="Verdict">Failed</td></tr></tbody></table></div>
+      <p class="sub" style="font-size:13px;margin-top:10px">R = the profit or loss divided by the trade&#x27;s risk. Results come from historical tests and do not represent any real account.</p>
+      <h2 style="margin-top:34px">What does this tell us?</h2>
+      <p class="sub">Short chart patterns on their own did not beat luck after costs in our tests. That is why we offer the liquidity map as a tool to understand and learn the chart, not as an entry signal. When an idea passes the public test, it appears here first.</p>
+      <p class="sub" style="margin-top:14px">Follow the public test: <a href="/trend-following">trend following</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Liquidity Matrix · <a href="mailto:jarvislmatrix@gmail.com">jarvislmatrix@gmail.com</a> · <a href="https://www.youtube.com/@LiquidityMatrixTradingSystem" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.instagram.com/liquiditymatrix_ultimatesystem" target="_blank" rel="noopener">Instagram</a></div>
+    <nav><a href="/levels">Market levels</a><a href="/track-record">Track record</a><a href="/indicators">Indicators</a><a href="/services">Services</a><a href="/pricing">Pricing</a><a href="/about">The method</a><a href="/disclaimer">Risk disclaimer</a><a href="/privacy">Privacy</a></nav>
+  </div>
+  <p class="risk">Trading carries a high risk of loss. Everything on this site is education based on past market data — not financial advice, not a recommendation to buy or sell, and not a promise of results. Liquidity Matrix is not affiliated with other indicators or products that use a similar name.</p>
+</footer>
+</body>
+</html>

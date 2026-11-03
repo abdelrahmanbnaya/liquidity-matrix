@@ -38,4 +38,8 @@
 <url><loc>https://liquidity-matrix.com/ar/privacy</loc><changefreq>yearly</changefreq></url>
   <url><loc>https://liquidity-matrix.com/indicators</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://liquidity-matrix.com/ar/indicators</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/trend-following</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/trend-following</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/lab</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://liquidity-matrix.com/ar/lab</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq></url>
 </urlset>

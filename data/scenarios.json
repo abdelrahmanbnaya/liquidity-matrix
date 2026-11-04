@@ -1108,8 +1108,8 @@
   "id": "US30-1793271600",
   "symbol": "US30",
   "created_utc": 1793275211,
-  "status": "open",
-  "r": null,
+  "status": "expired",
+  "r": 0.78,
   "digits": 2,
   "side": "short",
   "entry": 52368.0,
@@ -1119,7 +1119,8 @@
   "sweep_price": 52843.0,
   "sweep_t": 1793271600,
   "bar_t": 1793278800,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793725200
  },
  {
   "id": "EURUSD-1793286000",
@@ -1287,8 +1288,8 @@
   "id": "USDJPY-1793599200",
   "symbol": "USDJPY",
   "created_utc": 1793599209,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "short",
   "entry": 157.786,
@@ -1298,7 +1299,8 @@
   "sweep_price": 157.983,
   "sweep_t": 1793599200,
   "bar_t": 1793602800,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793703600
  },
  {
   "id": "BTCUSD-1793631600",
@@ -1357,8 +1359,8 @@
   "id": "GBPUSD-1793664000",
   "symbol": "GBPUSD",
   "created_utc": 1793684504,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 1.64,
   "digits": 5,
   "side": "long",
   "entry": 1.34077,
@@ -1368,7 +1370,8 @@
   "sweep_price": 1.34033,
   "sweep_t": 1793664000,
   "bar_t": 1793685600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793718000
  },
  {
   "id": "BTCUSD-1793664000",
@@ -1387,5 +1390,39 @@
   "bar_t": 1793678400,
   "rule": "v2",
   "closed_bar_t": 1793685600
+ },
+ {
+  "id": "XAGUSD-1793754000",
+  "symbol": "XAGUSD",
+  "created_utc": 1793750429,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "short",
+  "entry": 49.609,
+  "sl": 50.078,
+  "tp": 48.613,
+  "rr": 2.12,
+  "sweep_price": 49.946,
+  "sweep_t": 1793754000,
+  "bar_t": 1793754000,
+  "rule": "v2"
+ },
+ {
+  "id": "BTCUSD-1793728800",
+  "symbol": "BTCUSD",
+  "created_utc": 1793750441,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 77779.33,
+  "sl": 78212.15,
+  "tp": 76238.54,
+  "rr": 3.56,
+  "sweep_price": 77745.38,
+  "sweep_t": 1793728800,
+  "bar_t": 1793743200,
+  "rule": "v2"
  }
 ]

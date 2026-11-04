@@ -130,7 +130,13 @@
    }
   },
   "USDJPY": {
-   "breakout_20": null,
+   "breakout_20": {
+    "side": 1,
+    "entry_t": 1793664000,
+    "entry": 158.711,
+    "risk": 2.4333000000000142,
+    "stop": 156.2777
+   },
    "breakout_55": null,
    "breakout_100": null,
    "ma_20_100": null,

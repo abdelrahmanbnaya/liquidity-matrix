@@ -1120,7 +1120,9 @@
   "sweep_t": 1793271600,
   "bar_t": 1793278800,
   "rule": "v2",
-  "closed_bar_t": 1793725200
+  "closed_bar_t": 1793725200,
+  "after_expiry": "target",
+  "after_expiry_t": 1793768400
  },
  {
   "id": "EURUSD-1793286000",
@@ -1342,8 +1344,8 @@
   "id": "EURUSD-1793678400",
   "symbol": "EURUSD",
   "created_utc": 1793684500,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.68,
   "digits": 5,
   "side": "long",
   "entry": 1.11893,
@@ -1353,7 +1355,8 @@
   "sweep_price": 1.11794,
   "sweep_t": 1793678400,
   "bar_t": 1793685600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793761200
  },
  {
   "id": "GBPUSD-1793664000",
@@ -1395,8 +1398,8 @@
   "id": "XAGUSD-1793754000",
   "symbol": "XAGUSD",
   "created_utc": 1793750429,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "short",
   "entry": 49.609,
@@ -1406,14 +1409,15 @@
   "sweep_price": 49.946,
   "sweep_t": 1793754000,
   "bar_t": 1793754000,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793775600
  },
  {
   "id": "BTCUSD-1793728800",
   "symbol": "BTCUSD",
   "created_utc": 1793750441,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 3.56,
   "digits": 2,
   "side": "short",
   "entry": 77779.33,
@@ -1423,6 +1427,41 @@
   "sweep_price": 77745.38,
   "sweep_t": 1793728800,
   "bar_t": 1793743200,
+  "rule": "v2",
+  "closed_bar_t": 1793757600
+ },
+ {
+  "id": "NAS100-1793757600",
+  "symbol": "NAS100",
+  "created_utc": 1793772026,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 28031.7,
+  "sl": 27444.12,
+  "tp": 29582.9,
+  "rr": 2.64,
+  "sweep_price": 27976.7,
+  "sweep_t": 1793757600,
+  "bar_t": 1793775600,
+  "rule": "v2"
+ },
+ {
+  "id": "US30-1793757600",
+  "symbol": "US30",
+  "created_utc": 1793772028,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "long",
+  "entry": 51672.2,
+  "sl": 51252.42,
+  "tp": 52452.2,
+  "rr": 1.86,
+  "sweep_price": 51492.1,
+  "sweep_t": 1793757600,
+  "bar_t": 1793775600,
   "rule": "v2"
  }
 ]

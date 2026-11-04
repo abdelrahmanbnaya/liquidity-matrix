@@ -150,7 +150,8 @@
   "sweep_price": 82164.54,
   "sweep_t": 1792468800,
   "bar_t": 1792472400,
-  "closed_bar_t": 1792504800
+  "closed_bar_t": 1792504800,
+  "tp_after_stop_t": 1792792800
  },
  {
   "id": "EURUSD-1792497600",
@@ -1248,7 +1249,8 @@
   "sweep_t": 1793365200,
   "bar_t": 1793365200,
   "rule": "v2",
-  "closed_bar_t": 1793368800
+  "closed_bar_t": 1793368800,
+  "tp_after_stop_t": 1793786400
  },
  {
   "id": "BTCUSD-1793559600",
@@ -1320,7 +1322,8 @@
   "sweep_t": 1793631600,
   "bar_t": 1793642400,
   "rule": "v2",
-  "closed_bar_t": 1793646000
+  "closed_bar_t": 1793646000,
+  "tp_after_stop_t": 1793775600
  },
  {
   "id": "NAS100-1793653200",
@@ -1392,7 +1395,8 @@
   "sweep_t": 1793664000,
   "bar_t": 1793678400,
   "rule": "v2",
-  "closed_bar_t": 1793685600
+  "closed_bar_t": 1793685600,
+  "tp_after_stop_t": 1793775600
  },
  {
   "id": "XAGUSD-1793754000",
@@ -1451,8 +1455,8 @@
   "id": "US30-1793757600",
   "symbol": "US30",
   "created_utc": 1793772028,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 1.86,
   "digits": 2,
   "side": "long",
   "entry": 51672.2,
@@ -1462,14 +1466,15 @@
   "sweep_price": 51492.1,
   "sweep_t": 1793757600,
   "bar_t": 1793775600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793793600
  },
  {
   "id": "BTCUSD-1793768400",
   "symbol": "BTCUSD",
   "created_utc": 1793779235,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 77882.29,
@@ -1479,6 +1484,41 @@
   "sweep_price": 77981.38,
   "sweep_t": 1793768400,
   "bar_t": 1793772000,
+  "rule": "v2",
+  "closed_bar_t": 1793775600
+ },
+ {
+  "id": "EURUSD-1793790000",
+  "symbol": "EURUSD",
+  "created_utc": 1793797216,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "short",
+  "entry": 1.12634,
+  "sl": 1.12761,
+  "tp": 1.12368,
+  "rr": 2.1,
+  "sweep_price": 1.1263,
+  "sweep_t": 1793790000,
+  "bar_t": 1793800800,
+  "rule": "v2"
+ },
+ {
+  "id": "BTCUSD-1793775600",
+  "symbol": "BTCUSD",
+  "created_utc": 1793797227,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 78373.62,
+  "sl": 78902.12,
+  "tp": 75600.64,
+  "rr": 5.25,
+  "sweep_price": 78125.0,
+  "sweep_t": 1793775600,
+  "bar_t": 1793790000,
   "rule": "v2"
  }
 ]

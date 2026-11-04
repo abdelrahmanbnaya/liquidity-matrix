@@ -1463,5 +1463,22 @@
   "sweep_t": 1793757600,
   "bar_t": 1793775600,
   "rule": "v2"
+ },
+ {
+  "id": "BTCUSD-1793768400",
+  "symbol": "BTCUSD",
+  "created_utc": 1793779235,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 77882.29,
+  "sl": 78200.85,
+  "tp": 75600.64,
+  "rr": 7.16,
+  "sweep_price": 77981.38,
+  "sweep_t": 1793768400,
+  "bar_t": 1793772000,
+  "rule": "v2"
  }
 ]

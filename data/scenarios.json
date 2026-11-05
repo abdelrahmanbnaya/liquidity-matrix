@@ -1581,8 +1581,8 @@
   "id": "US30-1793865600",
   "symbol": "US30",
   "created_utc": 1793865621,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 53573.2,
@@ -1592,6 +1592,24 @@
   "sweep_price": 53589.7,
   "sweep_t": 1793865600,
   "bar_t": 1793869200,
+  "rule": "v2",
+  "closed_bar_t": 1793876400
+ },
+ {
+  "id": "GBPUSD-1793883600",
+  "symbol": "GBPUSD",
+  "created_utc": 1793883632,
+  "status": "open",
+  "r": null,
+  "digits": 5,
+  "side": "long",
+  "entry": 1.3467,
+  "sl": 1.34445,
+  "tp": 1.35009,
+  "rr": 1.51,
+  "sweep_price": 1.34481,
+  "sweep_t": 1793883600,
+  "bar_t": 1793887200,
   "rule": "v2"
  }
 ]

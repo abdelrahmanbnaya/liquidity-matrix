@@ -1341,7 +1341,8 @@
   "sweep_t": 1793653200,
   "bar_t": 1793667600,
   "rule": "v2",
-  "closed_bar_t": 1793692800
+  "closed_bar_t": 1793692800,
+  "tp_after_stop_t": 1793811600
  },
  {
   "id": "EURUSD-1793678400",
@@ -1491,8 +1492,8 @@
   "id": "EURUSD-1793790000",
   "symbol": "EURUSD",
   "created_utc": 1793797216,
-  "status": "open",
-  "r": null,
+  "status": "target",
+  "r": 2.1,
   "digits": 5,
   "side": "short",
   "entry": 1.12634,
@@ -1502,14 +1503,15 @@
   "sweep_price": 1.1263,
   "sweep_t": 1793790000,
   "bar_t": 1793800800,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793811600
  },
  {
   "id": "BTCUSD-1793775600",
   "symbol": "BTCUSD",
   "created_utc": 1793797227,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "short",
   "entry": 78373.62,
@@ -1519,6 +1521,24 @@
   "sweep_price": 78125.0,
   "sweep_t": 1793775600,
   "bar_t": 1793790000,
+  "rule": "v2",
+  "closed_bar_t": 1793800800
+ },
+ {
+  "id": "XAGUSD-1793808000",
+  "symbol": "XAGUSD",
+  "created_utc": 1793836807,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "short",
+  "entry": 50.761,
+  "sl": 50.953,
+  "tp": 49.132,
+  "rr": 8.49,
+  "sweep_price": 50.788,
+  "sweep_t": 1793808000,
+  "bar_t": 1793826000,
   "rule": "v2"
  }
 ]

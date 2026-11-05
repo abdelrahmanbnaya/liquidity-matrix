@@ -179,7 +179,13 @@
     "stop": 29847.07
    },
    "breakout_100": null,
-   "ma_20_100": null,
+   "ma_20_100": {
+    "side": -1,
+    "entry_t": 1793750400,
+    "entry": 28515.8,
+    "risk": 1920.8399999999986,
+    "stop": 30436.64
+   },
    "ma_50_200": null,
    "momentum_3m": {
     "side": -1,
@@ -204,7 +210,13 @@
    }
   },
   "US30": {
-   "breakout_20": null,
+   "breakout_20": {
+    "side": 1,
+    "entry_t": 1793750400,
+    "entry": 53456.8,
+    "risk": 2108.1600000000017,
+    "stop": 51348.64
+   },
    "breakout_55": null,
    "breakout_100": null,
    "ma_20_100": null,

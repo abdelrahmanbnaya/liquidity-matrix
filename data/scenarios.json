@@ -1563,8 +1563,8 @@
   "id": "USDJPY-1793818800",
   "symbol": "USDJPY",
   "created_utc": 1793858414,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 3,
   "side": "long",
   "entry": 158.354,
@@ -1574,6 +1574,24 @@
   "sweep_price": 158.209,
   "sweep_t": 1793818800,
   "bar_t": 1793840400,
+  "rule": "v2",
+  "closed_bar_t": 1793844000
+ },
+ {
+  "id": "US30-1793865600",
+  "symbol": "US30",
+  "created_utc": 1793865621,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 53573.2,
+  "sl": 53666.43,
+  "tp": 51296.2,
+  "rr": 24.42,
+  "sweep_price": 53589.7,
+  "sweep_t": 1793865600,
+  "bar_t": 1793869200,
   "rule": "v2"
  }
 ]

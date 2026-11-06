@@ -1439,8 +1439,8 @@
   "id": "NAS100-1793757600",
   "symbol": "NAS100",
   "created_utc": 1793772026,
-  "status": "open",
-  "r": null,
+  "status": "stop",
+  "r": -1.0,
   "digits": 2,
   "side": "long",
   "entry": 28031.7,
@@ -1450,7 +1450,8 @@
   "sweep_price": 27976.7,
   "sweep_t": 1793757600,
   "bar_t": 1793775600,
-  "rule": "v2"
+  "rule": "v2",
+  "closed_bar_t": 1793926800
  },
  {
   "id": "US30-1793757600",
@@ -1486,7 +1487,8 @@
   "sweep_t": 1793768400,
   "bar_t": 1793772000,
   "rule": "v2",
-  "closed_bar_t": 1793775600
+  "closed_bar_t": 1793775600,
+  "tp_after_stop_t": 1793890800
  },
  {
   "id": "EURUSD-1793790000",
@@ -1522,7 +1524,8 @@
   "sweep_t": 1793775600,
   "bar_t": 1793790000,
   "rule": "v2",
-  "closed_bar_t": 1793800800
+  "closed_bar_t": 1793800800,
+  "tp_after_stop_t": 1793890800
  },
  {
   "id": "XAGUSD-1793808000",
@@ -1593,7 +1596,8 @@
   "sweep_t": 1793865600,
   "bar_t": 1793869200,
   "rule": "v2",
-  "closed_bar_t": 1793876400
+  "closed_bar_t": 1793876400,
+  "tp_after_stop_t": 1793926800
  },
  {
   "id": "GBPUSD-1793883600",
@@ -1610,6 +1614,23 @@
   "sweep_price": 1.34481,
   "sweep_t": 1793883600,
   "bar_t": 1793887200,
+  "rule": "v2"
+ },
+ {
+  "id": "USDJPY-1793926800",
+  "symbol": "USDJPY",
+  "created_utc": 1793923224,
+  "status": "open",
+  "r": null,
+  "digits": 3,
+  "side": "long",
+  "entry": 157.492,
+  "sl": 157.196,
+  "tp": 158.504,
+  "rr": 3.42,
+  "sweep_price": 157.397,
+  "sweep_t": 1793926800,
+  "bar_t": 1793926800,
   "rule": "v2"
  }
 ]

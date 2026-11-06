@@ -1685,5 +1685,22 @@
   "sweep_t": 1793973600,
   "bar_t": 1793973600,
   "rule": "v2"
+ },
+ {
+  "id": "NAS100-1793962800",
+  "symbol": "NAS100",
+  "created_utc": 1793971819,
+  "status": "open",
+  "r": null,
+  "digits": 2,
+  "side": "short",
+  "entry": 26986.1,
+  "sl": 27185.92,
+  "tp": 26247.9,
+  "rr": 3.69,
+  "sweep_price": 27046.9,
+  "sweep_t": 1793962800,
+  "bar_t": 1793973600,
+  "rule": "v2"
  }
 ]

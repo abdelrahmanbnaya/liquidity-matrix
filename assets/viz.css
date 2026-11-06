@@ -1,0 +1,105 @@
+/* assets/viz.css - written by Jarvis (site_viz.py): ladder, session timeline, tabs, card range bar, table fix */
+
+/* tables: never break a word or a number in two */
+.levels td { overflow-wrap: normal; }
+.levels td.num, .levels td[data-label="Side"], .levels td[data-label="High"], .levels td[data-label="Low"],
+.levels td[data-label="Level"], .levels td[data-label="القمة"], .levels td[data-label="القاع"],
+.levels td[data-label="المستوى"], .levels td[data-label="الجهة"] { white-space: nowrap; }
+.levels td[data-label="Why"], .levels td[data-label="High was"], .levels td[data-label="Low was"],
+.levels td[data-label="لماذا يهم"], .levels td[data-label="ماذا حدث للقمة"], .levels td[data-label="ماذا حدث للقاع"] { overflow-wrap: anywhere; }
+@media (max-width: 600px) { .levels td.num, .levels td[data-label] { white-space: normal; } .levels td .num { white-space: nowrap; } }
+
+/* home / levels cards: where the price sits between the nearest two levels */
+.mk-range { margin-top: 8px; direction: ltr; }
+.mk-range .track { position: relative; height: 6px; border-radius: 999px;
+  background: linear-gradient(90deg, rgba(80,210,140,.55), var(--panel-2) 35%, var(--panel-2) 65%, rgba(255,92,98,.55)); }
+.mk-range .dot { position: absolute; top: 50%; width: 12px; height: 12px; border-radius: 50%; background: var(--gold);
+  border: 2px solid var(--bg); transform: translate(-50%, -50%); box-shadow: 0 0 0 3px rgba(245,192,70,.18); }
+.mk-range .cap { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+.mk-range .cap b { font-weight: 700; }
+
+/* market page tabs (plain jump links until the script runs) */
+.jump[data-tabs] { position: sticky; top: 64px; z-index: 5; background: rgba(9,9,12,.94); backdrop-filter: blur(8px);
+  display: flex; flex-wrap: nowrap; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--line); margin: 26px 0 0;
+  padding-top: 6px; scrollbar-width: none; font-size: 15px; }
+.jump[data-tabs]::-webkit-scrollbar { display: none; }
+.jump[data-tabs] a { flex: 0 0 auto; color: var(--muted); font-weight: 600; padding: 12px 14px 13px; border-bottom: 2px solid transparent; }
+.jump[data-tabs] a:hover { color: var(--text); text-decoration: none; }
+.jump[data-tabs] a[aria-selected="true"] { color: var(--text); border-bottom-color: var(--gold); }
+.jump[data-tabs] a:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; border-radius: 6px; }
+.has-tabs .tab-panel { padding-top: 22px; }
+.has-tabs .tab-panel > h3:first-child, .has-tabs .tab-panel > div:first-child > h3:first-child { margin-top: 0 !important; }
+
+/* liquidity ladder */
+.ladder-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 14px; margin: 18px 0; }
+.ladder-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; align-items: baseline; }
+.ladder-head h3 { margin: 0; font-size: 18px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--muted); }
+.legend i { display: inline-block; width: 18px; height: 0; border-top: 2px solid; vertical-align: middle; margin: 0 6px; }
+.legend i.up { border-color: var(--red); } .legend i.dn { border-color: var(--green); } .legend i.tk { border-color: #6f7280; border-top-style: dashed; }
+.ladder { position: relative; height: 660px; margin-top: 14px; }
+.ladder svg { position: absolute; left: 0; top: 0; width: 112px; height: 100%; overflow: visible; }
+.ladder svg line, .ladder svg path { fill: none; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.ladder svg .c { stroke-width: 1; opacity: .7; }
+.ladder svg .axis { stroke: var(--line); }
+.ladder svg .up { stroke: var(--red); } .ladder svg .dn { stroke: var(--green); } .ladder svg .tk { stroke: #5d606c; }
+.ladder svg rect.up { fill: rgba(255,92,98,.35); stroke: none; } .ladder svg rect.dn { fill: rgba(80,210,140,.35); stroke: none; }
+.now-line { position: absolute; left: 0; right: 0; border-top: 1.5px dashed var(--gold); opacity: .9; }
+.now-pill { position: absolute; left: 0; transform: translateY(-50%); background: var(--gold); color: #1a1406; font-weight: 800; font-size: 12px;
+  border-radius: 8px; padding: 4px 8px; line-height: 1.25; text-align: center; z-index: 1; }
+.now-pill .num { display: block; font-size: 13px; }
+.lrow { position: absolute; left: 112px; right: 0; height: 28px; margin-top: -14px; display: flex; align-items: center; gap: 10px; font-size: 14px; white-space: nowrap; }
+.lrow .p, .lrow .st { flex: 0 0 auto; }
+.lrow .p { font-weight: 700; min-width: 108px; }
+.lrow .n { color: var(--text); overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.lrow .d { margin-left: auto; font-size: 12.5px; color: var(--muted); padding-left: 8px; }
+.lrow .st { font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.lrow.above .p { color: var(--red); } .lrow.below .p { color: var(--green); }
+.lrow.above .st.open { color: var(--red); border-color: rgba(255,92,98,.4); }
+.lrow.below .st.open { color: var(--green); border-color: rgba(80,210,140,.35); }
+.lrow.taken .p, .lrow.taken .n { color: #6f7280; }
+.lrow.taken .n { text-decoration: line-through; text-decoration-color: rgba(154,157,171,.45); }
+.lrow .st.next { background: var(--gold); color: #1a1406; border-color: var(--gold); }
+.ladder-foot { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
+
+/* sessions timeline */
+.tl { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-top: 18px; }
+.tl-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 14px; align-items: baseline; }
+.tl-head h3 { margin: 0; font-size: 18px; }
+.tl-head > span { color: var(--muted); font-size: 13px; }
+.tl-day { margin-top: 18px; }
+.tl-day > .lbl { font-size: 12.5px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.tl-track { position: relative; height: 34px; margin-top: 8px; border-radius: 8px; background: var(--panel-2); border: 1px solid var(--line); }
+.tl-seg { position: absolute; top: 3px; bottom: 3px; border-radius: 6px; display: flex; align-items: center; padding: 0 8px;
+  font-size: 12.5px; font-weight: 700; overflow: hidden; white-space: nowrap; }
+.tl-seg.asia { background: rgba(245,192,70,.16); color: var(--gold); }
+.tl-seg.lon { background: rgba(77,163,255,.16); color: #7cbaff; }
+.tl-seg.ny { background: rgba(199,125,255,.16); color: #d6a4ff; }
+.tl-now { position: absolute; top: -6px; bottom: -6px; width: 2px; background: var(--text); }
+.tl-now span { position: absolute; top: -17px; left: 50%; transform: translateX(-50%); font-size: 11px; font-weight: 700; color: var(--text); }
+.tl-axis { position: relative; height: 16px; font-size: 11px; color: var(--muted); font-family: "JetBrains Mono", ui-monospace, monospace; }
+.tl-axis span { position: absolute; transform: translateX(-50%); top: 2px; }
+.tl-axis span:first-child { transform: none; } .tl-axis span:last-child { transform: translateX(-100%); }
+.tl-res { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+.tl-box { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 13px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.tl-box .t { font-weight: 700; }
+.tl-box .r { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.tl-box .r .num { font-weight: 700; }
+.tl-box.dim { opacity: .55; }
+.chip { font-size: 11.5px; font-weight: 700; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.chip.open-up { color: var(--red); border-color: rgba(255,92,98,.4); }
+.chip.open-dn { color: var(--green); border-color: rgba(80,210,140,.35); }
+.chip.taken { color: #8a8f98; }
+.chip.forming { color: var(--gold); border-color: var(--gold-dim); }
+
+@media (max-width: 860px) { .tl-res { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .ladder { height: 700px; }
+  .ladder svg { width: 86px; }
+  .lrow { left: 86px; gap: 8px; font-size: 12.5px; }
+  .lrow .p { min-width: 0; }
+  .lrow .d { display: none; }
+  .tl-seg { font-size: 11px; padding: 0 5px; }
+  .jump[data-tabs] { font-size: 14px; }
+  .jump[data-tabs] a { padding: 12px 11px 13px; }
+}

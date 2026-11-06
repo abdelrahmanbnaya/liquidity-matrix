@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v=16">
+<link rel="stylesheet" href="/assets/viz.css?v=1">
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f27544eb70614fe39584df2b3c54f3c1"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
@@ -39,31 +40,41 @@
   <section>
     <div class="wrap">
       <nav class="chips" aria-label="Markets"><a href="/markets/xauusd">Gold</a><a href="/markets/xagusd">Silver</a><a href="/markets/eurusd">EUR/USD</a><a href="/markets/gbpusd">GBP/USD</a><a href="/markets/usdjpy">USD/JPY</a><a href="/markets/nas100">Nasdaq 100</a><a href="/markets/us30">Dow Jones 30</a><span class="on">Bitcoin</span></nav>
-      <div class="kicker" style="margin-top:22px">Bitcoin · BTCUSD · H6 · updated Fri 06 Nov 13:00 UTC<span class="fresh" data-t="1793970025" data-lang="en"></span></div>
+      <div class="kicker" style="margin-top:22px">Bitcoin · BTCUSD · H6 · updated Fri 06 Nov 13:30 UTC<span class="fresh" data-t="1793971825" data-lang="en"></span></div>
       <h1 class="ph">Where the stops sit in Bitcoin right now</h1>
-      <p class="sub">Last price <b class="num" style="color:var(--text)">75941.98</b> · candle of Fri 06 Nov 12:00 UTC</p>
+      <p class="sub">Last price <b class="num" style="color:var(--text)">75850.62</b> · candle of Fri 06 Nov 12:00 UTC</p>
       <p class="sub">Highs above and lows below the last price that have <b>not</b> been traded through since they formed. Stops usually rest just beyond them. Found by code on real candles (Coinbase public data).</p>
-      <div class="stats glance"><div class="stat"><span>Last price</span><b class="num">75941.98</b><span>candle of Fri 06 Nov 12:00 UTC</span></div><div class="stat"><span>Nearest level above</span><b class="num up">81130.79</b><span>buy-side liquidity</span></div><div class="stat"><span>Nearest level below</span><b class="num down">75035.10</b><span>sell-side liquidity</span></div><div class="stat"><span>Latest liquidity sweep (H1)</span><b class="down">Sell-side taken</b><span>at <span class="num">75431.17</span> · 12 H1 candles ago</span></div></div>
-      <nav class="jump"><a href="#levels">Levels</a><a href="#scenario">Scenario</a><a href="#sessions">Sessions</a><a href="#live">Live chart</a><a href="#weekly">Weekly</a></nav>
+      <div class="stats glance"><div class="stat"><span>Last price</span><b class="num">75850.62</b><span>candle of Fri 06 Nov 12:00 UTC</span></div><div class="stat"><span>Nearest level above</span><b class="num up">76256.44</b><span>Today London high</span></div><div class="stat"><span>Nearest level below</span><b class="num down">75357.00</b><span>Today London low</span></div><div class="stat"><span>Latest liquidity sweep (H1)</span><b class="down">Sell-side taken</b><span>at <span class="num">75431.17</span> · 13 H1 candles ago</span></div></div>
+      <nav class="jump" aria-label="Page sections" data-tabs><a href="#levels" data-tab="levels">Levels</a><a href="#scenario" data-tab="scenario">Scenario</a><a href="#sessions" data-tab="sessions">Sessions</a><a href="#live" data-tab="live">Live chart</a><a href="#weekly" data-tab="weekly">Weekly</a></nav>
+      <div class="tab-panel" data-panel="levels">
+
       
       <div class="dash">
         <div class="stats tfs"><div class="stat"><span>M15 structure</span><b class="down">Bullish</b><span>higher high and higher low</span></div><div class="stat"><span>H1 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>H4 structure</span><b class="">Range</b><span>mixed swings (no clear higher or lower structure)</span></div><div class="stat"><span>D1 structure</span><b class="up">Bearish</b><span>lower high and lower low</span></div></div>
         <div class="grid g2" style="margin-top:14px">
-          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="down">Sell-side liquidity taken</b><p>H1 wick below the low <span class="num">75431.17</span>, closed back inside · Thu 05 Nov 23:00 UTC (12 H1 candles ago).</p></div>
+          <div class="card"><div class="kicker">Latest liquidity sweep (H1)</div><b class="down">Sell-side liquidity taken</b><p>H1 wick below the low <span class="num">75431.17</span>, closed back inside · Thu 05 Nov 23:00 UTC (13 H1 candles ago).</p></div>
           <div class="card sessions-clock" data-sessions><div class="kicker">Session clock</div><b data-now>Loading the session clock…</b><p data-next></p></div>
         </div>
       </div>
       <script src="/assets/sessions.js?v=3" defer></script>
-
       <div class="stats">
         <div class="stat"><span>Previous day high</span><b class="num">80843.85</b><span>Thu 05 Nov</span></div>
         <div class="stat"><span>Previous day low</span><b class="num">75035.10</b><span>Thu 05 Nov</span></div>
         <div class="stat"><span>Week high</span><b class="num">81130.79</b><span>Wed 04 Nov</span></div>
         <div class="stat"><span>Week low</span><b class="num">75035.10</b><span>Thu 05 Nov</span></div>
       </div>
-
       <h3 style="margin-top:34px" id="levels">Levels to watch</h3>
-      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/btcusd-m.png?v=2026110600" width="1080" height="1280"><img src="/assets/levels/btcusd.png?v=2026110600" alt="BTCUSD H6 chart: above 81130.79; above 81890.00; above 87249 – 87397; below 75035.10; below 62631.18" width="1200" height="675"></picture></div>
+      <div class="ladder-card">
+        <div class="ladder-head"><h3>Liquidity ladder</h3><div class="legend"><span><i class="up"></i>open above</span><span><i class="dn"></i>open below</span><span><i class="tk"></i>taken</span></div></div>
+        <div class="ladder" dir="ltr">
+          <svg viewBox="0 0 112 1000" preserveAspectRatio="none" aria-hidden="true"><line class="axis" x1="82" x2="82" y1="8" y2="992"/><rect class="up" x="73" y="27.3" width="18" height="5.6" rx="3"/><line class="up" x1="73" x2="91" y1="30.1" y2="30.1"/><path class="up c" d="M91,30.1 C102,30.1 100,51.5 108,51.5"/><line class="up" x1="73" x2="91" y1="237.5" y2="237.5"/><path class="up c" d="M91,237.5 C102,237.5 100,133.5 108,133.5"/><line class="up" x1="73" x2="91" y1="266.5" y2="266.5"/><path class="up c" d="M91,266.5 C102,266.5 100,182.0 108,182.0"/><line class="up" x1="73" x2="91" y1="277.4" y2="277.4"/><path class="up c" d="M91,277.4 C102,277.4 100,230.5 108,230.5"/><line class="up" x1="73" x2="91" y1="288.0" y2="288.0"/><path class="up c" d="M91,288.0 C102,288.0 100,279.0 108,279.0"/><line class="up" x1="73" x2="91" y1="317.8" y2="317.8"/><path class="up c" d="M91,317.8 C102,317.8 100,327.5 108,327.5"/><line class="up" x1="73" x2="91" y1="450.7" y2="450.7"/><path class="up c" d="M91,450.7 C102,450.7 100,375.9 108,375.9"/><line class="up" x1="73" x2="91" y1="452.6" y2="452.6"/><path class="up c" d="M91,452.6 C102,452.6 100,424.4 108,424.4"/><line class="tk" x1="73" x2="91" y1="484.1" y2="484.1" stroke-dasharray="3 3"/><path class="tk c" d="M91,484.1 C102,484.1 100,511.7 108,511.7" stroke-dasharray="3 3"/><line class="dn" x1="73" x2="91" y1="486.9" y2="486.9"/><path class="dn c" d="M91,486.9 C102,486.9 100,560.2 108,560.2"/><line class="dn" x1="73" x2="91" y1="493.4" y2="493.4"/><path class="dn c" d="M91,493.4 C102,493.4 100,608.7 108,608.7"/><line class="dn" x1="73" x2="91" y1="499.2" y2="499.2"/><path class="dn c" d="M91,499.2 C102,499.2 100,657.2 108,657.2"/><line class="dn" x1="73" x2="91" y1="972.7" y2="972.7"/><path class="dn c" d="M91,972.7 C102,972.7 100,948.5 108,948.5"/></svg>
+          <div class="now-line" style="top:46.81%"></div>
+          <div class="now-pill" style="top:46.81%">Price<span class="num">75850.62</span></div>
+          <div class="lrow above" style="top:5.15%"><span class="p num">87249 – 87397</span><span class="st open">● open</span><span class="n" dir="auto" title="Zone · 3 touches">Zone · 3 touches</span><span class="d num">+11472.40</span></div><div class="lrow above" style="top:13.35%"><span class="p num">81890.00</span><span class="st open">● open</span><span class="n" dir="auto" title="High · Thu 29 Oct">High · Thu 29 Oct</span><span class="d num">+6039.38</span></div><div class="lrow above" style="top:18.20%"><span class="p num">81130.79</span><span class="st open">● open</span><span class="n" dir="auto" title="Week high">Week high</span><span class="d num">+5280.17</span></div><div class="lrow above" style="top:23.05%"><span class="p num">80843.85</span><span class="st open">● open</span><span class="n" dir="auto" title="Yesterday Asia high">Yesterday Asia high</span><span class="d num">+4993.23</span></div><div class="lrow above" style="top:27.90%"><span class="p num">80568.24</span><span class="st open">● open</span><span class="n" dir="auto" title="Yesterday London high">Yesterday London high</span><span class="d num">+4717.62</span></div><div class="lrow above" style="top:32.75%"><span class="p num">79787.88</span><span class="st open">● open</span><span class="n" dir="auto" title="Yesterday New York high">Yesterday New York high</span><span class="d num">+3937.26</span></div><div class="lrow above" style="top:37.59%"><span class="p num">76306.26</span><span class="st open">● open</span><span class="n" dir="auto" title="Today Asia high">Today Asia high</span><span class="d num">+455.64</span></div><div class="lrow above" style="top:42.44%"><span class="p num">76256.44</span><span class="st next">▲ NEXT</span><span class="n" dir="auto" title="Today London high">Today London high</span><span class="d num">+405.82</span></div><div class="lrow below taken" style="top:51.17%"><span class="p num">75431.17</span><span class="st">✓ taken</span><span class="n" dir="auto" title="Yesterday New York low">Yesterday New York low</span><span class="d num">-419.45</span></div><div class="lrow below" style="top:56.02%"><span class="p num">75357.00</span><span class="st next">▼ NEXT</span><span class="n" dir="auto" title="Today London low">Today London low</span><span class="d num">-493.62</span></div><div class="lrow below" style="top:60.87%"><span class="p num">75186.00</span><span class="st open">● open</span><span class="n" dir="auto" title="Today Asia low">Today Asia low</span><span class="d num">-664.62</span></div><div class="lrow below" style="top:65.72%"><span class="p num">75035.10</span><span class="st open">● open</span><span class="n" dir="auto" title="Week low">Week low</span><span class="d num">-815.52</span></div><div class="lrow below" style="top:94.85%"><span class="p num">62631.18</span><span class="st open">● open</span><span class="n" dir="auto" title="Low · Sun 16 Aug">Low · Sun 16 Aug</span><span class="d num">-13219.44</span></div>
+        </div>
+        <p class="ladder-foot">Spacing follows the price distance; names in a tight cluster are nudged apart and joined to their level by a thin line. Levels from the H4 chart and from the Asia, London and New York session highs and lows.</p>
+      </div>
+      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/btcusd-m.png?v=2026110612" width="1080" height="1280"><img src="/assets/levels/btcusd.png?v=2026110612" alt="BTCUSD H6 chart: above 81130.79; above 81890.00; above 87249 – 87397; below 75035.10; below 62631.18" width="1200" height="675"></picture></div>
       <details class="more"><summary>Every level and why it matters (5)</summary><div class="more-body"><table class="levels">
         <thead><tr><th>Side</th><th>Level</th><th>Formed</th><th>Why it matters</th></tr></thead>
         <tbody>
@@ -74,6 +85,8 @@
           <tr><td class="down" data-label="Side">Below</td><td class="num" data-label="Level">62631.18</td><td data-label="Formed">Sun 16 Aug</td><td data-label="Why">A swing low from Sun 16 Aug, not traded through since.</td></tr>
         </tbody>
       </table></div></details>
+      </div>
+      <div class="tab-panel" data-panel="scenario">
 
       <h3 style="margin-top:34px">Two scenarios to watch — not a prediction</h3>
       <div class="grid g2" style="margin-top:12px">
@@ -96,9 +109,12 @@
       <h3 style="margin-top:26px">Scenario log — every one, with its outcome</h3>
       <p class="sub" style="font-size:14px">15 closed: 5 reached the target, 10 stopped out, 0 expired · total +3.59R Outcomes are read from the candles; spread, slippage and commission are not included. Full log: <a href="/data/scenarios.json">scenarios.json</a> · <a href="/track-record">track record</a>.</p>
       <table class="levels"><thead><tr><th>Published</th><th>Side</th><th>Entry / SL / TP</th><th>Outcome</th></tr></thead><tbody><tr><td data-label="Published">Fri 06 Nov 06:00 UTC</td><td data-label="Side">Long</td><td class="num" data-label="Entry / SL / TP">75653.13 / 74830.87 / 80700.00</td><td data-label="Outcome"><b style="color:var(--gold)">Open</b> </td></tr><tr><td data-label="Published">Wed 04 Nov 13:00 UTC</td><td data-label="Side">Short</td><td class="num" data-label="Entry / SL / TP">78373.62 / 78902.12 / 75600.64</td><td data-label="Outcome"><b style="color:var(--red)">Stopped out</b> -1.00R <span class="sub" style="font-size:13px">· target reached after the stop</span></td></tr><tr><td data-label="Published">Wed 04 Nov 08:00 UTC</td><td data-label="Side">Short</td><td class="num" data-label="Entry / SL / TP">77882.29 / 78200.85 / 75600.64</td><td data-label="Outcome"><b style="color:var(--red)">Stopped out</b> -1.00R <span class="sub" style="font-size:13px">· target reached after the stop</span></td></tr><tr><td data-label="Published">Wed 04 Nov 00:00 UTC</td><td data-label="Side">Short</td><td class="num" data-label="Entry / SL / TP">77779.33 / 78212.15 / 76238.54</td><td data-label="Outcome"><b style="color:var(--green)">Target reached</b> +3.56R</td></tr><tr><td data-label="Published">Tue 03 Nov 05:41 UTC</td><td data-label="Side">Long</td><td class="num" data-label="Entry / SL / TP">76806.47 / 76298.95 / 78125.00</td><td data-label="Outcome"><b style="color:var(--red)">Stopped out</b> -1.00R <span class="sub" style="font-size:13px">· target reached after the stop</span></td></tr><tr><td data-label="Published">Mon 02 Nov 19:32 UTC</td><td data-label="Side">Long</td><td class="num" data-label="Entry / SL / TP">76882.82 / 76602.53 / 78125.00</td><td data-label="Outcome"><b style="color:var(--red)">Stopped out</b> -1.00R <span class="sub" style="font-size:13px">· target reached after the stop</span></td></tr><tr><td data-label="Published">Mon 02 Nov 00:00 UTC</td><td data-label="Side">Long</td><td class="num" data-label="Entry / SL / TP">77704.09 / 77442.16 / 78125.91</td><td data-label="Outcome"><b style="color:var(--green)">Target reached</b> +1.61R</td></tr><tr><td data-label="Published">Thu 29 Oct 00:00 UTC</td><td data-label="Side">Short</td><td class="num" data-label="Entry / SL / TP">81183.48 / 81827.60 / 79365.93</td><td data-label="Outcome"><b style="color:var(--red)">Stopped out</b> -1.00R <span class="sub" style="font-size:13px">· target reached after the stop</span></td></tr></tbody></table>
-      
+      </div>
+      <div class="tab-panel" data-panel="sessions">
+
       <h3 style="margin-top:34px" id="sessions">Sessions: Asia · London · New York</h3>
       <p class="sub">Each session's high and low is a pool of stops. Which ones were already taken, and did price reject them (closed back inside) or accept them (held beyond)? Now: New York.</p>
+      <div class="tl"><div class="tl-head"><h3>Sessions: yesterday and today</h3><span>Times in UTC · status as of 13:30 UTC</span></div><div class="tl-day"><div class="lbl">Yesterday</div><div class="tl-track" dir="ltr"><div class="tl-seg asia" style="left:0.00%;width:33.33%">Asia</div><div class="tl-seg lon" style="left:33.33%;width:20.83%">London</div><div class="tl-seg ny" style="left:54.17%;width:37.50%">New York</div></div><div class="tl-axis" dir="ltr"><span style="left:0">00:00</span><span style="left:25%">06:00</span><span style="left:50%">12:00</span><span style="left:75%">18:00</span><span style="left:100%">24:00</span></div><div class="tl-res"><div class="tl-box"><span class="t">Asia</span><div class="r"><span>High <span class="num up">80843.85</span></span><span class="chip open-up">● open</span></div><div class="r"><span>Low <span class="num down">80169.28</span></span><span class="chip taken">✓ taken</span></div></div><div class="tl-box"><span class="t">London</span><div class="r"><span>High <span class="num up">80568.24</span></span><span class="chip open-up">● open</span></div><div class="r"><span>Low <span class="num down">79438.60</span></span><span class="chip taken">✓ taken</span></div></div><div class="tl-box"><span class="t">New York</span><div class="r"><span>High <span class="num up">79787.88</span></span><span class="chip open-up">● open</span></div><div class="r"><span>Low <span class="num down">75431.17</span></span><span class="chip taken">✓ taken</span></div></div></div></div><div class="tl-day"><div class="lbl">Today</div><div class="tl-track" dir="ltr"><div class="tl-seg asia" style="left:0.00%;width:33.33%">Asia</div><div class="tl-seg lon" style="left:33.33%;width:20.83%">London</div><div class="tl-seg ny" style="left:54.17%;width:37.50%">New York</div><div class="tl-now" style="left:56.25%"><span>now</span></div></div><div class="tl-axis" dir="ltr"><span style="left:0">00:00</span><span style="left:25%">06:00</span><span style="left:50%">12:00</span><span style="left:75%">18:00</span><span style="left:100%">24:00</span></div><div class="tl-res"><div class="tl-box"><span class="t">Asia</span><div class="r"><span>High <span class="num up">76306.26</span></span><span class="chip open-up">● open</span></div><div class="r"><span>Low <span class="num down">75186.00</span></span><span class="chip open-dn">● open</span></div></div><div class="tl-box"><span class="t">London</span><div class="r"><span>High <span class="num up">76256.44</span></span><span class="chip open-up">● open</span></div><div class="r"><span>Low <span class="num down">75357.00</span></span><span class="chip open-dn">● open</span></div></div><div class="tl-box"><span class="t">New York</span><div class="r"><span>High <span class="num up">75984.65</span></span><span class="chip forming">forming</span></div><div class="r"><span>Low <span class="num down">75695.76</span></span><span class="chip forming">forming</span></div></div></div></div></div>
       <details class="more"><summary>Show the session table</summary><div class="more-body"><table class="levels">
         <thead><tr><th>Session</th><th>High</th><th>What happened</th><th>Low</th><th>What happened</th></tr></thead>
         <tbody>
@@ -107,14 +123,19 @@
 <tr><td data-label="Session"><span>Yesterday New York <span style="color:var(--muted);font-size:13px">13:00–22:00 UTC</span></span></td><td class="num up" data-label="High">79787.88</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">75431.17</td><td data-label="Low was">taken Thu 23:00 UTC by off-session · accepted (held beyond)</td></tr>
 <tr><td data-label="Session"><span>Today Asia <span style="color:var(--muted);font-size:13px">00:00–08:00 UTC</span></span></td><td class="num up" data-label="High">76306.26</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">75186.00</td><td data-label="Low was">untouched — stops still there</td></tr>
 <tr><td data-label="Session"><span>Today London <span style="color:var(--muted);font-size:13px">08:00–13:00 UTC</span></span></td><td class="num up" data-label="High">76256.44</td><td data-label="High was">untouched — stops still there</td><td class="num down" data-label="Low">75357.00</td><td data-label="Low was">untouched — stops still there</td></tr>
+<tr><td data-label="Session"><span>Today New York <span style="color:var(--muted);font-size:13px">13:00–22:00 UTC</span></span></td><td class="num up" data-label="High">75984.65</td><td data-label="High was">forming now</td><td class="num down" data-label="Low">75695.76</td><td data-label="Low was">forming now</td></tr>
         </tbody>
       </table>
       <ul class="list"><li>Nearest resting buy-side liquidity: Today London high 76256.44.</li><li>Nearest resting sell-side liquidity: Today London low 75357.0.</li><li>Recent history (14 days): London took Asia&#x27;s high 43% and low 36% of days; New York took London&#x27;s high 64% and low 64%.</li></ul>
       <div class="note">The session counts describe what happened in the recent history (with the number of days). They are not a signal or a prediction.</div></div></details>
-      
+      </div>
+      <div class="tab-panel" data-panel="live">
+
       <h3 style="margin-top:34px" id="live">Live chart</h3>
       <div class="tv"><div class="tradingview-widget-container" style="height:100%;width:100%"><div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize": true, "symbol": "COINBASE:BTCUSD", "interval": "60", "timezone": "Etc/UTC", "theme": "dark", "style": "1", "locale": "en", "backgroundColor": "rgba(9, 9, 12, 1)", "gridColor": "rgba(38, 38, 47, 0.6)", "hide_side_toolbar": true, "allow_symbol_change": false, "save_image": false, "support_host": "https://www.tradingview.com"}</script></div></div><p class="sub" style="font-size:13px;margin-top:8px">Live chart by TradingView (their price feed: it can differ slightly from the broker candles our levels are built from).</p>
-      <div id="weekly">
+      </div>
+      <div class="tab-panel" data-panel="weekly">
+<div id="weekly">
       <h3 style="margin-top:34px">Weekly outlook · 2026-W45</h3>
       <div class="stats">
         <div class="stat"><span>Last week high</span><b class="num">81890.00</b><span>26 Oct – 01 Nov 2026</span></div>
@@ -123,10 +144,54 @@
         <div class="stat"><span>Last week range</span><b class="num">5748.98</b><span>100% of the 8-week average</span></div>
       </div>
       <p class="sub" style="margin-top:14px">Nearest untouched daily level above: <b class="num up">81890.00</b> · below: <b class="num down">76141.02</b>. <a href="/weekly#btcusd">Full weekly outlook →</a></p></div>
+      </div>
       <div class="note">These are levels where stops are likely to sit, not entries. Price can go through any of them. Always use a stop loss and keep risk small — a common rule is 1% of the account or less on a single trade.</div>
     </div>
   </section>
   <script defer src="/assets/site.js?v=2"></script>
+  <script>
+(function () {
+  var bar = document.querySelector("[data-tabs]");
+  if (!bar) return;
+  var links = [].slice.call(bar.querySelectorAll("a[data-tab]"));
+  var panels = [].slice.call(document.querySelectorAll("[data-panel]"));
+  if (!links.length || !panels.length) return;
+  document.documentElement.classList.add("has-tabs");
+  bar.setAttribute("role", "tablist");
+  function show(name, scroll) {
+    if (!panels.some(function (p) { return p.getAttribute("data-panel") === name; })) name = links[0].getAttribute("data-tab");
+    links.forEach(function (a) {
+      var on = a.getAttribute("data-tab") === name;
+      a.setAttribute("role", "tab"); a.setAttribute("aria-selected", on ? "true" : "false"); a.tabIndex = on ? 0 : -1;
+    });
+    panels.forEach(function (p) { p.hidden = p.getAttribute("data-panel") !== name; });
+    if (scroll) bar.scrollIntoView({ block: "start" });
+  }
+  function fromHash() {
+    var h = (location.hash || "").slice(1);
+    if (!h) return show(links[0].getAttribute("data-tab"), false);
+    var el = document.getElementById(h);
+    var p = el && el.closest ? el.closest("[data-panel]") : null;
+    show(p ? p.getAttribute("data-panel") : h, false);
+    if (el) el.scrollIntoView();
+  }
+  links.forEach(function (a, i) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault(); show(a.getAttribute("data-tab"), true);
+      if (history.replaceState) history.replaceState(null, "", "#" + a.getAttribute("data-tab"));
+    });
+    a.addEventListener("keydown", function (e) {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      var rtl = document.documentElement.dir === "rtl";
+      var step = (e.key === "ArrowRight") !== rtl ? 1 : links.length - 1;
+      var n = links[(i + step) % links.length];
+      n.focus(); show(n.getAttribute("data-tab"), false);
+    });
+  });
+  window.addEventListener("hashchange", fromHash);
+  fromHash();
+})();
+</script>
 </main>
 
 <footer>

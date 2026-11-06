@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v=16">
+<link rel="stylesheet" href="/assets/viz.css?v=1">
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f27544eb70614fe39584df2b3c54f3c1"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
@@ -40,12 +41,14 @@
   <section>
     <div class="wrap">
       <nav class="chips" aria-label="Markets"><a href="/ar/markets/xauusd">الذهب</a><a href="/ar/markets/xagusd">الفضة</a><span class="on">اليورو مقابل الدولار</span><a href="/ar/markets/gbpusd">الإسترليني مقابل الدولار</a><a href="/ar/markets/usdjpy">الدولار مقابل الين</a><a href="/ar/markets/nas100">ناسداك 100</a><a href="/ar/markets/us30">داو جونز 30</a><a href="/ar/markets/btcusd">بيتكوين</a></nav>
-      <div class="kicker" style="margin-top:22px">اليورو مقابل الدولار · EURUSD · H4 · آخر تحديث الجمعة 6 نوفمبر ⁦13:00 UTC⁩<span class="fresh" data-t="1793970016" data-lang="ar"></span></div>
+      <div class="kicker" style="margin-top:22px">اليورو مقابل الدولار · EURUSD · H4 · آخر تحديث الجمعة 6 نوفمبر ⁦13:30 UTC⁩<span class="fresh" data-t="1793971809" data-lang="ar"></span></div>
       <h1 class="ph">أين تتجمع أوامر الوقف في اليورو مقابل الدولار الآن</h1>
-      <p class="sub">آخر سعر <b class="num" style="color:var(--text)">1.11672</b> · شمعة الجمعة 6 نوفمبر ⁦10:00 UTC⁩</p>
+      <p class="sub">آخر سعر <b class="num" style="color:var(--text)">1.11464</b> · شمعة الجمعة 6 نوفمبر ⁦10:00 UTC⁩</p>
       <p class="sub">القمم فوق السعر والقيعان تحته التي <b>لم</b> يتجاوزها السعر منذ أن تكوّنت. عادةً ما تتجمع أوامر الوقف خلفها مباشرة. مستخرجة بالكود من شموع حقيقية (ميتاتريدر (MetaTrader)).</p>
-      <div class="stats glance"><div class="stat"><span>آخر سعر</span><b class="num">1.11672</b><span>شمعة الجمعة 6 نوفمبر ⁦10:00 UTC⁩</span></div><div class="stat"><span>أقرب مستوى فوق السعر</span><b class="num up">1.12560 – 1.12682</b><span>سيولة الشراء</span></div><div class="stat"><span>أقرب مستوى تحت السعر</span><b class="num down">1.11365</b><span>سيولة البيع</span></div><div class="stat"><span>آخر سحب سيولة (H1)</span><b class="down">أُخذت سيولة البيع</b><span>عند <span class="num">1.11674</span> · على آخر شمعة ساعة</span></div></div>
-      <nav class="jump"><a href="#levels">المستويات</a><a href="#scenario">السيناريو</a><a href="#sessions">الجلسات</a><a href="#live">الشارت المباشر</a><a href="#weekly">الأسبوعي</a></nav>
+      <div class="stats glance"><div class="stat"><span>آخر سعر</span><b class="num">1.11464</b><span>شمعة الجمعة 6 نوفمبر ⁦10:00 UTC⁩</span></div><div class="stat"><span>أقرب مستوى فوق السعر</span><b class="num up">1.11923</b><span>قمة لندن اليوم</span></div><div class="stat"><span>أقرب مستوى تحت السعر</span><b class="num down">1.11365</b><span>سيولة البيع</span></div><div class="stat"><span>آخر سحب سيولة (H1)</span><b class="down">أُخذت سيولة البيع</b><span>عند <span class="num">1.11674</span> · على آخر شمعة ساعة</span></div></div>
+      <nav class="jump" aria-label="أقسام الصفحة" data-tabs><a href="#levels" data-tab="levels">المستويات</a><a href="#scenario" data-tab="scenario">السيناريو</a><a href="#sessions" data-tab="sessions">الجلسات</a><a href="#live" data-tab="live">الشارت المباشر</a><a href="#weekly" data-tab="weekly">الأسبوعي</a></nav>
+      <div class="tab-panel" data-panel="levels">
+
       
       <div class="dash">
         <div class="stats tfs"><div class="stat"><span>هيكل M15</span><b class="">عرضي</b><span>قمم وقيعان متداخلة، دون اتجاه واضح</span></div><div class="stat"><span>هيكل H1</span><b class="up">هابط</b><span>قمة أدنى وقاع أدنى</span></div><div class="stat"><span>هيكل H4</span><b class="">عرضي</b><span>قمم وقيعان متداخلة، دون اتجاه واضح</span></div><div class="stat"><span>هيكل D1</span><b class="up">هابط</b><span>قمة أدنى وقاع أدنى</span></div></div>
@@ -55,16 +58,25 @@
         </div>
       </div>
       <script src="/assets/sessions.js?v=3" defer></script>
-
       <div class="stats">
         <div class="stat"><span>قمة اليوم السابق</span><b class="num">1.12682</b><span>الخميس 5 نوفمبر</span></div>
         <div class="stat"><span>قاع اليوم السابق</span><b class="num">1.12030</b><span>الخميس 5 نوفمبر</span></div>
         <div class="stat"><span>قمة الأسبوع</span><b class="num">1.12731</b><span>الأربعاء 4 نوفمبر</span></div>
-        <div class="stat"><span>قاع الأسبوع</span><b class="num">1.11477</b><span>الاثنين 2 نوفمبر</span></div>
+        <div class="stat"><span>قاع الأسبوع</span><b class="num">1.11459</b><span>الجمعة 6 نوفمبر</span></div>
       </div>
 
       <h3 style="margin-top:34px" id="levels">المستويات التي تستحق المتابعة</h3>
-      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/eurusd-ar-m.png?v=2026110606" width="1080" height="1280"><img src="/assets/levels/eurusd-ar.png?v=2026110606" alt="شارت EURUSD H4: فوق 1.12560 – 1.12682؛ فوق 1.12855؛ فوق 1.13804؛ تحت 1.11365؛ تحت 1.11044" width="1200" height="675"></picture></div>
+      <div class="ladder-card">
+        <div class="ladder-head"><h3>سلّم السيولة</h3><div class="legend"><span><i class="up"></i>لم يُلمس فوق السعر</span><span><i class="dn"></i>لم يُلمس تحت السعر</span><span><i class="tk"></i>أُخذ</span></div></div>
+        <div class="ladder" dir="ltr">
+          <svg viewBox="0 0 112 1000" preserveAspectRatio="none" aria-hidden="true"><line class="axis" x1="82" x2="82" y1="8" y2="992"/><line class="up" x1="73" x2="91" y1="27.3" y2="27.3"/><path class="up c" d="M91,27.3 C102,27.3 100,51.5 108,51.5"/><line class="up" x1="73" x2="91" y1="352.4" y2="352.4"/><path class="up c" d="M91,352.4 C102,352.4 100,251.9 108,251.9"/><line class="up" x1="73" x2="91" y1="411.6" y2="411.6"/><path class="up c" d="M91,411.6 C102,411.6 100,300.4 108,300.4"/><rect class="up" x="73" y="411.6" width="18" height="41.8" rx="3"/><line class="up" x1="73" x2="91" y1="432.5" y2="432.5"/><path class="up c" d="M91,432.5 C102,432.5 100,348.9 108,348.9"/><line class="up" x1="73" x2="91" y1="476.7" y2="476.7"/><path class="up c" d="M91,476.7 C102,476.7 100,397.3 108,397.3"/><line class="up" x1="73" x2="91" y1="494.2" y2="494.2"/><path class="up c" d="M91,494.2 C102,494.2 100,445.8 108,445.8"/><line class="up" x1="73" x2="91" y1="526.0" y2="526.0"/><path class="up c" d="M91,526.0 C102,526.0 100,494.3 108,494.3"/><line class="tk" x1="73" x2="91" y1="529.1" y2="529.1" stroke-dasharray="3 3"/><path class="tk c" d="M91,529.1 C102,529.1 100,542.8 108,542.8" stroke-dasharray="3 3"/><line class="tk" x1="73" x2="91" y1="588.7" y2="588.7" stroke-dasharray="3 3"/><path class="tk c" d="M91,588.7 C102,588.7 100,591.3 108,591.3" stroke-dasharray="3 3"/><line class="tk" x1="73" x2="91" y1="635.0" y2="635.0" stroke-dasharray="3 3"/><path class="tk c" d="M91,635.0 C102,635.0 100,639.8 108,639.8" stroke-dasharray="3 3"/><line class="up" x1="73" x2="91" y1="671.6" y2="671.6"/><path class="up c" d="M91,671.6 C102,671.6 100,688.2 108,688.2"/><line class="tk" x1="73" x2="91" y1="756.9" y2="756.9" stroke-dasharray="3 3"/><path class="tk c" d="M91,756.9 C102,756.9 100,736.7 108,736.7" stroke-dasharray="3 3"/><line class="tk" x1="73" x2="91" y1="770.3" y2="770.3" stroke-dasharray="3 3"/><path class="tk c" d="M91,770.3 C102,770.3 100,785.2 108,785.2" stroke-dasharray="3 3"/><line class="dn" x1="73" x2="91" y1="862.8" y2="862.8"/><path class="dn c" d="M91,862.8 C102,862.8 100,872.5 108,872.5"/><line class="dn" x1="73" x2="91" y1="972.7" y2="972.7"/><path class="dn c" d="M91,972.7 C102,972.7 100,948.5 108,948.5"/></svg>
+          <div class="now-line" style="top:82.89%"></div>
+          <div class="now-pill" style="top:82.89%">السعر<span class="num">1.11464</span></div>
+          <div class="lrow above" style="top:5.15%"><span class="p num">1.13804</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قمة H4 · الأربعاء 30 سبتمبر">قمة H4 · الأربعاء 30 سبتمبر</span><span class="d num">+0.02340</span></div><div class="lrow above" style="top:25.19%"><span class="p num">1.12855</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قمة H4 · الجمعة 2 أكتوبر">قمة H4 · الجمعة 2 أكتوبر</span><span class="d num">+0.01391</span></div><div class="lrow above" style="top:30.04%"><span class="p num">1.12682</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قمة آسيا أمس">قمة آسيا أمس</span><span class="d num">+0.01218</span></div><div class="lrow above" style="top:34.89%"><span class="p num">1.12560 – 1.12682</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="منطقة · لمسها السعر 3 مرات">منطقة · لمسها السعر 3 مرات</span><span class="d num">+0.01157</span></div><div class="lrow above" style="top:39.73%"><span class="p num">1.12492</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قمة لندن أمس">قمة لندن أمس</span><span class="d num">+0.01028</span></div><div class="lrow above" style="top:44.58%"><span class="p num">1.12441</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قمة نيويورك أمس">قمة نيويورك أمس</span><span class="d num">+0.00977</span></div><div class="lrow above" style="top:49.43%"><span class="p num">1.12348</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قمة آسيا اليوم">قمة آسيا اليوم</span><span class="d num">+0.00884</span></div><div class="lrow above taken" style="top:54.28%"><span class="p num">1.12339</span><span class="st">✓ أُخذ</span><span class="n" dir="auto" title="قاع آسيا أمس">قاع آسيا أمس</span><span class="d num">+0.00875</span></div><div class="lrow above taken" style="top:59.13%"><span class="p num">1.12165</span><span class="st">✓ أُخذ</span><span class="n" dir="auto" title="قاع لندن أمس">قاع لندن أمس</span><span class="d num">+0.00701</span></div><div class="lrow above taken" style="top:63.98%"><span class="p num">1.12030</span><span class="st">✓ أُخذ</span><span class="n" dir="auto" title="قاع نيويورك أمس">قاع نيويورك أمس</span><span class="d num">+0.00566</span></div><div class="lrow above" style="top:68.82%"><span class="p num">1.11923</span><span class="st next">▲ التالي</span><span class="n" dir="auto" title="قمة لندن اليوم">قمة لندن اليوم</span><span class="d num">+0.00459</span></div><div class="lrow above taken" style="top:73.67%"><span class="p num">1.11674</span><span class="st">✓ أُخذ</span><span class="n" dir="auto" title="قاع آسيا اليوم">قاع آسيا اليوم</span><span class="d num">+0.00210</span></div><div class="lrow above taken" style="top:78.52%"><span class="p num">1.11635</span><span class="st">✓ أُخذ</span><span class="n" dir="auto" title="قاع لندن اليوم">قاع لندن اليوم</span><span class="d num">+0.00171</span></div><div class="lrow below" style="top:87.25%"><span class="p num">1.11365</span><span class="st next">▼ التالي</span><span class="n" dir="auto" title="قاع H4 · الجمعة 30 أكتوبر">قاع H4 · الجمعة 30 أكتوبر</span><span class="d num">-0.00099</span></div><div class="lrow below" style="top:94.85%"><span class="p num">1.11044</span><span class="st open">● لم يُلمس</span><span class="n" dir="auto" title="قاع H4 · الخميس 29 أكتوبر">قاع H4 · الخميس 29 أكتوبر</span><span class="d num">-0.00420</span></div>
+        </div>
+        <p class="ladder-foot">المسافات بحسب فرق السعر؛ الأسماء المتقاربة مُزاحة قليلًا ومربوطة بمستواها بخط رفيع. المستويات من شارت H4 ومن قمم وقيعان جلسات آسيا ولندن ونيويورك.</p>
+      </div>
+      <div class="chart"><picture><source media="(max-width: 600px)" srcset="/assets/levels/eurusd-ar-m.png?v=2026110610" width="1080" height="1280"><img src="/assets/levels/eurusd-ar.png?v=2026110610" alt="شارت EURUSD H4: فوق 1.12560 – 1.12682؛ فوق 1.12855؛ فوق 1.13804؛ تحت 1.11365؛ تحت 1.11044" width="1200" height="675"></picture></div>
 
       <details class="more"><summary>كل المستويات وسبب أهميتها (5)</summary><div class="more-body"><table class="levels">
         <thead><tr><th>الجهة</th><th>المستوى</th><th>تكوّن في</th><th>لماذا يهم</th></tr></thead>
@@ -76,6 +88,8 @@
           <tr><td class="down" data-label="الجهة">تحت السعر</td><td class="num" data-label="المستوى">1.11044</td><td data-label="تكوّن في">الخميس 29 أكتوبر</td><td data-label="لماذا يهم">قاع متأرجح (Swing low) من الخميس 29 أكتوبر، لم يكسره السعر منذ ذلك الحين.</td></tr>
         </tbody>
       </table></div></details>
+      </div>
+      <div class="tab-panel" data-panel="scenario">
 
       <h3 style="margin-top:34px">سيناريوهان للمتابعة — وليس توقعًا</h3>
       <div class="grid g2" style="margin-top:12px">
@@ -98,9 +112,12 @@
       <h3 style="margin-top:26px">سجل السيناريوهات — كلها، مع نتائجها</h3>
       <p class="sub" style="font-size:14px">أُغلق 12: وصل 7 إلى الهدف، وضرب 5 وقف الخسارة، وانتهت مدة 0 · الإجمالي <span class="num">+15.01R</span>. تُقرأ النتائج من الشموع، ولا تشمل السبريد ولا الانزلاق السعري ولا العمولة. السجل الكامل: <a href="/data/scenarios.json">scenarios.json</a> · <a href="/ar/track-record">سجل النتائج</a>.</p>
       <table class="levels"><thead><tr><th>نُشر</th><th>الاتجاه</th><th>الدخول / الوقف / الهدف</th><th>النتيجة</th></tr></thead><tbody><tr><td data-label="نُشر">الجمعة 6 نوفمبر ⁦13:00 UTC⁩</td><td data-label="الاتجاه">شراء</td><td class="num" data-label="الدخول / الوقف / الهدف">1.11683 / 1.11606 / 1.12348</td><td data-label="النتيجة"><b style="color:var(--gold)">مفتوح</b> </td></tr><tr><td data-label="نُشر">الأربعاء 4 نوفمبر ⁦13:00 UTC⁩</td><td data-label="الاتجاه">بيع</td><td class="num" data-label="الدخول / الوقف / الهدف">1.12634 / 1.12761 / 1.12368</td><td data-label="النتيجة"><b style="color:var(--green)">وصل إلى الهدف</b> <span class="num">+2.10R</span></td></tr><tr><td data-label="نُشر">الثلاثاء 3 نوفمبر ⁦05:41 UTC⁩</td><td data-label="الاتجاه">شراء</td><td class="num" data-label="الدخول / الوقف / الهدف">1.11893 / 1.11742 / 1.12296</td><td data-label="النتيجة"><b style="color:var(--green)">وصل إلى الهدف</b> <span class="num">+2.68R</span></td></tr><tr><td data-label="نُشر">الخميس 29 أكتوبر ⁦14:19 UTC⁩</td><td data-label="الاتجاه">شراء</td><td class="num" data-label="الدخول / الوقف / الهدف">1.11355 / 1.11005 / 1.11954</td><td data-label="النتيجة"><b style="color:var(--green)">وصل إلى الهدف</b> <span class="num">+1.71R</span></td></tr><tr><td data-label="نُشر">الخميس 29 أكتوبر ⁦08:00 UTC⁩</td><td data-label="الاتجاه">شراء</td><td class="num" data-label="الدخول / الوقف / الهدف">1.11439 / 1.11274 / 1.11695</td><td data-label="النتيجة"><b style="color:var(--red)">ضرب وقف الخسارة</b> <span class="num">-1.00R</span> <span class="sub" style="font-size:13px">· وصل السعر إلى الهدف بعد ضرب الوقف</span></td></tr><tr><td data-label="نُشر">الأربعاء 28 أكتوبر ⁦05:00 UTC⁩</td><td data-label="الاتجاه">شراء</td><td class="num" data-label="الدخول / الوقف / الهدف">1.11216 / 1.11188 / 1.11318</td><td data-label="النتيجة"><b style="color:var(--red)">ضرب وقف الخسارة</b> <span class="num">-1.00R</span> <span class="sub" style="font-size:13px">· وصل السعر إلى الهدف بعد ضرب الوقف</span></td></tr><tr><td data-label="نُشر">الثلاثاء 27 أكتوبر ⁦00:00 UTC⁩</td><td data-label="الاتجاه">شراء</td><td class="num" data-label="الدخول / الوقف / الهدف">1.11735 / 1.11697 / 1.11954</td><td data-label="النتيجة"><b style="color:var(--red)">ضرب وقف الخسارة</b> <span class="num">-1.00R</span></td></tr><tr><td data-label="نُشر">الاثنين 26 أكتوبر ⁦05:00 UTC⁩</td><td data-label="الاتجاه">بيع</td><td class="num" data-label="الدخول / الوقف / الهدف">1.12200 / 1.12289 / 1.11894</td><td data-label="النتيجة"><b style="color:var(--green)">وصل إلى الهدف</b> <span class="num">+3.44R</span></td></tr></tbody></table>
-      
+      </div>
+      <div class="tab-panel" data-panel="sessions">
+
       <h3 style="margin-top:34px" id="sessions">الجلسات: آسيا · لندن · نيويورك</h3>
       <p class="sub">قمة كل جلسة وقاعها تجمّعٌ لأوامر الوقف. أيها أُخذ بالفعل؟ وهل رفضه السعر (أغلق عائدًا إلى الداخل) أم قبله (ثبت خلفه)؟ الآن: جلسة نيويورك.</p>
+      <div class="tl"><div class="tl-head"><h3>الجلسات: أمس واليوم</h3><span>بتوقيت UTC · الحالة حتى 13:30 UTC</span></div><div class="tl-day"><div class="lbl">أمس</div><div class="tl-track" dir="ltr"><div class="tl-seg asia" style="left:0.00%;width:33.33%">آسيا</div><div class="tl-seg lon" style="left:33.33%;width:20.83%">لندن</div><div class="tl-seg ny" style="left:54.17%;width:37.50%">نيويورك</div></div><div class="tl-axis" dir="ltr"><span style="left:0">00:00</span><span style="left:25%">06:00</span><span style="left:50%">12:00</span><span style="left:75%">18:00</span><span style="left:100%">24:00</span></div><div class="tl-res"><div class="tl-box"><span class="t">آسيا</span><div class="r"><span>القمة <span class="num up">1.12682</span></span><span class="chip open-up">● لم يُلمس</span></div><div class="r"><span>القاع <span class="num down">1.12339</span></span><span class="chip taken">✓ أُخذ</span></div></div><div class="tl-box"><span class="t">لندن</span><div class="r"><span>القمة <span class="num up">1.12492</span></span><span class="chip open-up">● لم يُلمس</span></div><div class="r"><span>القاع <span class="num down">1.12165</span></span><span class="chip taken">✓ أُخذ</span></div></div><div class="tl-box"><span class="t">نيويورك</span><div class="r"><span>القمة <span class="num up">1.12441</span></span><span class="chip open-up">● لم يُلمس</span></div><div class="r"><span>القاع <span class="num down">1.12030</span></span><span class="chip taken">✓ أُخذ</span></div></div></div></div><div class="tl-day"><div class="lbl">اليوم</div><div class="tl-track" dir="ltr"><div class="tl-seg asia" style="left:0.00%;width:33.33%">آسيا</div><div class="tl-seg lon" style="left:33.33%;width:20.83%">لندن</div><div class="tl-seg ny" style="left:54.17%;width:37.50%">نيويورك</div><div class="tl-now" style="left:56.25%"><span>الآن</span></div></div><div class="tl-axis" dir="ltr"><span style="left:0">00:00</span><span style="left:25%">06:00</span><span style="left:50%">12:00</span><span style="left:75%">18:00</span><span style="left:100%">24:00</span></div><div class="tl-res"><div class="tl-box"><span class="t">آسيا</span><div class="r"><span>القمة <span class="num up">1.12348</span></span><span class="chip open-up">● لم يُلمس</span></div><div class="r"><span>القاع <span class="num down">1.11674</span></span><span class="chip taken">✓ أُخذ</span></div></div><div class="tl-box"><span class="t">لندن</span><div class="r"><span>القمة <span class="num up">1.11923</span></span><span class="chip open-up">● لم يُلمس</span></div><div class="r"><span>القاع <span class="num down">1.11635</span></span><span class="chip taken">✓ أُخذ</span></div></div><div class="tl-box"><span class="t">نيويورك</span><div class="r"><span>القمة <span class="num up">1.11707</span></span><span class="chip forming">يتشكّل</span></div><div class="r"><span>القاع <span class="num down">1.11459</span></span><span class="chip forming">يتشكّل</span></div></div></div></div></div>
       <details class="more"><summary>اعرض جدول الجلسات</summary><div class="more-body"><table class="levels">
         <thead><tr><th>الجلسة</th><th>القمة</th><th>ماذا حدث</th><th>القاع</th><th>ماذا حدث</th></tr></thead>
         <tbody>
@@ -108,16 +125,20 @@
 <tr><td data-label="الجلسة"><span>لندن أمس <span style="color:var(--muted);font-size:13px"><span class="num">08:00–13:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.12492</td><td data-label="ماذا حدث للقمة">لم يُلمس — أوامر الوقف ما زالت هناك</td><td class="num down" data-label="القاع">1.12165</td><td data-label="ماذا حدث للقاع">أُخذ يوم الخميس الساعة 13:30 UTC في جلسة نيويورك · رفض: أغلق السعر عائدًا إلى الداخل</td></tr>
 <tr><td data-label="الجلسة"><span>نيويورك أمس <span style="color:var(--muted);font-size:13px"><span class="num">13:00–22:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.12441</td><td data-label="ماذا حدث للقمة">لم يُلمس — أوامر الوقف ما زالت هناك</td><td class="num down" data-label="القاع">1.12030</td><td data-label="ماذا حدث للقاع">أُخذ يوم الجمعة الساعة 03:30 UTC في جلسة آسيا · قبول: ثبت السعر خلف المستوى</td></tr>
 <tr><td data-label="الجلسة"><span>آسيا اليوم <span style="color:var(--muted);font-size:13px"><span class="num">00:00–08:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.12348</td><td data-label="ماذا حدث للقمة">لم يُلمس — أوامر الوقف ما زالت هناك</td><td class="num down" data-label="القاع">1.11674</td><td data-label="ماذا حدث للقاع">أُخذ يوم الجمعة الساعة 12:45 UTC في جلسة لندن · رفض: أغلق السعر عائدًا إلى الداخل</td></tr>
-<tr><td data-label="الجلسة"><span>لندن اليوم <span style="color:var(--muted);font-size:13px"><span class="num">08:00–13:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.11923</td><td data-label="ماذا حدث للقمة">لم يُلمس — أوامر الوقف ما زالت هناك</td><td class="num down" data-label="القاع">1.11635</td><td data-label="ماذا حدث للقاع">لم يُلمس — أوامر الوقف ما زالت هناك</td></tr>
-<tr><td data-label="الجلسة"><span>نيويورك اليوم <span style="color:var(--muted);font-size:13px"><span class="num">13:00–22:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.11686</td><td data-label="ماذا حدث للقمة">تتشكل الآن</td><td class="num down" data-label="القاع">1.11666</td><td data-label="ماذا حدث للقاع">تتشكل الآن</td></tr>
+<tr><td data-label="الجلسة"><span>لندن اليوم <span style="color:var(--muted);font-size:13px"><span class="num">08:00–13:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.11923</td><td data-label="ماذا حدث للقمة">لم يُلمس — أوامر الوقف ما زالت هناك</td><td class="num down" data-label="القاع">1.11635</td><td data-label="ماذا حدث للقاع">أُخذ يوم الجمعة الساعة 13:00 UTC في جلسة نيويورك · قبول: ثبت السعر خلف المستوى</td></tr>
+<tr><td data-label="الجلسة"><span>نيويورك اليوم <span style="color:var(--muted);font-size:13px"><span class="num">13:00–22:00</span> UTC</span></span></td><td class="num up" data-label="القمة">1.11707</td><td data-label="ماذا حدث للقمة">تتشكل الآن</td><td class="num down" data-label="القاع">1.11459</td><td data-label="ماذا حدث للقاع">تتشكل الآن</td></tr>
         </tbody>
       </table>
-      <ul class="list"><li>أقرب سيولة شراء لم تُلمس: قمة لندن اليوم عند <span class="num">1.11923</span>.</li><li>أقرب سيولة بيع لم تُلمس: قاع لندن اليوم عند <span class="num">1.11635</span>.</li><li>خلال آخر 20 يومًا: أخذت جلسة لندن قمة آسيا في <span class="num">30%</span> من الأيام وقاعها في <span class="num">65%</span>، وأخذت نيويورك قمة لندن في <span class="num">35%</span> وقاعها في <span class="num">65%</span>.</li></ul>
+      <ul class="list"><li>أقرب سيولة شراء لم تُلمس: قمة لندن اليوم عند <span class="num">1.11923</span>.</li><li>خلال آخر 20 يومًا: أخذت جلسة لندن قمة آسيا في <span class="num">30%</span> من الأيام وقاعها في <span class="num">65%</span>، وأخذت نيويورك قمة لندن في <span class="num">35%</span> وقاعها في <span class="num">65%</span>.</li></ul>
       <div class="note">الأرقام الخاصة بالجلسات تصف ما حدث في الفترة الأخيرة (مع عدد الأيام). إنها ليست إشارة ولا توقعًا.</div></div></details>
-      
+      </div>
+      <div class="tab-panel" data-panel="live">
+
       <h3 style="margin-top:34px" id="live">شارت مباشر</h3>
       <div class="tv" dir="ltr"><div class="tradingview-widget-container" style="height:100%;width:100%"><div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize": true, "symbol": "FX:EURUSD", "interval": "60", "timezone": "Etc/UTC", "theme": "dark", "style": "1", "locale": "ar_AE", "backgroundColor": "rgba(9, 9, 12, 1)", "gridColor": "rgba(38, 38, 47, 0.6)", "hide_side_toolbar": true, "allow_symbol_change": false, "save_image": false, "support_host": "https://www.tradingview.com"}</script></div></div><p class="sub" style="font-size:13px;margin-top:8px">شارت مباشر من TradingView (بيانات أسعارهم قد تختلف قليلًا عن شموع الوسيط التي نبني عليها المستويات).</p>
-      <div id="weekly">
+      </div>
+      <div class="tab-panel" data-panel="weekly">
+<div id="weekly">
       <h3 style="margin-top:34px">النظرة الأسبوعية · <span class="num">2026-W45</span></h3>
       <div class="stats">
         <div class="stat"><span>قمة الأسبوع الماضي</span><b class="num">1.12267</b><span>26 أكتوبر 2026 – 30 أكتوبر 2026</span></div>
@@ -126,10 +147,54 @@
         <div class="stat"><span>مدى الأسبوع الماضي</span><b class="num">0.01223</b><span><span class="num">101%</span> من متوسط آخر 8 أسابيع</span></div>
       </div>
       <p class="sub" style="margin-top:14px">أقرب مستوى يومي لم يُلمس فوق السعر: <b class="num up">1.12148</b> · وتحته: <b class="num down">1.11044</b>. <a href="/ar/weekly#eurusd">النظرة الأسبوعية كاملة ←</a></p></div>
+      </div>
       <div class="note">هذه مستويات يُرجَّح أن تتجمع عندها أوامر الوقف، وليست نقاط دخول. قد يخترق السعر أيًّا منها. استخدم دائمًا وقف الخسارة وقلّل المخاطرة — من القواعد الشائعة ألا تتجاوز 1% من الحساب في الصفقة الواحدة.</div>
     </div>
   </section>
   <script defer src="/assets/site.js?v=2"></script>
+  <script>
+(function () {
+  var bar = document.querySelector("[data-tabs]");
+  if (!bar) return;
+  var links = [].slice.call(bar.querySelectorAll("a[data-tab]"));
+  var panels = [].slice.call(document.querySelectorAll("[data-panel]"));
+  if (!links.length || !panels.length) return;
+  document.documentElement.classList.add("has-tabs");
+  bar.setAttribute("role", "tablist");
+  function show(name, scroll) {
+    if (!panels.some(function (p) { return p.getAttribute("data-panel") === name; })) name = links[0].getAttribute("data-tab");
+    links.forEach(function (a) {
+      var on = a.getAttribute("data-tab") === name;
+      a.setAttribute("role", "tab"); a.setAttribute("aria-selected", on ? "true" : "false"); a.tabIndex = on ? 0 : -1;
+    });
+    panels.forEach(function (p) { p.hidden = p.getAttribute("data-panel") !== name; });
+    if (scroll) bar.scrollIntoView({ block: "start" });
+  }
+  function fromHash() {
+    var h = (location.hash || "").slice(1);
+    if (!h) return show(links[0].getAttribute("data-tab"), false);
+    var el = document.getElementById(h);
+    var p = el && el.closest ? el.closest("[data-panel]") : null;
+    show(p ? p.getAttribute("data-panel") : h, false);
+    if (el) el.scrollIntoView();
+  }
+  links.forEach(function (a, i) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault(); show(a.getAttribute("data-tab"), true);
+      if (history.replaceState) history.replaceState(null, "", "#" + a.getAttribute("data-tab"));
+    });
+    a.addEventListener("keydown", function (e) {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      var rtl = document.documentElement.dir === "rtl";
+      var step = (e.key === "ArrowRight") !== rtl ? 1 : links.length - 1;
+      var n = links[(i + step) % links.length];
+      n.focus(); show(n.getAttribute("data-tab"), false);
+    });
+  });
+  window.addEventListener("hashchange", fromHash);
+  fromHash();
+})();
+</script>
 </main>
 
 <footer>

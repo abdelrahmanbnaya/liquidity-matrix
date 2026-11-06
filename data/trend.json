@@ -178,7 +178,13 @@
     "risk": 1759.7699999999986,
     "stop": 29847.07
    },
-   "breakout_100": null,
+   "breakout_100": {
+    "side": -1,
+    "entry_t": 1793836800,
+    "entry": 26491.6,
+    "risk": 2133.0899999999992,
+    "stop": 28624.69
+   },
    "ma_20_100": {
     "side": -1,
     "entry_t": 1793750400,
@@ -210,13 +216,7 @@
    }
   },
   "US30": {
-   "breakout_20": {
-    "side": 1,
-    "entry_t": 1793750400,
-    "entry": 53456.8,
-    "risk": 2108.1600000000017,
-    "stop": 51348.64
-   },
+   "breakout_20": null,
    "breakout_55": null,
    "breakout_100": null,
    "ma_20_100": null,
@@ -278,5 +278,17 @@
    }
   }
  },
- "closed": []
+ "closed": [
+  {
+   "symbol": "US30",
+   "rule": "breakout_20",
+   "side": 1,
+   "entry_t": 1793750400,
+   "entry": 53456.8,
+   "exit_t": 1793836800,
+   "exit": 51347.14,
+   "reason": "stop",
+   "r": -1.001
+  }
+ ]
 }

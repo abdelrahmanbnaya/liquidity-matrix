@@ -9,14 +9,22 @@
 .levels td[data-label="لماذا يهم"], .levels td[data-label="ماذا حدث للقمة"], .levels td[data-label="ماذا حدث للقاع"] { overflow-wrap: anywhere; }
 @media (max-width: 600px) { .levels td.num, .levels td[data-label] { white-space: normal; } .levels td .num { white-space: nowrap; } }
 
-/* home / levels cards: where the price sits between the nearest two levels */
-.mk-range { margin-top: 8px; direction: ltr; }
-.mk-range .track { position: relative; height: 6px; border-radius: 999px;
-  background: linear-gradient(90deg, rgba(80,210,140,.55), var(--panel-2) 35%, var(--panel-2) 65%, rgba(255,92,98,.55)); }
-.mk-range .dot { position: absolute; top: 50%; width: 12px; height: 12px; border-radius: 50%; background: var(--gold);
-  border: 2px solid var(--bg); transform: translate(-50%, -50%); box-shadow: 0 0 0 3px rgba(245,192,70,.18); }
-.mk-range .cap { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); margin-top: 6px; }
-.mk-range .cap b { font-weight: 700; }
+/* home / levels cards: a thin rail between the two prices; the nearer price is coloured */
+.mk-rail { position: relative; height: 2px; background: var(--line); border-radius: 2px; margin: 1px 0 3px; direction: ltr; }
+.mk-rail i { position: absolute; top: 50%; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); transform: translate(-50%, -50%); }
+.mkc .num.near-up { color: var(--red); font-weight: 700; }
+.mkc .num.near-dn { color: var(--green); font-weight: 700; }
+
+/* Telegram join row (levels_channel.cta_html) */
+.tg-join { display: flex; align-items: center; gap: 14px; margin-top: 16px; padding: 14px 16px; background: var(--panel);
+  border: 1px solid var(--line); border-radius: var(--radius); color: var(--text); }
+.tg-join:hover { text-decoration: none; border-color: #2aabee; }
+.tg-join svg { flex: 0 0 auto; width: 40px; height: 40px; }
+.tg-join .tg-txt { display: flex; flex-direction: column; min-width: 0; line-height: 1.35; }
+.tg-join .tg-txt b { font-size: 15.5px; }
+.tg-join .tg-txt small { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+.tg-join .tg-go { margin-inline-start: auto; flex: 0 0 auto; background: #2aabee; color: #fff; font-weight: 700; font-size: 14px;
+  border-radius: 999px; padding: 8px 16px; }
 
 /* market page tabs (plain jump links until the script runs) */
 .jump[data-tabs] { position: sticky; top: 64px; z-index: 5; background: rgba(9,9,12,.94); backdrop-filter: blur(8px);
